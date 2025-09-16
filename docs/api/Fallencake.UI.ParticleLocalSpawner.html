@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ParticleLocalSpawner | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ParticleLocalSpawner | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ParticleLocalSpawner">
+
+
+
+  <h1 id="Fallencake_UI_ParticleLocalSpawner" data-uid="Fallencake.UI.ParticleLocalSpawner" class="text-break">
+Class ParticleLocalSpawner  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ParticleLocalSpawner : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">ParticleLocalSpawner</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_ActiveParticleCount_" data-uid="Fallencake.UI.ParticleLocalSpawner.ActiveParticleCount*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_ActiveParticleCount" data-uid="Fallencake.UI.ParticleLocalSpawner.ActiveParticleCount">
+  ActiveParticleCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActiveParticleCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_IsSpawning_" data-uid="Fallencake.UI.ParticleLocalSpawner.IsSpawning*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_IsSpawning" data-uid="Fallencake.UI.ParticleLocalSpawner.IsSpawning">
+  IsSpawning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSpawning { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_PooledParticleCount_" data-uid="Fallencake.UI.ParticleLocalSpawner.PooledParticleCount*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_PooledParticleCount" data-uid="Fallencake.UI.ParticleLocalSpawner.PooledParticleCount">
+  PooledParticleCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PooledParticleCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_AddSprite_" data-uid="Fallencake.UI.ParticleLocalSpawner.AddSprite*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_AddSprite_UnityEngine_Sprite_" data-uid="Fallencake.UI.ParticleLocalSpawner.AddSprite(UnityEngine.Sprite)">
+  AddSprite(Sprite)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSprite(Sprite sprite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_AddStartColorOption_" data-uid="Fallencake.UI.ParticleLocalSpawner.AddStartColorOption*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_AddStartColorOption_UnityEngine_Color_" data-uid="Fallencake.UI.ParticleLocalSpawner.AddStartColorOption(UnityEngine.Color)">
+  AddStartColorOption(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddStartColorOption(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_ClearAllParticles_" data-uid="Fallencake.UI.ParticleLocalSpawner.ClearAllParticles*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_ClearAllParticles" data-uid="Fallencake.UI.ParticleLocalSpawner.ClearAllParticles">
+  ClearAllParticles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllParticles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_RemoveSprite_" data-uid="Fallencake.UI.ParticleLocalSpawner.RemoveSprite*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_RemoveSprite_UnityEngine_Sprite_" data-uid="Fallencake.UI.ParticleLocalSpawner.RemoveSprite(UnityEngine.Sprite)">
+  RemoveSprite(Sprite)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSprite(Sprite sprite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetColorOverLifetime_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetColorOverLifetime*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetColorOverLifetime_UnityEngine_Gradient_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetColorOverLifetime(UnityEngine.Gradient)">
+  SetColorOverLifetime(Gradient)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColorOverLifetime(Gradient gradient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gradient</code> <span class="xref">Gradient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetParticleLifetime_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetParticleLifetime*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetParticleLifetime_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetParticleLifetime(System.Single)">
+  SetParticleLifetime(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParticleLifetime(float lifetime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lifetime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetParticleSystemMode_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetParticleSystemMode*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetParticleSystemMode_System_Single_UnityEngine_Color_UnityEngine_AnimationCurve_UnityEngine_Gradient_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetParticleSystemMode(System.Single,UnityEngine.Color,UnityEngine.AnimationCurve,UnityEngine.Gradient)">
+  SetParticleSystemMode(float, Color, AnimationCurve, Gradient)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParticleSystemMode(float startSize, Color startColor, AnimationCurve sizeOverLifetime, Gradient colorOverLifetime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startSize</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>startColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>sizeOverLifetime</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>colorOverLifetime</code> <span class="xref">Gradient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetPositionRandomization_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetPositionRandomization*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetPositionRandomization_System_Boolean_UnityEngine_Vector3_Fallencake_UI_ParticleLocalSpawner_RandomizationMode_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetPositionRandomization(System.Boolean,UnityEngine.Vector3,Fallencake.UI.ParticleLocalSpawner.RandomizationMode)">
+  SetPositionRandomization(bool, Vector3, RandomizationMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPositionRandomization(bool enable, Vector3 randomRange, ParticleLocalSpawner.RandomizationMode mode = RandomizationMode.Box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>randomRange</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="Fallencake.UI.ParticleLocalSpawner.html">ParticleLocalSpawner</a>.<a class="xref" href="Fallencake.UI.ParticleLocalSpawner.RandomizationMode.html">RandomizationMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRandomParticleLifetime_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomParticleLifetime*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRandomParticleLifetime_System_Single_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomParticleLifetime(System.Single,System.Single)">
+  SetRandomParticleLifetime(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomParticleLifetime(float minLife, float maxLife)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minLife</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxLife</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRandomSpawnFrequency_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomSpawnFrequency*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRandomSpawnFrequency_System_Single_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomSpawnFrequency(System.Single,System.Single)">
+  SetRandomSpawnFrequency(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomSpawnFrequency(float minFreq, float maxFreq)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minFreq</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxFreq</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRandomStartColors_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomStartColors*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRandomStartColors_System_Collections_Generic_List_UnityEngine_Color__" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomStartColors(System.Collections.Generic.List{UnityEngine.Color})">
+  SetRandomStartColors(List&lt;Color&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomStartColors(List&lt;Color&gt; colors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors</code> <span class="xref">List</span>&lt;<span class="xref">Color</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRandomStartSize_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomStartSize*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRandomStartSize_System_Single_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomStartSize(System.Single,System.Single)">
+  SetRandomStartSize(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomStartSize(float minSize, float maxSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minSize</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxSize</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRandomizationIntensity_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomizationIntensity*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRandomizationIntensity_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRandomizationIntensity(System.Single)">
+  SetRandomizationIntensity(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomizationIntensity(float intensity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intensity</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRotationDirection_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRotationDirection*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRotationDirection_Fallencake_UI_ParticleLocalSpawner_RotationDirection_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRotationDirection(Fallencake.UI.ParticleLocalSpawner.RotationDirection)">
+  SetRotationDirection(RotationDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRotationDirection(ParticleLocalSpawner.RotationDirection direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="Fallencake.UI.ParticleLocalSpawner.html">ParticleLocalSpawner</a>.<a class="xref" href="Fallencake.UI.ParticleLocalSpawner.RotationDirection.html">RotationDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRotationSettings_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRotationSettings*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRotationSettings_System_Boolean_Fallencake_UI_ParticleLocalSpawner_RotationDirection_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRotationSettings(System.Boolean,Fallencake.UI.ParticleLocalSpawner.RotationDirection)">
+  SetRotationSettings(bool, RotationDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRotationSettings(bool rotateToPrevious, ParticleLocalSpawner.RotationDirection direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotateToPrevious</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="Fallencake.UI.ParticleLocalSpawner.html">ParticleLocalSpawner</a>.<a class="xref" href="Fallencake.UI.ParticleLocalSpawner.RotationDirection.html">RotationDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetRotationToPrevious_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRotationToPrevious*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetRotationToPrevious_System_Boolean_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetRotationToPrevious(System.Boolean)">
+  SetRotationToPrevious(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRotationToPrevious(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetSizeOverLifetime_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetSizeOverLifetime*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetSizeOverLifetime_UnityEngine_AnimationCurve_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetSizeOverLifetime(UnityEngine.AnimationCurve)">
+  SetSizeOverLifetime(AnimationCurve)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSizeOverLifetime(AnimationCurve curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetSpawnFrequency_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetSpawnFrequency*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetSpawnFrequency_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetSpawnFrequency(System.Single)">
+  SetSpawnFrequency(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpawnFrequency(float frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetStartColor_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetStartColor*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetStartColor_UnityEngine_Color_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetStartColor(UnityEngine.Color)">
+  SetStartColor(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStartColor(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_SetStartSize_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetStartSize*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_SetStartSize_System_Single_" data-uid="Fallencake.UI.ParticleLocalSpawner.SetStartSize(System.Single)">
+  SetStartSize(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStartSize(float size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_StartSpawning_" data-uid="Fallencake.UI.ParticleLocalSpawner.StartSpawning*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_StartSpawning" data-uid="Fallencake.UI.ParticleLocalSpawner.StartSpawning">
+  StartSpawning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartSpawning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ParticleLocalSpawner_StopSpawning_" data-uid="Fallencake.UI.ParticleLocalSpawner.StopSpawning*"></a>
+
+  <h3 id="Fallencake_UI_ParticleLocalSpawner_StopSpawning" data-uid="Fallencake.UI.ParticleLocalSpawner.StopSpawning">
+  StopSpawning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSpawning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

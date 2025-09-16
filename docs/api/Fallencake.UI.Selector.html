@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Selector | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Selector | ModularUIPack ">
+      
+      <meta name="description" content="Simple selector component that updates text, icons, layouts, and indicators based on the selected item.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Selector">
+
+
+
+  <h1 id="Fallencake_UI_Selector" data-uid="Fallencake.UI.Selector" class="text-break">
+Class Selector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Simple selector component that updates text, icons, layouts, and indicators based on the selected item.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Selector : BaseSelector, ISaveable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="Fallencake.UI.BaseSelector.html">BaseSelector</a></div>
+      <div><span class="xref">Selector</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ISaveable.html">ISaveable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__basicTextLabel">BaseSelector._basicTextLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__secondaryTextLabel">BaseSelector._secondaryTextLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__basicIcon">BaseSelector._basicIcon</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__secondaryIcon">BaseSelector._secondaryIcon</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__indicatorsContainer">BaseSelector._indicatorsContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__indicatorPrefab">BaseSelector._indicatorPrefab</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__previousAnimator">BaseSelector._previousAnimator</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__nextAnimator">BaseSelector._nextAnimator</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__basicContentLayout">BaseSelector._basicContentLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__secondaryContentLayout">BaseSelector._secondaryContentLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__isIconEnabled">BaseSelector._isIconEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsIconEnabled">BaseSelector.IsIconEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__isTextEnabled">BaseSelector._isTextEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsTextEnabled">BaseSelector.IsTextEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__isIndicatorsEnabled">BaseSelector._isIndicatorsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsIndicatorsEnabled">BaseSelector.IsIndicatorsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__isSavingEnabled">BaseSelector._isSavingEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsSavingEnabled">BaseSelector.IsSavingEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__saveKey">BaseSelector._saveKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_SaveKey">BaseSelector.SaveKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__invokeOnInitialization">BaseSelector._invokeOnInitialization</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_InvokeOnInitialization">BaseSelector.InvokeOnInitialization</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__invertAnimation">BaseSelector._invertAnimation</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_InvertAnimation">BaseSelector.InvertAnimation</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__loopSelection">BaseSelector._loopSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_LoopSelection">BaseSelector.LoopSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__iconScale">BaseSelector._iconScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IconScale">BaseSelector.IconScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__contentSpacing">BaseSelector._contentSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_ContentSpacing">BaseSelector.ContentSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__defaultItemIndex">BaseSelector._defaultItemIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_DefaultItemIndex">BaseSelector.DefaultItemIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__items">BaseSelector._items</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_OnSelectedIndexChanged">BaseSelector.OnSelectedIndexChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_OnSelectedTextChanged">BaseSelector.OnSelectedTextChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__selectedItemIndex">BaseSelector._selectedItemIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_SelectedItemIndex">BaseSelector.SelectedItemIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__isInitialized">BaseSelector._isInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsInitialized">BaseSelector.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_PlayerPrefsKeyPrefix">BaseSelector.PlayerPrefsKeyPrefix</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_s_ItemsValidationWarning">BaseSelector.s_ItemsValidationWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_s_TextLabelWarning">BaseSelector.s_TextLabelWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_s_IndicatorWarning">BaseSelector.s_IndicatorWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_Awake">BaseSelector.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_Initialize">BaseSelector.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_ValidateComponents">BaseSelector.ValidateComponents()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_LoadState">BaseSelector.LoadState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_SaveState">BaseSelector.SaveState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_UpdateVisuals">BaseSelector.UpdateVisuals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_InvokeInitialSelection">BaseSelector.InvokeInitialSelection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_HandleSelectedIndexChanged">BaseSelector.HandleSelectedIndexChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_HandleSelectedTextChanged">BaseSelector.HandleSelectedTextChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsDestroyed">BaseSelector.IsDestroyed()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_Selector_CreateNewItem_" data-uid="Fallencake.UI.Selector.CreateNewItem*"></a>
+
+  <h3 id="Fallencake_UI_Selector_CreateNewItem_System_String_UnityEngine_Sprite_" data-uid="Fallencake.UI.Selector.CreateNewItem(System.String,UnityEngine.Sprite)">
+  CreateNewItem(string, Sprite)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNewItem(string name, Sprite icon = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>icon</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_NextItem_" data-uid="Fallencake.UI.Selector.NextItem*"></a>
+
+  <h3 id="Fallencake_UI_Selector_NextItem" data-uid="Fallencake.UI.Selector.NextItem">
+  NextItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NextItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_PreviousItem_" data-uid="Fallencake.UI.Selector.PreviousItem*"></a>
+
+  <h3 id="Fallencake_UI_Selector_PreviousItem" data-uid="Fallencake.UI.Selector.PreviousItem">
+  PreviousItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreviousItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_RemoveItem_" data-uid="Fallencake.UI.Selector.RemoveItem*"></a>
+
+  <h3 id="Fallencake_UI_Selector_RemoveItem_System_String_" data-uid="Fallencake.UI.Selector.RemoveItem(System.String)">
+  RemoveItem(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveItem(string itemName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_SelectItem_" data-uid="Fallencake.UI.Selector.SelectItem*"></a>
+
+  <h3 id="Fallencake_UI_Selector_SelectItem_System_Int32_" data-uid="Fallencake.UI.Selector.SelectItem(System.Int32)">
+  SelectItem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects an item by index and updates visuals in derived implementations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SelectItem(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>Zero-based index of the item to select.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_SelectItem_" data-uid="Fallencake.UI.Selector.SelectItem*"></a>
+
+  <h3 id="Fallencake_UI_Selector_SelectItem_System_Int32_System_Boolean_" data-uid="Fallencake.UI.Selector.SelectItem(System.Int32,System.Boolean)">
+  SelectItem(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects an item and optionally plays transition animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectItem(int index, bool playAnimation = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>Zero-based index of the item to select.</p>
+</dd>
+    <dt><code>playAnimation</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to play selection animation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_UpdateContentLayout_" data-uid="Fallencake.UI.Selector.UpdateContentLayout*"></a>
+
+  <h3 id="Fallencake_UI_Selector_UpdateContentLayout" data-uid="Fallencake.UI.Selector.UpdateContentLayout">
+  UpdateContentLayout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateContentLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_UpdateIndicators_" data-uid="Fallencake.UI.Selector.UpdateIndicators*"></a>
+
+  <h3 id="Fallencake_UI_Selector_UpdateIndicators" data-uid="Fallencake.UI.Selector.UpdateIndicators">
+  UpdateIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Selector_UpdateLabelAndIcon_" data-uid="Fallencake.UI.Selector.UpdateLabelAndIcon*"></a>
+
+  <h3 id="Fallencake_UI_Selector_UpdateLabelAndIcon" data-uid="Fallencake.UI.Selector.UpdateLabelAndIcon">
+  UpdateLabelAndIcon()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateLabelAndIcon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

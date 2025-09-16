@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Button | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Button | ModularUIPack ">
+      
+      <meta name="description" content="Modular, multi-graphic UI button with single- and double-click support, group selection behavior, and optional click ripple effects.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Button">
+
+
+
+  <h1 id="Fallencake_UI_Button" data-uid="Fallencake.UI.Button" class="text-break">
+Class Button  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Modular, multi-graphic UI button with single- and double-click support, group selection
+behavior, and optional click ripple effects.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Modular UI/Button&quot;, 30)]
+[ExecuteAlways]
+public class Button : MultipleGraphicsSelectable, IMultiSelectable, IMultipleClicksHandler, IGroupSelectable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">Selectable</span></div>
+      <div><a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a></div>
+      <div><span class="xref">Button</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IMultiSelectable.html">IMultiSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.IMultipleClicksHandler.html">IMultipleClicksHandler</a></div>
+      <div><a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__colorableGraphics">MultipleGraphicsSelectable._colorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableGraphics">MultipleGraphicsSelectable._swappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableCanvasGroupe">MultipleGraphicsSelectable._swappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics">MultipleGraphicsSelectable.ColorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics">MultipleGraphicsSelectable.SwappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe">MultipleGraphicsSelectable.SwappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__transition">MultipleGraphicsSelectable._transition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition">MultipleGraphicsSelectable.SelectableTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__tweenCoroutine">MultipleGraphicsSelectable._tweenCoroutine</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_Start">MultipleGraphicsSelectable.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_OnDisable">MultipleGraphicsSelectable.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_OnDestroy">MultipleGraphicsSelectable.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">MultipleGraphicsSelectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics">MultipleGraphicsSelectable.AddNewColorableGraphics()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite">MultipleGraphicsSelectable.AddNewSwappableSprite()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_Fallencake_UI_SelectionColorBlock_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, SelectionColorBlock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_System_Single_System_Single_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, Color, Color, Color, Color, Color, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Graphic_Fallencake_UI_SelectionSpriteState_">MultipleGraphicsSelectable.AddSwappableSprite(Graphic, SelectionSpriteState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Image_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_">MultipleGraphicsSelectable.AddSwappableSprite(Image, Sprite, Sprite, Sprite, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_">MultipleGraphicsSelectable.SetFadingCanvasGroups(CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, float)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Fallencake_UI_Button_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Composes multiple icons and text labels for each visual state and coordinates their transitions
+via <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a>. Supports double-click detection using
+<a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_DoubleClickInterval">DoubleClickInterval</a> and <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_EnableInstantFirstClickEvent">EnableInstantFirstClickEvent</a>, and can participate
+in a <a class="xref" href="Fallencake.UI.SelectableGroup.html">SelectableGroup</a> to synchronize selection within a group. Optionally spawns a ripple
+effect on pointer down.
+</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_Button_ClickEffectMaxScale" data-uid="Fallencake.UI.Button.ClickEffectMaxScale">
+  ClickEffectMaxScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum uniform scale the ripple can reach before it is destroyed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0.5, 25)]
+public float ClickEffectMaxScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_ClickEffectParent" data-uid="Fallencake.UI.Button.ClickEffectParent">
+  ClickEffectParent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The parent <span class="xref">UnityEngine.Transform</span> that will host the ripple effect GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ClickEffectParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_ClickEffectSpeed" data-uid="Fallencake.UI.Button.ClickEffectSpeed">
+  ClickEffectSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Playback speed multiplier for the ripple animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0.1, 5)]
+public float ClickEffectSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_ClickEffectStartColor" data-uid="Fallencake.UI.Button.ClickEffectStartColor">
+  ClickEffectStartColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starting color (including alpha) of the ripple.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ClickEffectStartColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_ClickEffectTargetColor" data-uid="Fallencake.UI.Button.ClickEffectTargetColor">
+  ClickEffectTargetColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Target color (including alpha) the ripple fades to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ClickEffectTargetColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_ClickEffectTexture" data-uid="Fallencake.UI.Button.ClickEffectTexture">
+  ClickEffectTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The sprite used by the ripple effect image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sprite ClickEffectTexture</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_DoubleClickInterval" data-uid="Fallencake.UI.Button.DoubleClickInterval">
+  DoubleClickInterval
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The interval in seconds between the first click and the second click to trigger the OnDoubleClick event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0.1, 1)]
+public float DoubleClickInterval</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_EnableClickEffect" data-uid="Fallencake.UI.Button.EnableClickEffect">
+  EnableClickEffect
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables or disables the visual ripple effect on pointer down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableClickEffect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_Button_EnableClickEffect_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When enabled, <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_CreateRippleEffect_UnityEngine_Vector2_">CreateRippleEffect(Vector2)</a> instantiates a transient
+<code>RippleEffect</code> on <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_ClickEffectParent">ClickEffectParent</a> configured by the fields below.</p>
+</div>
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_EnableDoubleClick" data-uid="Fallencake.UI.Button.EnableDoubleClick">
+  EnableDoubleClick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, the button will trigger the OnDoubleClick event when the user clicks the button twice within the DoubleClickInterval seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableDoubleClick</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_EnableInstantFirstClickEvent" data-uid="Fallencake.UI.Button.EnableInstantFirstClickEvent">
+  EnableInstantFirstClickEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true, the OnClick event will be triggered immediately when the button is clicked.
+If false, the event will be triggered after the DoubleClickInterval seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableInstantFirstClickEvent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_IsCenteredPosition" data-uid="Fallencake.UI.Button.IsCenteredPosition">
+  IsCenteredPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, spawns the ripple at the center of <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_ClickEffectParent">ClickEffectParent</a>; otherwise uses the pointer position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCenteredPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_IsRenderOnTop" data-uid="Fallencake.UI.Button.IsRenderOnTop">
+  IsRenderOnTop
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, forces <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_ClickEffectParent">ClickEffectParent</a> to be rendered on top by moving it to the end of the sibling list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRenderOnTop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Button_OnClickEffectUpdateMode" data-uid="Fallencake.UI.Button.OnClickEffectUpdateMode">
+  OnClickEffectUpdateMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the ripple animation uses scaled or unscaled time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClickEffectUpdateMode OnClickEffectUpdateMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ClickEffectUpdateMode.html">ClickEffectUpdateMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_Button_IsIconEnabled_" data-uid="Fallencake.UI.Button.IsIconEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Button_IsIconEnabled" data-uid="Fallencake.UI.Button.IsIconEnabled">
+  IsIconEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether icon graphics are enabled and synchronized across button states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIconEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>Setting this property immediately toggles icon GameObjects using <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_SetIconEnabled_System_Boolean_">SetIconEnabled(bool)</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_IsTextEnabled_" data-uid="Fallencake.UI.Button.IsTextEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Button_IsTextEnabled" data-uid="Fallencake.UI.Button.IsTextEnabled">
+  IsTextEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether text label graphics are enabled across button states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTextEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>Setting this property immediately toggles text label GameObjects using <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_SetTextLabelEnabled_System_Boolean_">SetTextLabelEnabled(bool)</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_OnClick_" data-uid="Fallencake.UI.Button.OnClick*"></a>
+
+  <h3 id="Fallencake_UI_Button_OnClick" data-uid="Fallencake.UI.Button.OnClick">
+  OnClick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UnityEvent that is triggered when the button is pressed once.
+Note: Triggered on MouseUp after MouseDown on the same object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnButtonClickedEvent OnClick { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.OnButtonClickedEvent.html">OnButtonClickedEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_OnDoubleClick_" data-uid="Fallencake.UI.Button.OnDoubleClick*"></a>
+
+  <h3 id="Fallencake_UI_Button_OnDoubleClick" data-uid="Fallencake.UI.Button.OnDoubleClick">
+  OnDoubleClick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UnityEvent that is triggered when the button is pressed twice for a short period of time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnButtonClickedEvent OnDoubleClick { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.OnButtonClickedEvent.html">OnButtonClickedEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_Button_CreateRippleEffect_" data-uid="Fallencake.UI.Button.CreateRippleEffect*"></a>
+
+  <h3 id="Fallencake_UI_Button_CreateRippleEffect_UnityEngine_Vector2_" data-uid="Fallencake.UI.Button.CreateRippleEffect(UnityEngine.Vector2)">
+  CreateRippleEffect(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Spawns a ripple effect at the given screen-space position or at the center depending on <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_IsCenteredPosition">IsCenteredPosition</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateRippleEffect(Vector2 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Screen position in pixels where the ripple should appear.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_ForceSelected_" data-uid="Fallencake.UI.Button.ForceSelected*"></a>
+
+  <h3 id="Fallencake_UI_Button_ForceSelected_System_Boolean_" data-uid="Fallencake.UI.Button.ForceSelected(System.Boolean)">
+  ForceSelected(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Forces the button's selected flag and refreshes its visuals, regardless of group presence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceSelected(bool selected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selected</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether the button should appear selected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_HandleDoubleClickCheck_" data-uid="Fallencake.UI.Button.HandleDoubleClickCheck*"></a>
+
+  <h3 id="Fallencake_UI_Button_HandleDoubleClickCheck" data-uid="Fallencake.UI.Button.HandleDoubleClickCheck">
+  HandleDoubleClickCheck()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method that handles the check for double click on button to trigger OnDoubleClick event. You can call it from OnPointerClick method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HandleDoubleClickCheck()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_Button_HandleDoubleClickCheck_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_EnableDoubleClick">EnableDoubleClick</a> is disabled, immediately performs a normal click.
+Otherwise uses <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_DoubleClickInterval">DoubleClickInterval</a> to detect the second click and optionally
+fires the first click instantly depending on <a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_EnableInstantFirstClickEvent">EnableInstantFirstClickEvent</a>.</p>
+</div>
+
+
+
+
+  <a id="Fallencake_UI_Button_SetGroup_" data-uid="Fallencake.UI.Button.SetGroup*"></a>
+
+  <h3 id="Fallencake_UI_Button_SetGroup_Fallencake_UI_SelectableGroup_" data-uid="Fallencake.UI.Button.SetGroup(Fallencake.UI.SelectableGroup)">
+  SetGroup(SelectableGroup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assigns the group that manages this button's selection state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroup(SelectableGroup group)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group</code> <a class="xref" href="Fallencake.UI.SelectableGroup.html">SelectableGroup</a></dt>
+    <dd><p>The <a class="xref" href="Fallencake.UI.SelectableGroup.html">SelectableGroup</a> to associate with this button.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_SetIconEnabled_" data-uid="Fallencake.UI.Button.SetIconEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Button_SetIconEnabled_System_Boolean_" data-uid="Fallencake.UI.Button.SetIconEnabled(System.Boolean)">
+  SetIconEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Toggle the visibility of the icon. If _isIconControlsParent is true, the icon's parent will be toggled instead of the icon itself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIconEnabled(bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActive</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, the icon will be visible. If false, the icon will be hidden.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_SetSelectedInGroup_" data-uid="Fallencake.UI.Button.SetSelectedInGroup*"></a>
+
+  <h3 id="Fallencake_UI_Button_SetSelectedInGroup_System_Boolean_" data-uid="Fallencake.UI.Button.SetSelectedInGroup(System.Boolean)">
+  SetSelectedInGroup(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets this button's selected state within its group and updates visuals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectedInGroup(bool selected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selected</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, forces the button into the Selected state in its group.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Button_SetTextLabelEnabled_" data-uid="Fallencake.UI.Button.SetTextLabelEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Button_SetTextLabelEnabled_System_Boolean_" data-uid="Fallencake.UI.Button.SetTextLabelEnabled(System.Boolean)">
+  SetTextLabelEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Toggle the visibility of the text label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextLabelEnabled(bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActive</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, the text label will be visible. If false, the text label will be hidden.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_OnClick">OnClick</a></div>
+      <div><a class="xref" href="Fallencake.UI.Button.html#Fallencake_UI_Button_OnDoubleClick">OnDoubleClick</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

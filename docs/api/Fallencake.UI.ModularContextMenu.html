@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModularContextMenu | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModularContextMenu | ModularUIPack ">
+      
+      <meta name="description" content="A modular popup menu appears upon user interaction, such as a right-click mouse operation.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ModularContextMenu">
+
+
+
+  <h1 id="Fallencake_UI_ModularContextMenu" data-uid="Fallencake.UI.ModularContextMenu" class="text-break">
+Class ModularContextMenu  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A modular popup menu appears upon user interaction, such as a right-click mouse operation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Modular UI/Context Menu&quot;)]
+public class ModularContextMenu : ContextMenuBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="Fallencake.UI.ContextMenuBase.html">ContextMenuBase</a></div>
+      <div><span class="xref">ModularContextMenu</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase__popupAnimator">ContextMenuBase._popupAnimator</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase__itemsContainer">ContextMenuBase._itemsContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase__content">ContextMenuBase._content</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase__contentRectTransform">ContextMenuBase._contentRectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase__isActive">ContextMenuBase._isActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_isActive">ContextMenuBase.isActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_InitContent">ContextMenuBase.InitContent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_InitItemsContainer">ContextMenuBase.InitItemsContainer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_InitPopupAnimator">ContextMenuBase.InitPopupAnimator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_ClearAllItems">ContextMenuBase.ClearAllItems()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_Open">ContextMenuBase.Open()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_Close">ContextMenuBase.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_CloseInstantly">ContextMenuBase.CloseInstantly()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_CloseOnClick">ContextMenuBase.CloseOnClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_UpdateItemsWithDelay_System_Single_">ContextMenuBase.UpdateItemsWithDelay(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_GetMenuWidth">ContextMenuBase.GetMenuWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ContextMenuBase.html#Fallencake_UI_ContextMenuBase_SetProperty__1___0____0_System_Action_">ContextMenuBase.SetProperty&lt;T&gt;(ref T, T, Action)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ModularContextMenu__offset" data-uid="Fallencake.UI.ModularContextMenu._offset">
+  _offset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectOffset _offset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ModularContextMenu__subMenuOffset" data-uid="Fallencake.UI.ModularContextMenu._subMenuOffset">
+  _subMenuOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Vector2 _subMenuOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ModularContextMenu_backgroundColor_" data-uid="Fallencake.UI.ModularContextMenu.backgroundColor*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_backgroundColor" data-uid="Fallencake.UI.ModularContextMenu.backgroundColor">
+  backgroundColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Background overlay color used when interactive background is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color backgroundColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_isCloseOnClick_" data-uid="Fallencake.UI.ModularContextMenu.isCloseOnClick*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_isCloseOnClick" data-uid="Fallencake.UI.ModularContextMenu.isCloseOnClick">
+  isCloseOnClick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, clicking on the interactive background closes the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isCloseOnClick { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_offset_" data-uid="Fallencake.UI.ModularContextMenu.offset*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_offset" data-uid="Fallencake.UI.ModularContextMenu.offset">
+  offset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The offset added around the content element to the point at which the menu opens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectOffset offset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_panelPosition_" data-uid="Fallencake.UI.ModularContextMenu.panelPosition*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_panelPosition" data-uid="Fallencake.UI.ModularContextMenu.panelPosition">
+  panelPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current quadrant of the menu relative to the cursor/area bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelPosition panelPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.PanelPosition.html">PanelPosition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_subMenuOffset_" data-uid="Fallencake.UI.ModularContextMenu.subMenuOffset*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_subMenuOffset" data-uid="Fallencake.UI.ModularContextMenu.subMenuOffset">
+  subMenuOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Relative offset applied when spawning a submenu next to the parent item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 subMenuOffset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ModularContextMenu_AddButton_" data-uid="Fallencake.UI.ModularContextMenu.AddButton*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_AddButton_System_String_UnityEngine_Events_UnityAction_UnityEngine_Sprite_System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.AddButton(System.String,UnityEngine.Events.UnityAction,UnityEngine.Sprite,System.Boolean)">
+  AddButton(string, UnityAction, Sprite, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a clickable button item with optional icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextMenuItem AddButton(string name, UnityAction onClick, Sprite icon = null, bool rebuild = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd><p>Display text.</p>
+</dd>
+    <dt><code>onClick</code> <span class="xref">UnityAction</span></dt>
+    <dd><p>Click callback.</p>
+</dd>
+    <dt><code>icon</code> <span class="xref">Sprite</span></dt>
+    <dd><p>Optional icon.</p>
+</dd>
+    <dt><code>rebuild</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ContextMenuItem.html">ContextMenuItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_AddItem_" data-uid="Fallencake.UI.ModularContextMenu.AddItem*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_AddItem_Fallencake_UI_ContextMenuItem_System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.AddItem(Fallencake.UI.ContextMenuItem,System.Boolean)">
+  AddItem(ContextMenuItem, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a preconfigured item and optionally rebuilds the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(ContextMenuItem item, bool rebuild = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Fallencake.UI.ContextMenuItem.html">ContextMenuItem</a></dt>
+    <dd><p>Item to add.</p>
+</dd>
+    <dt><code>rebuild</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_AddNewItem_" data-uid="Fallencake.UI.ModularContextMenu.AddNewItem*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_AddNewItem" data-uid="Fallencake.UI.ModularContextMenu.AddNewItem">
+  AddNewItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new empty item to the menu. Prefer AddItem/AddButton/AddSeparator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use AddItem(ContextMenuItem) / AddButton / AddSeparator&quot;)]
+public void AddNewItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_AddSeparator_" data-uid="Fallencake.UI.ModularContextMenu.AddSeparator*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_AddSeparator_System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.AddSeparator(System.Boolean)">
+  AddSeparator(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a visual separator item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextMenuItem AddSeparator(bool rebuild = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rebuild</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ContextMenuItem.html">ContextMenuItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_AddSubMenu_" data-uid="Fallencake.UI.ModularContextMenu.AddSubMenu*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_AddSubMenu_System_String_System_Collections_Generic_List_Fallencake_UI_ContextSubMenuItem__UnityEngine_Sprite_System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.AddSubMenu(System.String,System.Collections.Generic.List{Fallencake.UI.ContextSubMenuItem},UnityEngine.Sprite,System.Boolean)">
+  AddSubMenu(string, List&lt;ContextSubMenuItem&gt;, Sprite, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a submenu with provided items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextMenuItem AddSubMenu(string name, List&lt;ContextSubMenuItem&gt; items, Sprite icon = null, bool rebuild = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd><p>Submenu header text.</p>
+</dd>
+    <dt><code>items</code> <span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ContextSubMenuItem.html">ContextSubMenuItem</a>&gt;</dt>
+    <dd><p>Child submenu items.</p>
+</dd>
+    <dt><code>icon</code> <span class="xref">Sprite</span></dt>
+    <dd><p>Optional icon.</p>
+</dd>
+    <dt><code>rebuild</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ContextMenuItem.html">ContextMenuItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_ClearItems_" data-uid="Fallencake.UI.ModularContextMenu.ClearItems*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_ClearItems_System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.ClearItems(System.Boolean)">
+  ClearItems(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all menu items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearItems(bool rebuild = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rebuild</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_OpenAt_" data-uid="Fallencake.UI.ModularContextMenu.OpenAt*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_OpenAt_UnityEngine_Vector2_" data-uid="Fallencake.UI.ModularContextMenu.OpenAt(UnityEngine.Vector2)">
+  OpenAt(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the menu at a specific screen position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenAt(Vector2 screenPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenPosition</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Position in screen pixels.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_OpenAt_" data-uid="Fallencake.UI.ModularContextMenu.OpenAt*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_OpenAt_UnityEngine_Vector2_System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.OpenAt(UnityEngine.Vector2,System.Boolean)">
+  OpenAt(Vector2, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the menu at a specific screen position with optional content rebuild.
+When <code class="paramref">isUpdateContent</code> is true, items are rebuilt before showing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenAt(Vector2 screenPosition, bool isUpdateContent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenPosition</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Position in screen pixels.</p>
+</dd>
+    <dt><code>isUpdateContent</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a> before showing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_OpenAtCursor_" data-uid="Fallencake.UI.ModularContextMenu.OpenAtCursor*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_OpenAtCursor" data-uid="Fallencake.UI.ModularContextMenu.OpenAtCursor">
+  OpenAtCursor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shows the menu at the current cursor position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenAtCursor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_SetItems_" data-uid="Fallencake.UI.ModularContextMenu.SetItems*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_SetItems_System_Collections_Generic_List_Fallencake_UI_ContextMenuItem__System_Boolean_" data-uid="Fallencake.UI.ModularContextMenu.SetItems(System.Collections.Generic.List{Fallencake.UI.ContextMenuItem},System.Boolean)">
+  SetItems(List&lt;ContextMenuItem&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the entire items list and optionally rebuilds the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetItems(List&lt;ContextMenuItem&gt; items, bool rebuild = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ContextMenuItem.html">ContextMenuItem</a>&gt;</dt>
+    <dd><p>New list of items to display.</p>
+</dd>
+    <dt><code>rebuild</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, calls <a class="xref" href="Fallencake.UI.ModularContextMenu.html#Fallencake_UI_ModularContextMenu_UpdateContent">UpdateContent()</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_UpdateContent_" data-uid="Fallencake.UI.ModularContextMenu.UpdateContent*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_UpdateContent" data-uid="Fallencake.UI.ModularContextMenu.UpdateContent">
+  UpdateContent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds menu items based on the current items list and repositions the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateContent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularContextMenu_UpdatePositionFromCursor_" data-uid="Fallencake.UI.ModularContextMenu.UpdatePositionFromCursor*"></a>
+
+  <h3 id="Fallencake_UI_ModularContextMenu_UpdatePositionFromCursor" data-uid="Fallencake.UI.ModularContextMenu.UpdatePositionFromCursor">
+  UpdatePositionFromCursor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates internal cursor position (based on current input system) and repositions the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePositionFromCursor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

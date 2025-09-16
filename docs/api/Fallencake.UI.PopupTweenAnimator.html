@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PopupTweenAnimator | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PopupTweenAnimator | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.PopupTweenAnimator">
+
+
+
+  <h1 id="Fallencake_UI_PopupTweenAnimator" data-uid="Fallencake.UI.PopupTweenAnimator" class="text-break">
+Class PopupTweenAnimator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PopupTweenAnimator : TweenAnimatorBase, IPopupTweenAnimator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="Fallencake.UI.TweenAnimatorBase.html">TweenAnimatorBase</a></div>
+      <div><span class="xref">PopupTweenAnimator</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IPopupTweenAnimator.html">IPopupTweenAnimator</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ModularPopupAnimator.html">ModularPopupAnimator</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenAnimatorBase.html#Fallencake_UI_TweenAnimatorBase_OnDisable">TweenAnimatorBase.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenAnimatorBase.html#Fallencake_UI_TweenAnimatorBase_PlayTween_Fallencake_UI_TweenParameters_Fallencake_UI_LoopType_System_Boolean_System_Action_">TweenAnimatorBase.PlayTween(TweenParameters, LoopType, bool, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenAnimatorBase.html#Fallencake_UI_TweenAnimatorBase_PlayPopupTween_Fallencake_UI_PopupTweenParameters_System_Boolean_System_Boolean_System_Boolean_System_Action_System_Action_">TweenAnimatorBase.PlayPopupTween(PopupTweenParameters, bool, bool, bool, Action, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenAnimatorBase.html#Fallencake_UI_TweenAnimatorBase_OnTweenComplete_Fallencake_UI_ITweenBasicParameters_System_Boolean_System_Action_">TweenAnimatorBase.OnTweenComplete(ITweenBasicParameters, bool, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenAnimatorBase.html#Fallencake_UI_TweenAnimatorBase_OnSimpleTweenComplete_Fallencake_UI_ITweenBasicParameters_System_Boolean_System_Action_">TweenAnimatorBase.OnSimpleTweenComplete(ITweenBasicParameters, bool, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenAnimatorBase.html#Fallencake_UI_TweenAnimatorBase_OnSimpleTweenComplete_Fallencake_UI_ITweenBasicParameters_System_Boolean_System_Boolean_System_Action_">TweenAnimatorBase.OnSimpleTweenComplete(ITweenBasicParameters, bool, bool, Action)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_IsHiddenOnStart_" data-uid="Fallencake.UI.PopupTweenAnimator.IsHiddenOnStart*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_IsHiddenOnStart" data-uid="Fallencake.UI.PopupTweenAnimator.IsHiddenOnStart">
+  IsHiddenOnStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHiddenOnStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_IsHideAnimating_" data-uid="Fallencake.UI.PopupTweenAnimator.IsHideAnimating*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_IsHideAnimating" data-uid="Fallencake.UI.PopupTweenAnimator.IsHideAnimating">
+  IsHideAnimating
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if Hide animation is currently playing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHideAnimating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_IsShowAnimating_" data-uid="Fallencake.UI.PopupTweenAnimator.IsShowAnimating*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_IsShowAnimating" data-uid="Fallencake.UI.PopupTweenAnimator.IsShowAnimating">
+  IsShowAnimating
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if Show animation is currently playing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShowAnimating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnHideEnd_" data-uid="Fallencake.UI.PopupTweenAnimator.OnHideEnd*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnHideEnd" data-uid="Fallencake.UI.PopupTweenAnimator.OnHideEnd">
+  OnHideEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event called when Hide animation ends</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnHideEnd { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnHideStart_" data-uid="Fallencake.UI.PopupTweenAnimator.OnHideStart*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnHideStart" data-uid="Fallencake.UI.PopupTweenAnimator.OnHideStart">
+  OnHideStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event called when Hide animation starts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnHideStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnHideUpdate_" data-uid="Fallencake.UI.PopupTweenAnimator.OnHideUpdate*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnHideUpdate" data-uid="Fallencake.UI.PopupTweenAnimator.OnHideUpdate">
+  OnHideUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event called every frame during Hide animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnHideUpdate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnShowEnd_" data-uid="Fallencake.UI.PopupTweenAnimator.OnShowEnd*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnShowEnd" data-uid="Fallencake.UI.PopupTweenAnimator.OnShowEnd">
+  OnShowEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event called when Show animation ends</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnShowEnd { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnShowStart_" data-uid="Fallencake.UI.PopupTweenAnimator.OnShowStart*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnShowStart" data-uid="Fallencake.UI.PopupTweenAnimator.OnShowStart">
+  OnShowStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event called when Show animation starts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnShowStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnShowUpdate_" data-uid="Fallencake.UI.PopupTweenAnimator.OnShowUpdate*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnShowUpdate" data-uid="Fallencake.UI.PopupTweenAnimator.OnShowUpdate">
+  OnShowUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event called every frame during Show animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnShowUpdate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_Hide_" data-uid="Fallencake.UI.PopupTweenAnimator.Hide*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_Hide_System_Action_" data-uid="Fallencake.UI.PopupTweenAnimator.Hide(System.Action)">
+  Hide(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Hide(Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_HideInstantly_" data-uid="Fallencake.UI.PopupTweenAnimator.HideInstantly*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_HideInstantly_System_Action_" data-uid="Fallencake.UI.PopupTweenAnimator.HideInstantly(System.Action)">
+  HideInstantly(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void HideInstantly(Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InitializeTintParameters_" data-uid="Fallencake.UI.PopupTweenAnimator.InitializeTintParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InitializeTintParameters" data-uid="Fallencake.UI.PopupTweenAnimator.InitializeTintParameters">
+  InitializeTintParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes tint parameters to capture current colors if UseCurrentColorAsStart is enabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeTintParameters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InvokeHideEnd_" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeHideEnd*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InvokeHideEnd" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeHideEnd">
+  InvokeHideEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called internally to trigger hide end event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeHideEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InvokeHideStart_" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeHideStart*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InvokeHideStart" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeHideStart">
+  InvokeHideStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called internally to trigger hide start event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeHideStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InvokeHideUpdate_" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeHideUpdate*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InvokeHideUpdate" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeHideUpdate">
+  InvokeHideUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called internally to trigger hide update event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeHideUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InvokeShowEnd_" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeShowEnd*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InvokeShowEnd" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeShowEnd">
+  InvokeShowEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called internally to trigger show end event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeShowEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InvokeShowStart_" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeShowStart*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InvokeShowStart" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeShowStart">
+  InvokeShowStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called internally to trigger show start event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeShowStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_InvokeShowUpdate_" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeShowUpdate*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_InvokeShowUpdate" data-uid="Fallencake.UI.PopupTweenAnimator.InvokeShowUpdate">
+  InvokeShowUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called internally to trigger show update event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeShowUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_OnEnable_" data-uid="Fallencake.UI.PopupTweenAnimator.OnEnable*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_OnEnable" data-uid="Fallencake.UI.PopupTweenAnimator.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_Show_" data-uid="Fallencake.UI.PopupTweenAnimator.Show*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_Show_System_Action_" data-uid="Fallencake.UI.PopupTweenAnimator.Show(System.Action)">
+  Show(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Show(Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenAnimator_Start_" data-uid="Fallencake.UI.PopupTweenAnimator.Start*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenAnimator_Start" data-uid="Fallencake.UI.PopupTweenAnimator.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

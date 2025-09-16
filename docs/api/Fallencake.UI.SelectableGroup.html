@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SelectableGroup | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SelectableGroup | ModularUIPack ">
+      
+      <meta name="description" content="A group of selectable UI elements that manages selection state and interactions between buttons. Provides functionality for single/multiple selection modes and deselection behavior.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.SelectableGroup">
+
+
+
+  <h1 id="Fallencake_UI_SelectableGroup" data-uid="Fallencake.UI.SelectableGroup" class="text-break">
+Class SelectableGroup  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A group of selectable UI elements that manages selection state and interactions between buttons.
+Provides functionality for single/multiple selection modes and deselection behavior.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SelectableGroup : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">SelectableGroup</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_SelectableGroup_AllowDeselection_" data-uid="Fallencake.UI.SelectableGroup.AllowDeselection*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_AllowDeselection" data-uid="Fallencake.UI.SelectableGroup.AllowDeselection">
+  AllowDeselection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether deselection is allowed when clicking again</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowDeselection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_AllowMultipleSelection_" data-uid="Fallencake.UI.SelectableGroup.AllowMultipleSelection*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_AllowMultipleSelection" data-uid="Fallencake.UI.SelectableGroup.AllowMultipleSelection">
+  AllowMultipleSelection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether multiple selection is allowed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowMultipleSelection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_SelectedSelectable_" data-uid="Fallencake.UI.SelectableGroup.SelectedSelectable*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_SelectedSelectable" data-uid="Fallencake.UI.SelectableGroup.SelectedSelectable">
+  SelectedSelectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>First selected element (for compatibility)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGroupSelectable SelectedSelectable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_SelectedSelectables_" data-uid="Fallencake.UI.SelectableGroup.SelectedSelectables*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_SelectedSelectables" data-uid="Fallencake.UI.SelectableGroup.SelectedSelectables">
+  SelectedSelectables
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current selected elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IGroupSelectable&gt; SelectedSelectables { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_SelectableGroup_AddSelectable_" data-uid="Fallencake.UI.SelectableGroup.AddSelectable*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_AddSelectable_Fallencake_UI_IGroupSelectable_" data-uid="Fallencake.UI.SelectableGroup.AddSelectable(Fallencake.UI.IGroupSelectable)">
+  AddSelectable(IGroupSelectable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a selectable element to the group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSelectable(IGroupSelectable selectable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectable</code> <a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_ForceDeselect_" data-uid="Fallencake.UI.SelectableGroup.ForceDeselect*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_ForceDeselect_Fallencake_UI_IGroupSelectable_" data-uid="Fallencake.UI.SelectableGroup.ForceDeselect(Fallencake.UI.IGroupSelectable)">
+  ForceDeselect(IGroupSelectable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Forces deselection of an element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceDeselect(IGroupSelectable selectable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectable</code> <a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_ForceSelect_" data-uid="Fallencake.UI.SelectableGroup.ForceSelect*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_ForceSelect_Fallencake_UI_IGroupSelectable_" data-uid="Fallencake.UI.SelectableGroup.ForceSelect(Fallencake.UI.IGroupSelectable)">
+  ForceSelect(IGroupSelectable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Forces selection of an element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceSelect(IGroupSelectable selectable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectable</code> <a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_OnSelectionChanged_" data-uid="Fallencake.UI.SelectableGroup.OnSelectionChanged*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_OnSelectionChanged" data-uid="Fallencake.UI.SelectableGroup.OnSelectionChanged">
+  OnSelectionChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when selection changes in the group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSelectionChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_RemoveSelectable_" data-uid="Fallencake.UI.SelectableGroup.RemoveSelectable*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_RemoveSelectable_Fallencake_UI_IGroupSelectable_" data-uid="Fallencake.UI.SelectableGroup.RemoveSelectable(Fallencake.UI.IGroupSelectable)">
+  RemoveSelectable(IGroupSelectable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a selectable element from the group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSelectable(IGroupSelectable selectable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectable</code> <a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_SelectSelectable_" data-uid="Fallencake.UI.SelectableGroup.SelectSelectable*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_SelectSelectable_Fallencake_UI_IGroupSelectable_" data-uid="Fallencake.UI.SelectableGroup.SelectSelectable(Fallencake.UI.IGroupSelectable)">
+  SelectSelectable(IGroupSelectable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects or deselects an element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectSelectable(IGroupSelectable selectable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectable</code> <a class="xref" href="Fallencake.UI.IGroupSelectable.html">IGroupSelectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SelectableGroup_UnselectAll_" data-uid="Fallencake.UI.SelectableGroup.UnselectAll*"></a>
+
+  <h3 id="Fallencake_UI_SelectableGroup_UnselectAll" data-uid="Fallencake.UI.SelectableGroup.UnselectAll">
+  UnselectAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deselects all elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnselectAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

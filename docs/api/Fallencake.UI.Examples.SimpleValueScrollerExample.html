@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SimpleValueScrollerExample | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SimpleValueScrollerExample | ModularUIPack ">
+      
+      <meta name="description" content="Universal component for demonstrating smooth or stepwise changes of numeric values. Can work with any components via the UnityEvent system. Supports various animation types, curves, and speed settings.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample">
+
+
+
+  <h1 id="Fallencake_UI_Examples_SimpleValueScrollerExample" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample" class="text-break">
+Class SimpleValueScrollerExample  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a>.<a class="xref" href="Fallencake.UI.Examples.html">Examples</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Universal component for demonstrating smooth or stepwise changes of numeric values.
+Can work with any components via the UnityEvent system.
+Supports various animation types, curves, and speed settings.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SimpleValueScrollerExample : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">SimpleValueScrollerExample</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_CurrentValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.CurrentValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_CurrentValue" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.CurrentValue">
+  CurrentValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CurrentValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_CurrentValueType_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.CurrentValueType*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_CurrentValueType" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.CurrentValueType">
+  CurrentValueType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleValueScrollerExample.ValueType CurrentValueType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.html">SimpleValueScrollerExample</a>.<a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.ValueType.html">ValueType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_IsAnimating_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.IsAnimating*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_IsAnimating" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.IsAnimating">
+  IsAnimating
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnimating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_MaxValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.MaxValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_MaxValue" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.MaxValue">
+  MaxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_MinValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.MinValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_MinValue" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.MinValue">
+  MinValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_AddValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AddValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_AddValue_System_Single_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AddValue(System.Single)">
+  AddValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a value to the current one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(float valueToAdd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueToAdd</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_AnimateToMaximum_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimateToMaximum*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_AnimateToMaximum" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimateToMaximum">
+  AnimateToMaximum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates to the maximum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimateToMaximum()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_AnimateToMinimum_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimateToMinimum*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_AnimateToMinimum" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimateToMinimum">
+  AnimateToMinimum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates to the minimum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimateToMinimum()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_AnimateToValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimateToValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_AnimateToValue_System_Single_System_Nullable_System_Single__" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimateToValue(System.Single,System.Nullable{System.Single})">
+  AnimateToValue(float, float?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates to the specified value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimateToValue(float targetValue, float? customDuration = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetValue</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>customDuration</code> <span class="xref">float</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetRandomValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetRandomValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetRandomValue" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetRandomValue">
+  SetRandomValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a random value in the range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetToMaximum_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetToMaximum*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetToMaximum" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetToMaximum">
+  SetToMaximum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value to the maximum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToMaximum()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetToMinimum_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetToMinimum*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetToMinimum" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetToMinimum">
+  SetToMinimum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value to the minimum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToMinimum()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_SetValue_System_Single_System_Boolean_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SetValue(System.Single,System.Boolean)">
+  SetValue(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a new value with the possibility of animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(float value, bool sendEvent = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>sendEvent</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_StartAutoTest_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.StartAutoTest*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_StartAutoTest" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.StartAutoTest">
+  StartAutoTest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the automatic test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAutoTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_StopAnimation_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.StopAnimation*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_StopAnimation" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.StopAnimation">
+  StopAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the current animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_StopAutoTest_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.StopAutoTest*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_StopAutoTest" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.StopAutoTest">
+  StopAutoTest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the automatic test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAutoTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_SimpleValueScrollerExample_SubtractValue_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SubtractValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_SimpleValueScrollerExample_SubtractValue_System_Single_" data-uid="Fallencake.UI.Examples.SimpleValueScrollerExample.SubtractValue(System.Single)">
+  SubtractValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subtracts a value from the current one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubtractValue(float valueToSubtract)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueToSubtract</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

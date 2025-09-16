@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TweenExtensions | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TweenExtensions | ModularUIPack ">
+      
+      <meta name="description" content="Collection of coroutine-based tween helpers for common UI and transform animations.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.TweenExtensions">
+
+
+
+  <h1 id="Fallencake_UI_TweenExtensions" data-uid="Fallencake.UI.TweenExtensions" class="text-break">
+Class TweenExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Collection of coroutine-based tween helpers for common UI and transform animations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TweenExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">TweenExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeCanvasGroup_" data-uid="Fallencake.UI.TweenExtensions.FadeCanvasGroup*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeCanvasGroup_UnityEngine_CanvasGroup_System_Single_System_Single_UnityEngine_AnimationCurve_System_Boolean_System_Boolean_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeCanvasGroup(UnityEngine.CanvasGroup,System.Single,System.Single,UnityEngine.AnimationCurve,System.Boolean,System.Boolean,System.Single,System.Action,System.Action)">
+  FadeCanvasGroup(CanvasGroup, float, float, AnimationCurve, bool, bool, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades a <span class="xref">UnityEngine.CanvasGroup</span> with interactivity and instant flags, supporting per-frame update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeCanvasGroup(this CanvasGroup canvasGroup, float endAlpha, float duration, AnimationCurve ease, bool isInteractable, bool isInstantly, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvasGroup</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>isInteractable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>isInstantly</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeCanvasGroup_" data-uid="Fallencake.UI.TweenExtensions.FadeCanvasGroup*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeCanvasGroup_UnityEngine_CanvasGroup_System_Single_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeCanvasGroup(UnityEngine.CanvasGroup,System.Single,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  FadeCanvasGroup(CanvasGroup, float, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades a <span class="xref">UnityEngine.CanvasGroup</span> to <code class="paramref">endAlpha</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeCanvasGroup(this CanvasGroup canvasGroup, float endAlpha, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvasGroup</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeCanvasGroupInstantly_" data-uid="Fallencake.UI.TweenExtensions.FadeCanvasGroupInstantly*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeCanvasGroupInstantly_UnityEngine_CanvasGroup_System_Single_System_Boolean_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeCanvasGroupInstantly(UnityEngine.CanvasGroup,System.Single,System.Boolean,System.Action)">
+  FadeCanvasGroupInstantly(CanvasGroup, float, bool, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a <span class="xref">UnityEngine.CanvasGroup</span> alpha immediately and optionnaly toggles interactivity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeCanvasGroupInstantly(this CanvasGroup canvasGroup, float endAlpha, bool isInteractable, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvasGroup</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>isInteractable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeGraphic_" data-uid="Fallencake.UI.TweenExtensions.FadeGraphic*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeGraphic_UnityEngine_UI_Graphic_System_Single_System_Single_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeGraphic(UnityEngine.UI.Graphic,System.Single,System.Single,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  FadeGraphic(Graphic, float, float, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates Graphic alpha channel from specific start alpha to end alpha while keeping the color the same</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeGraphic(this Graphic target, float startAlpha, float endAlpha, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd><p>Target Graphic to animate</p>
+</dd>
+    <dt><code>startAlpha</code> <span class="xref">float</span></dt>
+    <dd><p>Start alpha value (0-1)</p>
+</dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd><p>Target alpha value (0-1)</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback called every frame during animation</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeGraphic_" data-uid="Fallencake.UI.TweenExtensions.FadeGraphic*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeGraphic_UnityEngine_UI_Graphic_System_Single_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeGraphic(UnityEngine.UI.Graphic,System.Single,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  FadeGraphic(Graphic, float, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades a <span class="xref">UnityEngine.UI.Graphic</span> alpha to <code class="paramref">endAlpha</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeGraphic(this Graphic target, float endAlpha, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd></dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeGraphic_" data-uid="Fallencake.UI.TweenExtensions.FadeGraphic*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeGraphic_UnityEngine_UI_Graphic_System_Single_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeGraphic(UnityEngine.UI.Graphic,System.Single,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  FadeGraphic(Graphic, float, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates Graphic alpha channel smoothly while keeping the color the same</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeGraphic(this Graphic target, float endAlpha, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd><p>Target Graphic to animate</p>
+</dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd><p>Target alpha value (0-1)</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback called every frame during animation</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_FadeImage_" data-uid="Fallencake.UI.TweenExtensions.FadeImage*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_FadeImage_UnityEngine_UI_Image_System_Single_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.FadeImage(UnityEngine.UI.Image,System.Single,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  FadeImage(Image, float, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades an <span class="xref">UnityEngine.UI.Image</span> alpha to <code class="paramref">endAlpha</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeImage(this Image image, float endAlpha, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <span class="xref">Image</span></dt>
+    <dd></dd>
+    <dt><code>endAlpha</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_MoveRectTransform_" data-uid="Fallencake.UI.TweenExtensions.MoveRectTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_MoveRectTransform_UnityEngine_RectTransform_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.MoveRectTransform(UnityEngine.RectTransform,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  MoveRectTransform(RectTransform, Vector3, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves a <span class="xref">UnityEngine.RectTransform.anchoredPosition</span> to <code class="paramref">endPosition</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveRectTransform(this RectTransform transform, Vector3 endPosition, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>endPosition</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_MoveTransform_" data-uid="Fallencake.UI.TweenExtensions.MoveTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_MoveTransform_UnityEngine_Transform_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Boolean_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.MoveTransform(UnityEngine.Transform,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Boolean,System.Single,System.Action)">
+  MoveTransform(Transform, Vector3, float, AnimationCurve, bool, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves a transform from its current position to <code class="paramref">endPosition</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveTransform(this Transform target, Vector3 endPosition, float duration, AnimationCurve ease, bool isLocalMovement = false, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>endPosition</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>isLocalMovement</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_MoveTransform_" data-uid="Fallencake.UI.TweenExtensions.MoveTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_MoveTransform_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Boolean_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.MoveTransform(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Boolean,System.Single,System.Action)">
+  MoveTransform(Transform, Vector3, Vector3, float, AnimationCurve, bool, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates Transform position from specific start position to end position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveTransform(this Transform target, Vector3 startPosition, Vector3 endPosition, float duration, AnimationCurve ease, bool isLocalMovement = false, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd><p>Target Transform to animate</p>
+</dd>
+    <dt><code>startPosition</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Start position value</p>
+</dd>
+    <dt><code>endPosition</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Target position value</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>isLocalMovement</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to use local position or world position</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_OffsetRectTransform_" data-uid="Fallencake.UI.TweenExtensions.OffsetRectTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_OffsetRectTransform_UnityEngine_RectTransform_Fallencake_UI_OffsetValues_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.OffsetRectTransform(UnityEngine.RectTransform,Fallencake.UI.OffsetValues,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  OffsetRectTransform(RectTransform, OffsetValues, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates RectTransform offsetMin and offsetMax values smoothly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator OffsetRectTransform(this RectTransform target, OffsetValues endOffsetValues, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>Target RectTransform to animate</p>
+</dd>
+    <dt><code>endOffsetValues</code> <a class="xref" href="Fallencake.UI.OffsetValues.html">OffsetValues</a></dt>
+    <dd><p>Target offset values</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_RotateTransform_" data-uid="Fallencake.UI.TweenExtensions.RotateTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_RotateTransform_UnityEngine_Transform_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.RotateTransform(UnityEngine.Transform,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  RotateTransform(Transform, Vector3, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a transform to <code class="paramref">endRotation</code> (Euler angles).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RotateTransform(this Transform target, Vector3 endRotation, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>endRotation</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_RotateTransform_" data-uid="Fallencake.UI.TweenExtensions.RotateTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_RotateTransform_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.RotateTransform(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  RotateTransform(Transform, Vector3, Vector3, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates Transform rotation from specific start rotation to end rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RotateTransform(this Transform target, Vector3 startRotation, Vector3 endRotation, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd><p>Target Transform to animate</p>
+</dd>
+    <dt><code>startRotation</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Start rotation value (euler angles)</p>
+</dd>
+    <dt><code>endRotation</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Target rotation value (euler angles)</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_ScaleTransform_" data-uid="Fallencake.UI.TweenExtensions.ScaleTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_ScaleTransform_UnityEngine_Transform_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.ScaleTransform(UnityEngine.Transform,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  ScaleTransform(Transform, Vector3, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Scales a transform to <code class="paramref">endScale</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ScaleTransform(this Transform target, Vector3 endScale, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>endScale</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_ScaleTransform_" data-uid="Fallencake.UI.TweenExtensions.ScaleTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_ScaleTransform_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.ScaleTransform(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  ScaleTransform(Transform, Vector3, Vector3, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates Transform scale from specific start scale to end scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ScaleTransform(this Transform target, Vector3 startScale, Vector3 endScale, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd><p>Target Transform to animate</p>
+</dd>
+    <dt><code>startScale</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Start scale value</p>
+</dd>
+    <dt><code>endScale</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Target scale value</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback called every frame during animation</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_ScaleTransformInstantly_" data-uid="Fallencake.UI.TweenExtensions.ScaleTransformInstantly*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_ScaleTransformInstantly_UnityEngine_Transform_UnityEngine_Vector3_System_Action_" data-uid="Fallencake.UI.TweenExtensions.ScaleTransformInstantly(UnityEngine.Transform,UnityEngine.Vector3,System.Action)">
+  ScaleTransformInstantly(Transform, Vector3, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a transform scale immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleTransformInstantly(this Transform target, Vector3 endScale, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>endScale</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_SizeRectTransform_" data-uid="Fallencake.UI.TweenExtensions.SizeRectTransform*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_SizeRectTransform_UnityEngine_RectTransform_UnityEngine_Vector2_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.SizeRectTransform(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  SizeRectTransform(RectTransform, Vector2, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates RectTransform sizeDelta values smoothly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator SizeRectTransform(this RectTransform target, Vector2 endSize, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>Target RectTransform to animate</p>
+</dd>
+    <dt><code>endSize</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Target size values</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Animation curve</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay before starting animation</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback when animation completes</p>
+</dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_SwapObjects_" data-uid="Fallencake.UI.TweenExtensions.SwapObjects*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_SwapObjects_UnityEngine_RectTransform_UnityEngine_RectTransform_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_Vector2_System_Single_UnityEngine_AnimationCurve_System_Action_" data-uid="Fallencake.UI.TweenExtensions.SwapObjects(UnityEngine.RectTransform,UnityEngine.RectTransform,UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,UnityEngine.Vector2,System.Single,UnityEngine.AnimationCurve,System.Action)">
+  SwapObjects(RectTransform, RectTransform, CanvasGroup, CanvasGroup, Vector2, float, AnimationCurve, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Swaps two objects by moving their positions and cross-fading their <span class="xref">UnityEngine.CanvasGroup</span> alphas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator SwapObjects(RectTransform currentTransform, RectTransform previousTransform, CanvasGroup currentCanvasGroup, CanvasGroup previousCanvasGroup, Vector2 endPosition, float duration, AnimationCurve ease, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>Transform to move in.</p>
+</dd>
+    <dt><code>previousTransform</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>Transform to move out.</p>
+</dd>
+    <dt><code>currentCanvasGroup</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup to fade in.</p>
+</dd>
+    <dt><code>previousCanvasGroup</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup to fade out.</p>
+</dd>
+    <dt><code>endPosition</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Delta position to move each transform.</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration in seconds.</p>
+</dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Easing curve.</p>
+</dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback after finishing.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_SwitchToggleHandle_" data-uid="Fallencake.UI.TweenExtensions.SwitchToggleHandle*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_SwitchToggleHandle_UnityEngine_RectTransform_System_Boolean_System_Boolean_System_Single_UnityEngine_AnimationCurve_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_UI_Image_UnityEngine_Color_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_System_Single_" data-uid="Fallencake.UI.TweenExtensions.SwitchToggleHandle(UnityEngine.RectTransform,System.Boolean,System.Boolean,System.Single,UnityEngine.AnimationCurve,UnityEngine.UI.Graphic,UnityEngine.Color,UnityEngine.UI.Image,UnityEngine.Color,UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,System.Single,System.Single)">
+  SwitchToggleHandle(RectTransform, bool, bool, float, AnimationCurve, Graphic, Color, Image, Color, CanvasGroup, CanvasGroup, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Backward-compatible wrapper of <a class="xref" href="Fallencake.UI.TweenExtensions.html#Fallencake_UI_TweenExtensions_SwitchToggleHandleAxis_UnityEngine_RectTransform_System_Boolean_System_Boolean_System_Single_UnityEngine_AnimationCurve_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_UI_Image_UnityEngine_Color_System_Collections_Generic_IList_Fallencake_UI_ToggleGraphic__UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_System_Single_Fallencake_UI_SwitchDirection_">SwitchToggleHandleAxis(RectTransform, bool, bool, float, AnimationCurve, Graphic, Color, Image, Color, IList&lt;ToggleGraphic&gt;, CanvasGroup, CanvasGroup, float, float, SwitchDirection)</a> for horizontal movement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator SwitchToggleHandle(RectTransform handle, bool isOn, bool isStretchingHandle, float duration, AnimationCurve ease, Graphic handleGraphic, Color handleEndColor, Image backgroundImage, Color backgroundEndColor, CanvasGroup handleOverlap = null, CanvasGroup backgroundOverlap = null, float stretchScaleX = 1, float stretchScaleY = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>isStretchingHandle</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>handleGraphic</code> <span class="xref">Graphic</span></dt>
+    <dd></dd>
+    <dt><code>handleEndColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>backgroundImage</code> <span class="xref">Image</span></dt>
+    <dd></dd>
+    <dt><code>backgroundEndColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>handleOverlap</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>backgroundOverlap</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>stretchScaleX</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>stretchScaleY</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_SwitchToggleHandleAxis_" data-uid="Fallencake.UI.TweenExtensions.SwitchToggleHandleAxis*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_SwitchToggleHandleAxis_UnityEngine_RectTransform_System_Boolean_System_Boolean_System_Single_UnityEngine_AnimationCurve_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_UI_Image_UnityEngine_Color_System_Collections_Generic_IList_Fallencake_UI_ToggleGraphic__UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_System_Single_Fallencake_UI_SwitchDirection_" data-uid="Fallencake.UI.TweenExtensions.SwitchToggleHandleAxis(UnityEngine.RectTransform,System.Boolean,System.Boolean,System.Single,UnityEngine.AnimationCurve,UnityEngine.UI.Graphic,UnityEngine.Color,UnityEngine.UI.Image,UnityEngine.Color,System.Collections.Generic.IList{Fallencake.UI.ToggleGraphic},UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,System.Single,System.Single,Fallencake.UI.SwitchDirection)">
+  SwitchToggleHandleAxis(RectTransform, bool, bool, float, AnimationCurve, Graphic, Color, Image, Color, IList&lt;ToggleGraphic&gt;, CanvasGroup, CanvasGroup, float, float, SwitchDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Switches a toggle handle with optional stretching, color/alpha overlays and axis selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator SwitchToggleHandleAxis(RectTransform handle, bool isOn, bool isStretchingHandle, float duration, AnimationCurve ease, Graphic handleGraphic, Color handleEndColor, Image backgroundImage, Color backgroundEndColor, IList&lt;ToggleGraphic&gt; colorTargets, CanvasGroup handleOverlap = null, CanvasGroup backgroundOverlap = null, float stretchScaleX = 1, float stretchScaleY = 1, SwitchDirection switchDirection = SwitchDirection.Horizontal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>isStretchingHandle</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>handleGraphic</code> <span class="xref">Graphic</span></dt>
+    <dd></dd>
+    <dt><code>handleEndColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>backgroundImage</code> <span class="xref">Image</span></dt>
+    <dd></dd>
+    <dt><code>backgroundEndColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>colorTargets</code> <span class="xref">IList</span>&lt;<a class="xref" href="Fallencake.UI.ToggleGraphic.html">ToggleGraphic</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>handleOverlap</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>backgroundOverlap</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>stretchScaleX</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>stretchScaleY</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>switchDirection</code> <a class="xref" href="Fallencake.UI.SwitchDirection.html">SwitchDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_SwitchToggleHandleAxisExtended_" data-uid="Fallencake.UI.TweenExtensions.SwitchToggleHandleAxisExtended*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_SwitchToggleHandleAxisExtended_UnityEngine_RectTransform_System_Boolean_System_Boolean_System_Single_UnityEngine_AnimationCurve_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_UI_Image_UnityEngine_Color_System_Collections_Generic_IList_Fallencake_UI_ToggleGraphic__UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_System_Single_Fallencake_UI_SwitchDirection_" data-uid="Fallencake.UI.TweenExtensions.SwitchToggleHandleAxisExtended(UnityEngine.RectTransform,System.Boolean,System.Boolean,System.Single,UnityEngine.AnimationCurve,UnityEngine.UI.Graphic,UnityEngine.Color,UnityEngine.UI.Image,UnityEngine.Color,System.Collections.Generic.IList{Fallencake.UI.ToggleGraphic},UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,System.Single,System.Single,Fallencake.UI.SwitchDirection)">
+  SwitchToggleHandleAxisExtended(RectTransform, bool, bool, float, AnimationCurve, Graphic, Color, Image, Color, IList&lt;ToggleGraphic&gt;, CanvasGroup, CanvasGroup, float, float, SwitchDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extended API: explicit method name that supports a list of color targets.
+Keeps older code calling SwitchToggleHandleAxis intact, while new code may call this name for clarity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator SwitchToggleHandleAxisExtended(RectTransform handle, bool isOn, bool isStretchingHandle, float duration, AnimationCurve ease, Graphic handleGraphic, Color handleEndColor, Image backgroundImage, Color backgroundEndColor, IList&lt;ToggleGraphic&gt; colorTargets, CanvasGroup handleOverlap = null, CanvasGroup backgroundOverlap = null, float stretchScaleX = 1, float stretchScaleY = 1, SwitchDirection switchDirection = SwitchDirection.Horizontal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>isStretchingHandle</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>handleGraphic</code> <span class="xref">Graphic</span></dt>
+    <dd></dd>
+    <dt><code>handleEndColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>backgroundImage</code> <span class="xref">Image</span></dt>
+    <dd></dd>
+    <dt><code>backgroundEndColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>colorTargets</code> <span class="xref">IList</span>&lt;<a class="xref" href="Fallencake.UI.ToggleGraphic.html">ToggleGraphic</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>handleOverlap</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>backgroundOverlap</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>stretchScaleX</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>stretchScaleY</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>switchDirection</code> <a class="xref" href="Fallencake.UI.SwitchDirection.html">SwitchDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_TintGraphic_" data-uid="Fallencake.UI.TweenExtensions.TintGraphic*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_TintGraphic_UnityEngine_Transform_UnityEngine_Color_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.TintGraphic(UnityEngine.Transform,UnityEngine.Color,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  TintGraphic(Transform, Color, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience: finds a <span class="xref">UnityEngine.UI.Graphic</span> on the transform and tints it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator TintGraphic(this Transform transform, Color endColor, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>endColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_TintGraphic_" data-uid="Fallencake.UI.TweenExtensions.TintGraphic*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_TintGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_" data-uid="Fallencake.UI.TweenExtensions.TintGraphic(UnityEngine.UI.Graphic,UnityEngine.Color,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action)">
+  TintGraphic(Graphic, Color, float, AnimationCurve, float, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tints a <span class="xref">UnityEngine.UI.Graphic</span> color to <code class="paramref">endColor</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator TintGraphic(this Graphic target, Color endColor, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd></dd>
+    <dt><code>endColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_TweenExtensions_TintGraphic_" data-uid="Fallencake.UI.TweenExtensions.TintGraphic*"></a>
+
+  <h3 id="Fallencake_UI_TweenExtensions_TintGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_System_Single_UnityEngine_AnimationCurve_System_Single_System_Action_System_Action_" data-uid="Fallencake.UI.TweenExtensions.TintGraphic(UnityEngine.UI.Graphic,UnityEngine.Color,System.Single,UnityEngine.AnimationCurve,System.Single,System.Action,System.Action)">
+  TintGraphic(Graphic, Color, float, AnimationCurve, float, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tints a <span class="xref">UnityEngine.UI.Graphic</span> color to <code class="paramref">endColor</code> and invokes <code class="paramref">onUpdate</code> per frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator TintGraphic(this Graphic target, Color endColor, float duration, AnimationCurve ease, float delay = 0, Action onComplete = null, Action onUpdate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd></dd>
+    <dt><code>endColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+    <dt><code>onUpdate</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

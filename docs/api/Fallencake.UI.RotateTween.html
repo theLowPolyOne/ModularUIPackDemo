@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RotateTween | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RotateTween | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.RotateTween">
+
+
+
+  <h1 id="Fallencake_UI_RotateTween" data-uid="Fallencake.UI.RotateTween" class="text-break">
+Class RotateTween  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class RotateTween : TweenBase&lt;Transform, Vector3&gt;, ITargetableTween&lt;Transform, Vector3&gt;, ITween</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Fallencake.UI.TweenBase-2.html">TweenBase</a>&lt;<span class="xref">Transform</span>, <span class="xref">Vector3</span>&gt;</div>
+      <div><span class="xref">RotateTween</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ITargetableTween-2.html">ITargetableTween</a>&lt;<span class="xref">Transform</span>, <span class="xref">Vector3</span>&gt;</div>
+      <div><a class="xref" href="Fallencake.UI.ITween.html">ITween</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__target">TweenBase&lt;Transform, Vector3&gt;._target</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__startValue">TweenBase&lt;Transform, Vector3&gt;._startValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__endValue">TweenBase&lt;Transform, Vector3&gt;._endValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__duration">TweenBase&lt;Transform, Vector3&gt;._duration</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__delay">TweenBase&lt;Transform, Vector3&gt;._delay</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__ease">TweenBase&lt;Transform, Vector3&gt;._ease</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Target">TweenBase&lt;Transform, Vector3&gt;.Target</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_StartValue">TweenBase&lt;Transform, Vector3&gt;.StartValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_EndValue">TweenBase&lt;Transform, Vector3&gt;.EndValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Duration">TweenBase&lt;Transform, Vector3&gt;.Duration</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Delay">TweenBase&lt;Transform, Vector3&gt;.Delay</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Ease">TweenBase&lt;Transform, Vector3&gt;.Ease</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_IsTweened">TweenBase&lt;Transform, Vector3&gt;.IsTweened</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__isTweened">TweenBase&lt;Transform, Vector3&gt;._isTweened</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2__tweenCoroutine">TweenBase&lt;Transform, Vector3&gt;._tweenCoroutine</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Play_UnityEngine_MonoBehaviour_System_Boolean_">TweenBase&lt;Transform, Vector3&gt;.Play(MonoBehaviour, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Reset_System_Boolean_">TweenBase&lt;Transform, Vector3&gt;.Reset(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_ResetTarget">TweenBase&lt;Transform, Vector3&gt;.ResetTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_OnComplete">TweenBase&lt;Transform, Vector3&gt;.OnComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_GetTargetValue_System_Boolean_">TweenBase&lt;Transform, Vector3&gt;.GetTargetValue(bool)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Fallencake_UI_RotateTween__ctor_" data-uid="Fallencake.UI.RotateTween.#ctor*"></a>
+
+  <h3 id="Fallencake_UI_RotateTween__ctor" data-uid="Fallencake.UI.RotateTween.#ctor">
+  RotateTween()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RotateTween()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RotateTween__ctor_" data-uid="Fallencake.UI.RotateTween.#ctor*"></a>
+
+  <h3 id="Fallencake_UI_RotateTween__ctor_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Single_UnityEngine_AnimationCurve_" data-uid="Fallencake.UI.RotateTween.#ctor(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.AnimationCurve)">
+  RotateTween(Transform, Vector3, Vector3, float, float, AnimationCurve)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RotateTween(Transform target, Vector3 startValue, Vector3 endValue, float duration, float delay, AnimationCurve ease = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>startValue</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>endValue</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ease</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_RotateTween_Play_" data-uid="Fallencake.UI.RotateTween.Play*"></a>
+
+  <h3 id="Fallencake_UI_RotateTween_Play_UnityEngine_MonoBehaviour_System_Boolean_" data-uid="Fallencake.UI.RotateTween.Play(UnityEngine.MonoBehaviour,System.Boolean)">
+  Play(MonoBehaviour, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the tween on a coroutine holder. Implementations should start a coroutine and call <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_OnComplete">OnComplete()</a> when finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Play(MonoBehaviour coroutineHolder, bool isForward = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coroutineHolder</code> <span class="xref">MonoBehaviour</span></dt>
+    <dd><p>MonoBehaviour used to start/stop coroutines.</p>
+</dd>
+    <dt><code>isForward</code> <span class="xref">bool</span></dt>
+    <dd><p>If true plays towards <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_EndValue">EndValue</a>, otherwise towards <a class="xref" href="Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_StartValue">StartValue</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RotateTween_ResetTarget_" data-uid="Fallencake.UI.RotateTween.ResetTarget*"></a>
+
+  <h3 id="Fallencake_UI_RotateTween_ResetTarget" data-uid="Fallencake.UI.RotateTween.ResetTarget">
+  ResetTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implemented by concrete tweens to restore target to its initial state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ResetTarget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Fallencake.UI.Audio | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Fallencake.UI.Audio | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Audio">
+
+  <h1 id="Fallencake_UI_Audio" data-uid="Fallencake.UI.Audio" class="text-break">Namespace Fallencake.UI.Audio</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.AudioManager.html">AudioManager</a></dt>
+      <dd><p>Centralized audio settings and utilities for UI components.
+Manages global enable/volume and provides a shared <span class="xref">UnityEngine.AudioSource</span>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.DropdownAudioHandler.html">DropdownAudioHandler</a></dt>
+      <dd><p>Concrete UI audio handler for <a class="xref" href="Fallencake.UI.DropdownMenu.html">DropdownMenu</a> that plays
+open/close and selection-related sounds via a shared <span class="xref">UnityEngine.AudioSource</span>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.InputFieldAudioHandler.html">InputFieldAudioHandler</a></dt>
+      <dd><p>Audio handler for Unity <span class="xref">UnityEngine.UI.InputField</span>-like components via <a class="xref" href="Fallencake.UI.Audio.IInputFieldAudioProvider.html">IInputFieldAudioProvider</a>.
+Plays typing and end-edit sounds.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.ProgressBarAudioHandler.html">ProgressBarAudioHandler</a></dt>
+      <dd><p>Audio handler for progress bars via <a class="xref" href="Fallencake.UI.Audio.IProgressBarAudioProvider.html">IProgressBarAudioProvider</a>.
+Supports update tick sound (with pitch control) and completion sound.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.ToggleAudioHandler.html">ToggleAudioHandler</a></dt>
+      <dd><p>Audio handler for Toggle-like components via <a class="xref" href="Fallencake.UI.Audio.IToggleAudioProvider.html">IToggleAudioProvider</a>.
+Plays toggle on/off sounds.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.UIAudioHandler-1.html">UIAudioHandler&lt;T&gt;</a></dt>
+      <dd><p>Generic base class for UI audio handlers that wires UI events to sound playback
+and provides shared management via <a class="xref" href="Fallencake.UI.Audio.AudioManager.html">AudioManager</a>.</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+      <dd><p>Serializable value object describing a UI sound: clip, enable flag, volume and pitch.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IAudioEventHandler.html">IAudioEventHandler</a></dt>
+      <dd><p>Interface that aggregates standard UI event handlers used for audio feedback.
+Implementations can react to selection, click, pointer and submit events.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IAudioHandler.html">IAudioHandler</a></dt>
+      <dd><p>Base interface for managing sounds in UI components.
+Provides access to audio device and toggles plus basic event-driven playback.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IAudioProvider.html">IAudioProvider</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IDropdownAudioHandler.html">IDropdownAudioHandler</a></dt>
+      <dd><p>Interface for managing sounds in the <a class="xref" href="Fallencake.UI.DropdownMenu.html">DropdownMenu</a> component.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IDropdownAudioProvider.html">IDropdownAudioProvider</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IInputFieldAudioHandler.html">IInputFieldAudioHandler</a></dt>
+      <dd><p>Інтерфейс для управління звуками в компоненті InputField</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IInputFieldAudioProvider.html">IInputFieldAudioProvider</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IProgressBarAudioHandler.html">IProgressBarAudioHandler</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IProgressBarAudioProvider.html">IProgressBarAudioProvider</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IToggleAudioHandler.html">IToggleAudioHandler</a></dt>
+      <dd><p>Interface for managing sounds in the Toggle component.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Audio.IToggleAudioProvider.html">IToggleAudioProvider</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

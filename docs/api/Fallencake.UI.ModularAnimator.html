@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModularAnimator | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModularAnimator | ModularUIPack ">
+      
+      <meta name="description" content="General-purpose animator that plays a list of tweens with optional loop policies and events.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ModularAnimator">
+
+
+
+  <h1 id="Fallencake_UI_ModularAnimator" data-uid="Fallencake.UI.ModularAnimator" class="text-break">
+Class ModularAnimator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>General-purpose animator that plays a list of tweens with optional loop policies and events.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ModularAnimator : MonoBehaviour, ITweenAnimator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">ModularAnimator</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ITweenAnimator.html">ITweenAnimator</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ModularAnimator_OnForwardCompleted" data-uid="Fallencake.UI.ModularAnimator.OnForwardCompleted">
+  OnForwardCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is invoked in the PingPong mode when all tweens have finished playing in the forward direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnForwardCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ModularAnimator_OnTweenCompleted" data-uid="Fallencake.UI.ModularAnimator.OnTweenCompleted">
+  OnTweenCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is triggered when all tweens have completed their animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnTweenCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ModularAnimator_IsTweened_" data-uid="Fallencake.UI.ModularAnimator.IsTweened*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_IsTweened" data-uid="Fallencake.UI.ModularAnimator.IsTweened">
+  IsTweened
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if all tweens in the <span class="xref">Fallencake.UI.ModularAnimator._tweens</span> list are currently tweening.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTweened { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_LoopCount_" data-uid="Fallencake.UI.ModularAnimator.LoopCount*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_LoopCount" data-uid="Fallencake.UI.ModularAnimator.LoopCount">
+  LoopCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of times to repeat the animation sequence when <span class="xref">Fallencake.UI.ModularAnimator._loopType</span> is not <a class="xref" href="Fallencake.UI.LoopType.html#Fallencake_UI_LoopType_None">None</a>.
+For <a class="xref" href="Fallencake.UI.LoopType.html#Fallencake_UI_LoopType_Simple">Simple</a> a single cycle is one forward play.
+For <a class="xref" href="Fallencake.UI.LoopType.html#Fallencake_UI_LoopType_PingPong">PingPong</a> a single cycle is a complete forward-and-backward play.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoopCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_Tweens_" data-uid="Fallencake.UI.ModularAnimator.Tweens*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Tweens" data-uid="Fallencake.UI.ModularAnimator.Tweens">
+  Tweens
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of tweens animated by this animator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ITween&gt; Tweens { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ITween.html">ITween</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ModularAnimator_Init_" data-uid="Fallencake.UI.ModularAnimator.Init*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Init_System_Collections_Generic_List_Fallencake_UI_ITween__Fallencake_UI_LoopType_System_Boolean_" data-uid="Fallencake.UI.ModularAnimator.Init(System.Collections.Generic.List{Fallencake.UI.ITween},Fallencake.UI.LoopType,System.Boolean)">
+  Init(List&lt;ITween&gt;, LoopType, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Overload that assumes infinite loop count when applicable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(List&lt;ITween&gt; tweens, LoopType loopType = LoopType.None, bool isPlayOnEnable = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tweens</code> <span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ITween.html">ITween</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>loopType</code> <a class="xref" href="Fallencake.UI.LoopType.html">LoopType</a></dt>
+    <dd></dd>
+    <dt><code>isPlayOnEnable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_Init_" data-uid="Fallencake.UI.ModularAnimator.Init*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Init_System_Collections_Generic_List_Fallencake_UI_ITween__Fallencake_UI_LoopType_System_Int32_System_Boolean_" data-uid="Fallencake.UI.ModularAnimator.Init(System.Collections.Generic.List{Fallencake.UI.ITween},Fallencake.UI.LoopType,System.Int32,System.Boolean)">
+  Init(List&lt;ITween&gt;, LoopType, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the animator with the specified tweens, loop type, and play on enable flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(List&lt;ITween&gt; tweens, LoopType loopType = LoopType.None, int loopCount = -1, bool isPlayOnEnable = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tweens</code> <span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ITween.html">ITween</a>&gt;</dt>
+    <dd><p>The list of tweens to animate.</p>
+</dd>
+    <dt><code>loopType</code> <a class="xref" href="Fallencake.UI.LoopType.html">LoopType</a></dt>
+    <dd><p>The type of loop to use for the tweens.</p>
+</dd>
+    <dt><code>loopCount</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>isPlayOnEnable</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to automatically play the tweens when the object is enabled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_OnDisable_" data-uid="Fallencake.UI.ModularAnimator.OnDisable*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_OnDisable" data-uid="Fallencake.UI.ModularAnimator.OnDisable">
+  OnDisable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_OnEnable_" data-uid="Fallencake.UI.ModularAnimator.OnEnable*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_OnEnable" data-uid="Fallencake.UI.ModularAnimator.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_Play_" data-uid="Fallencake.UI.ModularAnimator.Play*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Play" data-uid="Fallencake.UI.ModularAnimator.Play">
+  Play()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience overload without completion callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_Play_" data-uid="Fallencake.UI.ModularAnimator.Play*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Play_System_Action_" data-uid="Fallencake.UI.ModularAnimator.Play(System.Action)">
+  Play(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays all tweens and handles loop bookkeeping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play(Action onComplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onComplete</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_Stop_" data-uid="Fallencake.UI.ModularAnimator.Stop*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Stop" data-uid="Fallencake.UI.ModularAnimator.Stop">
+  Stop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops and resets tweens by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularAnimator_Stop_" data-uid="Fallencake.UI.ModularAnimator.Stop*"></a>
+
+  <h3 id="Fallencake_UI_ModularAnimator_Stop_System_Boolean_" data-uid="Fallencake.UI.ModularAnimator.Stop(System.Boolean)">
+  Stop(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops all coroutines and resets tweens optionally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop(bool isReset = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isReset</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

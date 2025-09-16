@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModularInputField | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModularInputField | ModularUIPack ">
+      
+      <meta name="description" content="Modular wrapper over  that adds animation hooks, audio feedback via  and convenient submit handling.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ModularInputField">
+
+
+
+  <h1 id="Fallencake_UI_ModularInputField" data-uid="Fallencake.UI.ModularInputField" class="text-break">
+Class ModularInputField  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Modular wrapper over <span class="xref">TMPro.TMP_InputField</span> that adds animation hooks,
+audio feedback via <a class="xref" href="Fallencake.UI.Audio.IInputFieldAudioProvider.html">IInputFieldAudioProvider</a> and
+convenient submit handling.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(TMP_InputField))]
+public class ModularInputField : MonoBehaviour, IInputFieldAudioProvider, IAudioProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">ModularInputField</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.Audio.IInputFieldAudioProvider.html">IInputFieldAudioProvider</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IAudioProvider.html">IAudioProvider</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ModularInputField_OnSubmitEvent" data-uid="Fallencake.UI.ModularInputField.OnSubmitEvent">
+  OnSubmitEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnSubmitEvent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ModularInputField_AudioSource_" data-uid="Fallencake.UI.ModularInputField.AudioSource*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_AudioSource" data-uid="Fallencake.UI.ModularInputField.AudioSource">
+  AudioSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>AudioSource used to play sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AudioSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_Component_" data-uid="Fallencake.UI.ModularInputField.Component*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_Component" data-uid="Fallencake.UI.ModularInputField.Component">
+  Component
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Owning component used by handlers for context and coroutines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour Component { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_DeselectSound_" data-uid="Fallencake.UI.ModularInputField.DeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_DeselectSound" data-uid="Fallencake.UI.ModularInputField.DeselectSound">
+  DeselectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on deselect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData DeselectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_EnableSounds_" data-uid="Fallencake.UI.ModularInputField.EnableSounds*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_EnableSounds" data-uid="Fallencake.UI.ModularInputField.EnableSounds">
+  EnableSounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables/disables sound playback for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableSounds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_EndEditSound_" data-uid="Fallencake.UI.ModularInputField.EndEditSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_EndEditSound" data-uid="Fallencake.UI.ModularInputField.EndEditSound">
+  EndEditSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound for end-edit/submit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData EndEditSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_PressSound_" data-uid="Fallencake.UI.ModularInputField.PressSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_PressSound" data-uid="Fallencake.UI.ModularInputField.PressSound">
+  PressSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on press/submit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData PressSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_SelectSound_" data-uid="Fallencake.UI.ModularInputField.SelectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_SelectSound" data-uid="Fallencake.UI.ModularInputField.SelectSound">
+  SelectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on select/hover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData SelectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_Selectable_" data-uid="Fallencake.UI.ModularInputField.Selectable*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_Selectable" data-uid="Fallencake.UI.ModularInputField.Selectable">
+  Selectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UI selectable to bind event triggers to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable Selectable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_TypeSound_" data-uid="Fallencake.UI.ModularInputField.TypeSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_TypeSound" data-uid="Fallencake.UI.ModularInputField.TypeSound">
+  TypeSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound for character typing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData TypeSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_UseDeselectSound_" data-uid="Fallencake.UI.ModularInputField.UseDeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_UseDeselectSound" data-uid="Fallencake.UI.ModularInputField.UseDeselectSound">
+  UseDeselectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables deselect sound playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseDeselectSound { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_UsePressSound_" data-uid="Fallencake.UI.ModularInputField.UsePressSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_UsePressSound" data-uid="Fallencake.UI.ModularInputField.UsePressSound">
+  UsePressSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables press sound playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsePressSound { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_UseSelectSound_" data-uid="Fallencake.UI.ModularInputField.UseSelectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_UseSelectSound" data-uid="Fallencake.UI.ModularInputField.UseSelectSound">
+  UseSelectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables select sound playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseSelectSound { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_Volume_" data-uid="Fallencake.UI.ModularInputField.Volume*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_Volume" data-uid="Fallencake.UI.ModularInputField.Volume">
+  Volume
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Per-component volume multiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ModularInputField_Deselect_" data-uid="Fallencake.UI.ModularInputField.Deselect*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_Deselect" data-uid="Fallencake.UI.ModularInputField.Deselect">
+  Deselect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers deselect animation if field is empty (placeholder visible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deselect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_Dispose_" data-uid="Fallencake.UI.ModularInputField.Dispose*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_Dispose" data-uid="Fallencake.UI.ModularInputField.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disposes internal audio handler and releases resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_OnDeselect_" data-uid="Fallencake.UI.ModularInputField.OnDeselect*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_OnDeselect_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.ModularInputField.OnDeselect(UnityEngine.EventSystems.BaseEventData)">
+  OnDeselect(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a new object is being selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDeselect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_OnPointerClick_" data-uid="Fallencake.UI.ModularInputField.OnPointerClick*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.ModularInputField.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this callback to detect clicks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_OnSelect_" data-uid="Fallencake.UI.ModularInputField.OnSelect*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_OnSelect_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.ModularInputField.OnSelect(UnityEngine.EventSystems.BaseEventData)">
+  OnSelect(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSelect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_OnSubmit_" data-uid="Fallencake.UI.ModularInputField.OnSubmit*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.ModularInputField.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_PlayDeselectSound_" data-uid="Fallencake.UI.ModularInputField.PlayDeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_PlayDeselectSound" data-uid="Fallencake.UI.ModularInputField.PlayDeselectSound">
+  PlayDeselectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayDeselectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_PlayPressSound_" data-uid="Fallencake.UI.ModularInputField.PlayPressSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_PlayPressSound" data-uid="Fallencake.UI.ModularInputField.PlayPressSound">
+  PlayPressSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayPressSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_PlaySelectSound_" data-uid="Fallencake.UI.ModularInputField.PlaySelectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_PlaySelectSound" data-uid="Fallencake.UI.ModularInputField.PlaySelectSound">
+  PlaySelectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySelectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_PlayTextInputSound_" data-uid="Fallencake.UI.ModularInputField.PlayTextInputSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_PlayTextInputSound" data-uid="Fallencake.UI.ModularInputField.PlayTextInputSound">
+  PlayTextInputSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays a text input sound if enabled and clip is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayTextInputSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_Select_" data-uid="Fallencake.UI.ModularInputField.Select*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_Select" data-uid="Fallencake.UI.ModularInputField.Select">
+  Select()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers select animation if field is empty (placeholder visible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Select()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_UpdateInteractable_" data-uid="Fallencake.UI.ModularInputField.UpdateInteractable*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_UpdateInteractable_System_Boolean_" data-uid="Fallencake.UI.ModularInputField.UpdateInteractable(System.Boolean)">
+  UpdateInteractable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates interactivity for the input field and audio handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateInteractable(bool isInteractable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInteractable</code> <span class="xref">bool</span></dt>
+    <dd><p>Target interactable state.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularInputField_UpdateStateInstant_" data-uid="Fallencake.UI.ModularInputField.UpdateStateInstant*"></a>
+
+  <h3 id="Fallencake_UI_ModularInputField_UpdateStateInstant" data-uid="Fallencake.UI.ModularInputField.UpdateStateInstant">
+  UpdateStateInstant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Waits for animator initialization and applies instant state to match current text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator UpdateStateInstant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FillImageScroller | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FillImageScroller | ModularUIPack ">
+      
+      <meta name="description" content="Specialized scroller that animates a fill by moving a &#39;s Y position according to a numeric value mapped between configurable minimum and maximum offsets.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.FillImageScroller">
+
+
+
+  <h1 id="Fallencake_UI_FillImageScroller" data-uid="Fallencake.UI.FillImageScroller" class="text-break">
+Class FillImageScroller  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Specialized scroller that animates a fill by moving a <span class="xref">UnityEngine.RectTransform</span>'s Y position
+according to a numeric value mapped between configurable minimum and maximum offsets.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FillImageScroller : AnimatedImageScroller</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="Fallencake.UI.AnimatedImageScroller.html">AnimatedImageScroller</a></div>
+      <div><span class="xref">FillImageScroller</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html#Fallencake_UI_AnimatedImageScroller__scrollableImages">AnimatedImageScroller._scrollableImages</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html#Fallencake_UI_AnimatedImageScroller__isScrolling">AnimatedImageScroller._isScrolling</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html#Fallencake_UI_AnimatedImageScroller_IsScrolling">AnimatedImageScroller.IsScrolling</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html#Fallencake_UI_AnimatedImageScroller_Init">AnimatedImageScroller.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html#Fallencake_UI_AnimatedImageScroller_Update">AnimatedImageScroller.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html#Fallencake_UI_AnimatedImageScroller_SetScrollableImages_System_Collections_Generic_List_Fallencake_UI_ScrollableImage__">AnimatedImageScroller.SetScrollableImages(List&lt;ScrollableImage&gt;)</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="Fallencake_UI_FillImageScroller_examples">Examples</h2>
+  <p>Quick setup in code:</p>
+<pre><code class="lang-csharp">var scroller = gameObject.AddComponent&lt;FillImageScroller&gt;();
+scroller.SetScrollableImages(myImages); // inherited UV scrolling if needed
+scroller.FillTransform = myFillRect;    // RectTransform to move vertically
+scroller.MinValue = 0f;
+scroller.MaxValue = 100f;
+scroller.MinFillOffset = 0f;
+scroller.MaxFillOffset = 120f;
+scroller.UseAutoHeight = true;         // anchors/pivot/height configured automatically
+scroller.Value = 65f;                   // updates Y position immediately</code></pre>
+
+
+  <h2 id="Fallencake_UI_FillImageScroller_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Inherits scrolling support from <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html">AnimatedImageScroller</a> for texture UV movement,
+and augments it with a vertical fill behavior driven by <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a>. The fill position is
+calculated using <span class="xref">UnityEngine.Mathf.InverseLerp(float, float, float)</span> over the 
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinValue">MinValue</a>–<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxValue">MaxValue</a> range and then mapped to the
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinFillOffset">MinFillOffset</a>–<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxFillOffset">MaxFillOffset</a> Y offsets via <span class="xref">UnityEngine.Mathf.Lerp(float, float, float)</span>.
+</p>
+<p>
+When <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_UseAutoHeight">UseAutoHeight</a> is enabled, the component configures anchors, pivot and height of the
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillTransform">FillTransform</a> for standard bottom-up filling by calling an internal setup routine
+(anchors (0,0)-(1,0), pivot.y = 1, height = <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxFillOffset">MaxFillOffset</a>), then applies only Y offset changes
+via <span class="xref">UnityEngine.RectTransform.anchoredPosition</span> while preserving X.
+</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_FillImageScroller_FillTransform_" data-uid="Fallencake.UI.FillImageScroller.FillTransform*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_FillTransform" data-uid="Fallencake.UI.FillImageScroller.FillTransform">
+  FillTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Target <span class="xref">UnityEngine.RectTransform</span> whose <span class="xref">UnityEngine.RectTransform.anchoredPosition</span>.y is updated
+to visualize the fill according to <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform FillTransform { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd><p>Assign the transform that should move vertically to represent the fill. Setting this property
+immediately re-applies the current <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a> via <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillValue_System_Single_">FillValue(float)</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_MaxFillOffset_" data-uid="Fallencake.UI.FillImageScroller.MaxFillOffset*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_MaxFillOffset" data-uid="Fallencake.UI.FillImageScroller.MaxFillOffset">
+  MaxFillOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum Y offset (in local anchored space) for <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillTransform">FillTransform</a> when <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a>
+equals <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxValue">MaxValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxFillOffset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>Updating this property immediately reapplies the current <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a>. When
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_UseAutoHeight">UseAutoHeight</a> is enabled, this value also defines the transform height via
+<span class="xref">UnityEngine.RectTransform.SetSizeWithCurrentAnchors(UnityEngine.RectTransform.Axis, float)</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_MaxValue_" data-uid="Fallencake.UI.FillImageScroller.MaxValue*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_MaxValue" data-uid="Fallencake.UI.FillImageScroller.MaxValue">
+  MaxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum value of the logical range that corresponds to <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxFillOffset">MaxFillOffset</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>Changing this revalidates <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a> to keep it within bounds and updates visuals if needed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_MinFillOffset_" data-uid="Fallencake.UI.FillImageScroller.MinFillOffset*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_MinFillOffset" data-uid="Fallencake.UI.FillImageScroller.MinFillOffset">
+  MinFillOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum Y offset (in local anchored space) for <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillTransform">FillTransform</a> when <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a>
+equals <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinValue">MinValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinFillOffset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>Updating this property immediately reapplies the current <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_MinValue_" data-uid="Fallencake.UI.FillImageScroller.MinValue*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_MinValue" data-uid="Fallencake.UI.FillImageScroller.MinValue">
+  MinValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum value of the logical range that corresponds to <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinFillOffset">MinFillOffset</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>Changing this revalidates <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a> to keep it within bounds and updates visuals if needed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_UseAutoHeight_" data-uid="Fallencake.UI.FillImageScroller.UseAutoHeight*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_UseAutoHeight" data-uid="Fallencake.UI.FillImageScroller.UseAutoHeight">
+  UseAutoHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables automatic height and layout configuration for the <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillTransform">FillTransform</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseAutoHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>When enabled, anchors are set to (0,0)–(1,0), <span class="xref">UnityEngine.RectTransform.pivot</span>.y becomes 1,
+position is reset to zero, and height is set to <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxFillOffset">MaxFillOffset</a> so that the Y
+offset directly represents the fill level.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_Value_" data-uid="Fallencake.UI.FillImageScroller.Value*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_Value" data-uid="Fallencake.UI.FillImageScroller.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current fill value clamped within <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinValue">MinValue</a>–<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxValue">MaxValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>Assigning a value updates the fill immediately by calling <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillValue_System_Single_">FillValue(float)</a>.
+The value is clamped to the valid range.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_FillImageScroller_Value_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The mapping uses <span class="xref">UnityEngine.Mathf.InverseLerp(float, float, float)</span> to compute a normalized factor
+and then <span class="xref">UnityEngine.Mathf.Lerp(float, float, float)</span> to produce the Y offset between
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinFillOffset">MinFillOffset</a> and <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxFillOffset">MaxFillOffset</a>.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_FillImageScroller_FillValue_" data-uid="Fallencake.UI.FillImageScroller.FillValue*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_FillValue_System_Single_" data-uid="Fallencake.UI.FillImageScroller.FillValue(System.Single)">
+  FillValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Recomputes and applies the <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillTransform">FillTransform</a>'s Y offset to reflect the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillValue(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd><p>The value to map into the <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinValue">MinValue</a>–<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxValue">MaxValue</a> range.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_FillImageScroller_FillValue_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+The value is normalized using <span class="xref">UnityEngine.Mathf.InverseLerp(float, float, float)</span> and then mapped to
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MinFillOffset">MinFillOffset</a>–<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_MaxFillOffset">MaxFillOffset</a> via <span class="xref">UnityEngine.Mathf.Lerp(float, float, float)</span>.
+When <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_UseAutoHeight">UseAutoHeight</a> is enabled, auto-height configuration is applied beforehand.
+</p>
+<p>
+Only the Y component of <span class="xref">UnityEngine.RectTransform.anchoredPosition</span> is changed; the X component remains
+unchanged to preserve horizontal alignment.
+</p>
+</div>
+
+
+
+
+  <a id="Fallencake_UI_FillImageScroller_Start_" data-uid="Fallencake.UI.FillImageScroller.Start*"></a>
+
+  <h3 id="Fallencake_UI_FillImageScroller_Start" data-uid="Fallencake.UI.FillImageScroller.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unity Start lifecycle method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_FillImageScroller_Start_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Invokes base initialization from <a class="xref" href="Fallencake.UI.AnimatedImageScroller.html">AnimatedImageScroller</a> and then applies the initial
+<a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_Value">Value</a> to position the <a class="xref" href="Fallencake.UI.FillImageScroller.html#Fallencake_UI_FillImageScroller_FillTransform">FillTransform</a>.</p>
+</div>
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Fallencake.UI.AnimatedImageScroller.html">AnimatedImageScroller</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DropdownMenu | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DropdownMenu | ModularUIPack ">
+      
+      <meta name="description" content="Configurable dropdown UI component supporting tween or Animator-based open/close, item selection, sounds, and optional state saving.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.DropdownMenu">
+
+
+
+  <h1 id="Fallencake_UI_DropdownMenu" data-uid="Fallencake.UI.DropdownMenu" class="text-break">
+Class DropdownMenu  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Configurable dropdown UI component supporting tween or Animator-based open/close,
+item selection, sounds, and optional state saving.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DropdownMenu : UIBehaviour, IDropdownMenu, IDropdownAudioProvider, IAudioProvider, ISaveable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">DropdownMenu</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IDropdownMenu.html">IDropdownMenu</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IDropdownAudioProvider.html">IDropdownAudioProvider</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IAudioProvider.html">IAudioProvider</a></div>
+      <div><a class="xref" href="Fallencake.UI.ISaveable.html">ISaveable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnItemTextChanged" data-uid="Fallencake.UI.DropdownMenu.OnItemTextChanged">
+  OnItemTextChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DropdownMenu.ItemTextChangedEvent OnItemTextChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.DropdownMenu.html">DropdownMenu</a>.<a class="xref" href="Fallencake.UI.DropdownMenu.ItemTextChangedEvent.html">ItemTextChangedEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnValueChanged" data-uid="Fallencake.UI.DropdownMenu.OnValueChanged">
+  OnValueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DropdownEvent OnValueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.DropdownEvent.html">DropdownEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_animationType" data-uid="Fallencake.UI.DropdownMenu.animationType">
+  animationType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationType animationType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.AnimationType.html">AnimationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_index" data-uid="Fallencake.UI.DropdownMenu.index">
+  index
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public int index</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_isOn" data-uid="Fallencake.UI.DropdownMenu.isOn">
+  isOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public bool isOn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_itemSpacing" data-uid="Fallencake.UI.DropdownMenu.itemSpacing">
+  itemSpacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0, 100)]
+public float itemSpacing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_items" data-uid="Fallencake.UI.DropdownMenu.items">
+  items
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public List&lt;DropdownItem&gt; items</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.DropdownItem.html">DropdownItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_setItemImage" data-uid="Fallencake.UI.DropdownMenu.setItemImage">
+  setItemImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public Image setItemImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_setItemText" data-uid="Fallencake.UI.DropdownMenu.setItemText">
+  setItemText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public TextMeshProUGUI setItemText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextMeshProUGUI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_DropdownMenu_siblingIndex" data-uid="Fallencake.UI.DropdownMenu.siblingIndex">
+  siblingIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public int siblingIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_DropdownMenu_AnimationCurve_" data-uid="Fallencake.UI.DropdownMenu.AnimationCurve*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_AnimationCurve" data-uid="Fallencake.UI.DropdownMenu.AnimationCurve">
+  AnimationCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Easing curve for tween-based animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve AnimationCurve { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_AnimationRunner_" data-uid="Fallencake.UI.DropdownMenu.AnimationRunner*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_AnimationRunner" data-uid="Fallencake.UI.DropdownMenu.AnimationRunner">
+  AnimationRunner
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>&quot;The MonoBehaviour component used to run coroutines or for attaching the Animator component.&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour AnimationRunner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_Animator_" data-uid="Fallencake.UI.DropdownMenu.Animator*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_Animator" data-uid="Fallencake.UI.DropdownMenu.Animator">
+  Animator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animator used when <a class="xref" href="Fallencake.UI.AnimationType.html#Fallencake_UI_AnimationType_UnityAnimator">UnityAnimator</a> is selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animator Animator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Animator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_AudioSource_" data-uid="Fallencake.UI.DropdownMenu.AudioSource*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_AudioSource" data-uid="Fallencake.UI.DropdownMenu.AudioSource">
+  AudioSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>AudioSource used for playing dropdown sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AudioSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_CloseSound_" data-uid="Fallencake.UI.DropdownMenu.CloseSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_CloseSound" data-uid="Fallencake.UI.DropdownMenu.CloseSound">
+  CloseSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound data for closing the dropdown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData CloseSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_ClosingTime_" data-uid="Fallencake.UI.DropdownMenu.ClosingTime*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_ClosingTime" data-uid="Fallencake.UI.DropdownMenu.ClosingTime">
+  ClosingTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Close animation duration (seconds, unscaled).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ClosingTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_Component_" data-uid="Fallencake.UI.DropdownMenu.Component*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_Component" data-uid="Fallencake.UI.DropdownMenu.Component">
+  Component
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Owning component used by handlers for context and coroutines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour Component { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_ContentOffset_" data-uid="Fallencake.UI.DropdownMenu.ContentOffset*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_ContentOffset" data-uid="Fallencake.UI.DropdownMenu.ContentOffset">
+  ContentOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Offset in pixels between header and list panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ContentOffset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_CurrentAnimationType_" data-uid="Fallencake.UI.DropdownMenu.CurrentAnimationType*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_CurrentAnimationType" data-uid="Fallencake.UI.DropdownMenu.CurrentAnimationType">
+  CurrentAnimationType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets/sets current animation type and reinitializes handler when changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationType CurrentAnimationType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.AnimationType.html">AnimationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_DeselectSound_" data-uid="Fallencake.UI.DropdownMenu.DeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_DeselectSound" data-uid="Fallencake.UI.DropdownMenu.DeselectSound">
+  DeselectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on deselect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData DeselectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_EnableSounds_" data-uid="Fallencake.UI.DropdownMenu.EnableSounds*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_EnableSounds" data-uid="Fallencake.UI.DropdownMenu.EnableSounds">
+  EnableSounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables UI sounds via <a class="xref" href="Fallencake.UI.Audio.IDropdownAudioHandler.html">IDropdownAudioHandler</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableSounds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_IsHighPriority_" data-uid="Fallencake.UI.DropdownMenu.IsHighPriority*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_IsHighPriority" data-uid="Fallencake.UI.DropdownMenu.IsHighPriority">
+  IsHighPriority
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, ensures the list renders on top using a dedicated Canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHighPriority { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_IsIconEnabled_" data-uid="Fallencake.UI.DropdownMenu.IsIconEnabled*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_IsIconEnabled" data-uid="Fallencake.UI.DropdownMenu.IsIconEnabled">
+  IsIconEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIconEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_IsInteractable_" data-uid="Fallencake.UI.DropdownMenu.IsInteractable*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_IsInteractable" data-uid="Fallencake.UI.DropdownMenu.IsInteractable">
+  IsInteractable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls user interaction availability.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInteractable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_IsItemSelectedAtUpdate_" data-uid="Fallencake.UI.DropdownMenu.IsItemSelectedAtUpdate*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_IsItemSelectedAtUpdate" data-uid="Fallencake.UI.DropdownMenu.IsItemSelectedAtUpdate">
+  IsItemSelectedAtUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true, invokes selected item events during <a class="xref" href="Fallencake.UI.DropdownMenu.html#Fallencake_UI_DropdownMenu_UpdateDropdown">UpdateDropdown()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsItemSelectedAtUpdate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_IsSavingEnabled_" data-uid="Fallencake.UI.DropdownMenu.IsSavingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_IsSavingEnabled" data-uid="Fallencake.UI.DropdownMenu.IsSavingEnabled">
+  IsSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables save/load behavior for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSavingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_IsTriggerEnabled_" data-uid="Fallencake.UI.DropdownMenu.IsTriggerEnabled*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_IsTriggerEnabled" data-uid="Fallencake.UI.DropdownMenu.IsTriggerEnabled">
+  IsTriggerEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, clicking outside closes the dropdown via an invisible overlay trigger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTriggerEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_ItemListCanvasGroup_" data-uid="Fallencake.UI.DropdownMenu.ItemListCanvasGroup*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_ItemListCanvasGroup" data-uid="Fallencake.UI.DropdownMenu.ItemListCanvasGroup">
+  ItemListCanvasGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>CanvasGroup used for list open/close transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasGroup ItemListCanvasGroup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_ItemListRect_" data-uid="Fallencake.UI.DropdownMenu.ItemListRect*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_ItemListRect" data-uid="Fallencake.UI.DropdownMenu.ItemListRect">
+  ItemListRect
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>RectTransform of the list content panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform ItemListRect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_ItemPadding_" data-uid="Fallencake.UI.DropdownMenu.ItemPadding*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_ItemPadding" data-uid="Fallencake.UI.DropdownMenu.ItemPadding">
+  ItemPadding
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get or set the padding of items in the container.
+Value format: (left, right, top, bottom)
+Default value: (8, 25, 8, 8)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectOffset ItemPadding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectOffset</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_ItemPrefab_" data-uid="Fallencake.UI.DropdownMenu.ItemPrefab*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_ItemPrefab" data-uid="Fallencake.UI.DropdownMenu.ItemPrefab">
+  ItemPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prefab used to instantiate list items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject ItemPrefab { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OpenSound_" data-uid="Fallencake.UI.DropdownMenu.OpenSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OpenSound" data-uid="Fallencake.UI.DropdownMenu.OpenSound">
+  OpenSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound data for opening the dropdown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData OpenSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OpeningTime_" data-uid="Fallencake.UI.DropdownMenu.OpeningTime*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OpeningTime" data-uid="Fallencake.UI.DropdownMenu.OpeningTime">
+  OpeningTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Open animation duration (seconds, unscaled).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OpeningTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OutOnPointerExit_" data-uid="Fallencake.UI.DropdownMenu.OutOnPointerExit*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OutOnPointerExit" data-uid="Fallencake.UI.DropdownMenu.OutOnPointerExit">
+  OutOnPointerExit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, pointer exit will close the dropdown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OutOnPointerExit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PanelDirection_" data-uid="Fallencake.UI.DropdownMenu.PanelDirection*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PanelDirection" data-uid="Fallencake.UI.DropdownMenu.PanelDirection">
+  PanelDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Direction from the header where the list opens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DropdownDirection PanelDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.DropdownDirection.html">DropdownDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PanelHeight_" data-uid="Fallencake.UI.DropdownMenu.PanelHeight*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PanelHeight" data-uid="Fallencake.UI.DropdownMenu.PanelHeight">
+  PanelHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Target list panel height while opened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PanelHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PressSound_" data-uid="Fallencake.UI.DropdownMenu.PressSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PressSound" data-uid="Fallencake.UI.DropdownMenu.PressSound">
+  PressSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on press/submit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData PressSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SaveKey_" data-uid="Fallencake.UI.DropdownMenu.SaveKey*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SaveKey" data-uid="Fallencake.UI.DropdownMenu.SaveKey">
+  SaveKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>PlayerPrefs key used to persist the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SelectItemSound_" data-uid="Fallencake.UI.DropdownMenu.SelectItemSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SelectItemSound" data-uid="Fallencake.UI.DropdownMenu.SelectItemSound">
+  SelectItemSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound data for selecting an item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData SelectItemSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SelectSound_" data-uid="Fallencake.UI.DropdownMenu.SelectSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SelectSound" data-uid="Fallencake.UI.DropdownMenu.SelectSound">
+  SelectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on select/hover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData SelectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_Selectable_" data-uid="Fallencake.UI.DropdownMenu.Selectable*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_Selectable" data-uid="Fallencake.UI.DropdownMenu.Selectable">
+  Selectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Underlying <span class="xref">UnityEngine.UI.Selectable</span> for navigation/select.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable Selectable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SelectedImage_" data-uid="Fallencake.UI.DropdownMenu.SelectedImage*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SelectedImage" data-uid="Fallencake.UI.DropdownMenu.SelectedImage">
+  SelectedImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Image that displays selected item icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image SelectedImage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SelectedItemIndex_" data-uid="Fallencake.UI.DropdownMenu.SelectedItemIndex*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SelectedItemIndex" data-uid="Fallencake.UI.DropdownMenu.SelectedItemIndex">
+  SelectedItemIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Index of the currently selected item; setter selects item and updates view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedItemIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SelectedText_" data-uid="Fallencake.UI.DropdownMenu.SelectedText*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SelectedText" data-uid="Fallencake.UI.DropdownMenu.SelectedText">
+  SelectedText
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Label that displays selected item text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI SelectedText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextMeshProUGUI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_Volume_" data-uid="Fallencake.UI.DropdownMenu.Volume*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_Volume" data-uid="Fallencake.UI.DropdownMenu.Volume">
+  Volume
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Master volume multiplier for sounds (0..1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_DropdownMenu_Animate_" data-uid="Fallencake.UI.DropdownMenu.Animate*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_Animate" data-uid="Fallencake.UI.DropdownMenu.Animate">
+  Animate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Toggles the open/close state and triggers the active animation handler and sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Animate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_Awake_" data-uid="Fallencake.UI.DropdownMenu.Awake*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_Awake" data-uid="Fallencake.UI.DropdownMenu.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_CreateNewItem_" data-uid="Fallencake.UI.DropdownMenu.CreateNewItem*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_CreateNewItem_System_String_" data-uid="Fallencake.UI.DropdownMenu.CreateNewItem(System.String)">
+  CreateNewItem(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNewItem(string title)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_CreateNewItem_" data-uid="Fallencake.UI.DropdownMenu.CreateNewItem*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_CreateNewItem_System_String_System_Boolean_" data-uid="Fallencake.UI.DropdownMenu.CreateNewItem(System.String,System.Boolean)">
+  CreateNewItem(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNewItem(string title, bool notify)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>notify</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_CreateNewItem_" data-uid="Fallencake.UI.DropdownMenu.CreateNewItem*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_CreateNewItem_System_String_UnityEngine_Sprite_System_Boolean_" data-uid="Fallencake.UI.DropdownMenu.CreateNewItem(System.String,UnityEngine.Sprite,System.Boolean)">
+  CreateNewItem(string, Sprite, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNewItem(string title, Sprite icon, bool notify)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>icon</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>notify</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_InitTrigger_" data-uid="Fallencake.UI.DropdownMenu.InitTrigger*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_InitTrigger" data-uid="Fallencake.UI.DropdownMenu.InitTrigger">
+  InitTrigger()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and configures click-outside trigger overlay in play mode when enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitTrigger()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_InitializeAudio_" data-uid="Fallencake.UI.DropdownMenu.InitializeAudio*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_InitializeAudio" data-uid="Fallencake.UI.DropdownMenu.InitializeAudio">
+  InitializeAudio()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeAudio()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_LoadState_" data-uid="Fallencake.UI.DropdownMenu.LoadState*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_LoadState" data-uid="Fallencake.UI.DropdownMenu.LoadState">
+  LoadState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads selected item index from <span class="xref">UnityEngine.PlayerPrefs</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnDeselect_" data-uid="Fallencake.UI.DropdownMenu.OnDeselect*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnDeselect_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.DropdownMenu.OnDeselect(UnityEngine.EventSystems.BaseEventData)">
+  OnDeselect(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a new object is being selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDeselect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnDestroy_" data-uid="Fallencake.UI.DropdownMenu.OnDestroy*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnDestroy" data-uid="Fallencake.UI.DropdownMenu.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnEnable_" data-uid="Fallencake.UI.DropdownMenu.OnEnable*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnEnable" data-uid="Fallencake.UI.DropdownMenu.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnPointerClick_" data-uid="Fallencake.UI.DropdownMenu.OnPointerClick*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.DropdownMenu.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this callback to detect clicks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnPointerEnter_" data-uid="Fallencake.UI.DropdownMenu.OnPointerEnter*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.DropdownMenu.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerEnter(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this callback to detect pointer enter events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnPointerExit_" data-uid="Fallencake.UI.DropdownMenu.OnPointerExit*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.DropdownMenu.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerExit(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this callback to detect pointer exit events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnSelect_" data-uid="Fallencake.UI.DropdownMenu.OnSelect*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnSelect_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.DropdownMenu.OnSelect(UnityEngine.EventSystems.BaseEventData)">
+  OnSelect(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSelect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_OnSubmit_" data-uid="Fallencake.UI.DropdownMenu.OnSubmit*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.DropdownMenu.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PlayCloseSound_" data-uid="Fallencake.UI.DropdownMenu.PlayCloseSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PlayCloseSound" data-uid="Fallencake.UI.DropdownMenu.PlayCloseSound">
+  PlayCloseSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays dropdown close sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayCloseSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PlayDeselectSound_" data-uid="Fallencake.UI.DropdownMenu.PlayDeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PlayDeselectSound" data-uid="Fallencake.UI.DropdownMenu.PlayDeselectSound">
+  PlayDeselectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays UI deselect sound via audio handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayDeselectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PlayOpenSound_" data-uid="Fallencake.UI.DropdownMenu.PlayOpenSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PlayOpenSound" data-uid="Fallencake.UI.DropdownMenu.PlayOpenSound">
+  PlayOpenSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays dropdown open sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOpenSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PlayPressSound_" data-uid="Fallencake.UI.DropdownMenu.PlayPressSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PlayPressSound" data-uid="Fallencake.UI.DropdownMenu.PlayPressSound">
+  PlayPressSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays UI press sound via audio handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayPressSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PlaySelectItemSound_" data-uid="Fallencake.UI.DropdownMenu.PlaySelectItemSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PlaySelectItemSound" data-uid="Fallencake.UI.DropdownMenu.PlaySelectItemSound">
+  PlaySelectItemSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays item selected sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySelectItemSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_PlaySelectSound_" data-uid="Fallencake.UI.DropdownMenu.PlaySelectSound*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_PlaySelectSound" data-uid="Fallencake.UI.DropdownMenu.PlaySelectSound">
+  PlaySelectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays UI select sound via audio handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySelectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_RemoveItem_" data-uid="Fallencake.UI.DropdownMenu.RemoveItem*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_RemoveItem_System_String_" data-uid="Fallencake.UI.DropdownMenu.RemoveItem(System.String)">
+  RemoveItem(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveItem(string itemTitle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemTitle</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_RemoveItem_" data-uid="Fallencake.UI.DropdownMenu.RemoveItem*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_RemoveItem_System_String_System_Boolean_" data-uid="Fallencake.UI.DropdownMenu.RemoveItem(System.String,System.Boolean)">
+  RemoveItem(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveItem(string itemTitle, bool notify)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemTitle</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>notify</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SaveState_" data-uid="Fallencake.UI.DropdownMenu.SaveState*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SaveState" data-uid="Fallencake.UI.DropdownMenu.SaveState">
+  SaveState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves selected item index to <span class="xref">UnityEngine.PlayerPrefs</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SelectItem_" data-uid="Fallencake.UI.DropdownMenu.SelectItem*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SelectItem_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="Fallencake.UI.DropdownMenu.SelectItem(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+  SelectItem(int, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects item by index, saves state if enabled and updates UI optionally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectItem(int itemIndex, bool updateView = true, bool playSound = true, bool selectDropdown = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemIndex</code> <span class="xref">int</span></dt>
+    <dd><p>Item index to select.</p>
+</dd>
+    <dt><code>updateView</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to update label/icon.</p>
+</dd>
+    <dt><code>playSound</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to play selection sound.</p>
+</dd>
+    <dt><code>selectDropdown</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to programmatically select the dropdown.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_SetIconEnabled_" data-uid="Fallencake.UI.DropdownMenu.SetIconEnabled*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_SetIconEnabled_System_Boolean_" data-uid="Fallencake.UI.DropdownMenu.SetIconEnabled(System.Boolean)">
+  SetIconEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the visibility of the selected item's icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIconEnabled(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to enable or disable the icon gameobject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_UpdateAnimator_" data-uid="Fallencake.UI.DropdownMenu.UpdateAnimator*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_UpdateAnimator" data-uid="Fallencake.UI.DropdownMenu.UpdateAnimator">
+  UpdateAnimator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reinitializes the tween animator handler when using tween mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAnimator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_UpdateDropdown_" data-uid="Fallencake.UI.DropdownMenu.UpdateDropdown*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_UpdateDropdown" data-uid="Fallencake.UI.DropdownMenu.UpdateDropdown">
+  UpdateDropdown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets up the dropdown menu by creating items and updating the UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDropdown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_UpdateItemLayout_" data-uid="Fallencake.UI.DropdownMenu.UpdateItemLayout*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_UpdateItemLayout" data-uid="Fallencake.UI.DropdownMenu.UpdateItemLayout">
+  UpdateItemLayout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateItemLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_DropdownMenu_UpdateSelectable_" data-uid="Fallencake.UI.DropdownMenu.UpdateSelectable*"></a>
+
+  <h3 id="Fallencake_UI_DropdownMenu_UpdateSelectable" data-uid="Fallencake.UI.DropdownMenu.UpdateSelectable">
+  UpdateSelectable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the interactable state of the Selectable component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSelectable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

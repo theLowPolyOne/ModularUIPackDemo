@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModularToggle | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModularToggle | ModularUIPack ">
+      
+      <meta name="description" content="A modular toggle consisting of several graphic elements, like changeable background and handle.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ModularToggle">
+
+
+
+  <h1 id="Fallencake_UI_ModularToggle" data-uid="Fallencake.UI.ModularToggle" class="text-break">
+Class ModularToggle  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A modular toggle consisting of several graphic elements, like changeable background and handle.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Modular UI/Modular Toggle&quot;, 32)]
+public class ModularToggle : ToggleBase, IMultiSelectable, ISaveable, IToggleAudioProvider, IAudioProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">Selectable</span></div>
+      <div><a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.ToggleBase.html">ToggleBase</a></div>
+      <div><span class="xref">ModularToggle</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IMultiSelectable.html">IMultiSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.ISaveable.html">ISaveable</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IToggleAudioProvider.html">IToggleAudioProvider</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IAudioProvider.html">IAudioProvider</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__isOn">ToggleBase._isOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__invokeEventsOnStart">ToggleBase._invokeEventsOnStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__handle">ToggleBase._handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__group">ToggleBase._group</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_IsOn">ToggleBase.IsOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__ease">ToggleBase._ease</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__switchDuration">ToggleBase._switchDuration</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_IsSavingEnabled">ToggleBase.IsSavingEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SaveKey">ToggleBase.SaveKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_OnValueChanged">ToggleBase.OnValueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase__isInitialized">ToggleBase._isInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_OnEnable">ToggleBase.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_OnDisable">ToggleBase.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_Initialize">ToggleBase.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_LoadState">ToggleBase.LoadState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SaveState">ToggleBase.SaveState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_Set_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">ToggleBase.Set(bool, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_AnimateSwitch">ToggleBase.AnimateSwitch()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SetOn">ToggleBase.SetOn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SetOff">ToggleBase.SetOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SetIsOn_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">ToggleBase.SetIsOn(bool, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SetIsOnWithoutNotify_System_Boolean_System_Boolean_">ToggleBase.SetIsOnWithoutNotify(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SetToggleGroup_Fallencake_UI_ModularToggleGroup_System_Boolean_">ToggleBase.SetToggleGroup(ModularToggleGroup, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SwitchView_System_Boolean_System_Boolean_">ToggleBase.SwitchView(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SwitchOn">ToggleBase.SwitchOn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_SwitchOff">ToggleBase.SwitchOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_OnSubmit_UnityEngine_EventSystems_BaseEventData_">ToggleBase.OnSubmit(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.ToggleBase.html#Fallencake_UI_ToggleBase_EditorApplyIsOn">ToggleBase.EditorApplyIsOn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__colorableGraphics">MultipleGraphicsSelectable._colorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableGraphics">MultipleGraphicsSelectable._swappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableCanvasGroupe">MultipleGraphicsSelectable._swappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics">MultipleGraphicsSelectable.ColorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics">MultipleGraphicsSelectable.SwappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe">MultipleGraphicsSelectable.SwappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__transition">MultipleGraphicsSelectable._transition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition">MultipleGraphicsSelectable.SelectableTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__tweenCoroutine">MultipleGraphicsSelectable._tweenCoroutine</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_Start">MultipleGraphicsSelectable.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">MultipleGraphicsSelectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics">MultipleGraphicsSelectable.AddNewColorableGraphics()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite">MultipleGraphicsSelectable.AddNewSwappableSprite()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_Fallencake_UI_SelectionColorBlock_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, SelectionColorBlock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_System_Single_System_Single_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, Color, Color, Color, Color, Color, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Graphic_Fallencake_UI_SelectionSpriteState_">MultipleGraphicsSelectable.AddSwappableSprite(Graphic, SelectionSpriteState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Image_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_">MultipleGraphicsSelectable.AddSwappableSprite(Image, Sprite, Sprite, Sprite, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_">MultipleGraphicsSelectable.SetFadingCanvasGroups(CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, float)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ModularToggle_AudioSource_" data-uid="Fallencake.UI.ModularToggle.AudioSource*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_AudioSource" data-uid="Fallencake.UI.ModularToggle.AudioSource">
+  AudioSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>AudioSource used to play sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AudioSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_Component_" data-uid="Fallencake.UI.ModularToggle.Component*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_Component" data-uid="Fallencake.UI.ModularToggle.Component">
+  Component
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>&quot;The MonoBehaviour component used to run coroutines or for attaching the Animator component.&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour Component { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_DeselectSound_" data-uid="Fallencake.UI.ModularToggle.DeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_DeselectSound" data-uid="Fallencake.UI.ModularToggle.DeselectSound">
+  DeselectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on deselect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData DeselectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_EnableSounds_" data-uid="Fallencake.UI.ModularToggle.EnableSounds*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_EnableSounds" data-uid="Fallencake.UI.ModularToggle.EnableSounds">
+  EnableSounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables/disables sound playback for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableSounds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_EnableSwitchText_" data-uid="Fallencake.UI.ModularToggle.EnableSwitchText*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_EnableSwitchText" data-uid="Fallencake.UI.ModularToggle.EnableSwitchText">
+  EnableSwitchText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableSwitchText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_IsColorableText_" data-uid="Fallencake.UI.ModularToggle.IsColorableText*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_IsColorableText" data-uid="Fallencake.UI.ModularToggle.IsColorableText">
+  IsColorableText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsColorableText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_IsFadingView_" data-uid="Fallencake.UI.ModularToggle.IsFadingView*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_IsFadingView" data-uid="Fallencake.UI.ModularToggle.IsFadingView">
+  IsFadingView
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFadingView { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_IsInteractable_" data-uid="Fallencake.UI.ModularToggle.IsInteractable*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_IsInteractable" data-uid="Fallencake.UI.ModularToggle.IsInteractable">
+  IsInteractable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls whether the toggle can be interacted with. When false, the toggle will not respond to user input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInteractable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_IsStretchingHandle_" data-uid="Fallencake.UI.ModularToggle.IsStretchingHandle*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_IsStretchingHandle" data-uid="Fallencake.UI.ModularToggle.IsStretchingHandle">
+  IsStretchingHandle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStretchingHandle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_PressSound_" data-uid="Fallencake.UI.ModularToggle.PressSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_PressSound" data-uid="Fallencake.UI.ModularToggle.PressSound">
+  PressSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on press/submit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData PressSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_SelectSound_" data-uid="Fallencake.UI.ModularToggle.SelectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_SelectSound" data-uid="Fallencake.UI.ModularToggle.SelectSound">
+  SelectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on select/hover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData SelectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_Selectable_" data-uid="Fallencake.UI.ModularToggle.Selectable*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_Selectable" data-uid="Fallencake.UI.ModularToggle.Selectable">
+  Selectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>&quot;The selectable component of the toggle. Used to select the toggle and handle navigation events.&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable Selectable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_SoundSource_" data-uid="Fallencake.UI.ModularToggle.SoundSource*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_SoundSource" data-uid="Fallencake.UI.ModularToggle.SoundSource">
+  SoundSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource SoundSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_SwitchDirection_" data-uid="Fallencake.UI.ModularToggle.SwitchDirection*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_SwitchDirection" data-uid="Fallencake.UI.ModularToggle.SwitchDirection">
+  SwitchDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The axis along which the handle moves. Updates handle anchors/pivot to edge-centered positions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SwitchDirection SwitchDirection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SwitchDirection.html">SwitchDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_ToggleOffSound_" data-uid="Fallencake.UI.ModularToggle.ToggleOffSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_ToggleOffSound" data-uid="Fallencake.UI.ModularToggle.ToggleOffSound">
+  ToggleOffSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound when toggled off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData ToggleOffSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_ToggleOnSound_" data-uid="Fallencake.UI.ModularToggle.ToggleOnSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_ToggleOnSound" data-uid="Fallencake.UI.ModularToggle.ToggleOnSound">
+  ToggleOnSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound when toggled on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData ToggleOnSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_Volume_" data-uid="Fallencake.UI.ModularToggle.Volume*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_Volume" data-uid="Fallencake.UI.ModularToggle.Volume">
+  Volume
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Per-component volume multiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ModularToggle_ApplyHandleAnchorsForDirection_" data-uid="Fallencake.UI.ModularToggle.ApplyHandleAnchorsForDirection*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_ApplyHandleAnchorsForDirection" data-uid="Fallencake.UI.ModularToggle.ApplyHandleAnchorsForDirection">
+  ApplyHandleAnchorsForDirection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies anchors and pivot to the handle based on current SwitchDirection and IsOn.
+Keeps the handle centered on the corresponding edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyHandleAnchorsForDirection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_Awake_" data-uid="Fallencake.UI.ModularToggle.Awake*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_Awake" data-uid="Fallencake.UI.ModularToggle.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to get the Animator component on the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_ModularToggle_Awake_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    private Animator buttonAnimator;
+    public Button button;
+
+    void Start()
+    {
+        //Assigns the "buttonAnimator" with the button's animator.
+        buttonAnimator = button.animator;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_InstantSwitch_" data-uid="Fallencake.UI.ModularToggle.InstantSwitch*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_InstantSwitch_System_Boolean_" data-uid="Fallencake.UI.ModularToggle.InstantSwitch(System.Boolean)">
+  InstantSwitch(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly update visuals of handle/background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InstantSwitch(bool isOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_OnDestroy_" data-uid="Fallencake.UI.ModularToggle.OnDestroy*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_OnDestroy" data-uid="Fallencake.UI.ModularToggle.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_OnPointerClick_" data-uid="Fallencake.UI.ModularToggle.OnPointerClick*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.ModularToggle.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handle pointer click to toggle value when interactable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_OnPointerEnter_" data-uid="Fallencake.UI.ModularToggle.OnPointerEnter*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.ModularToggle.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerEnter(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluate current state and transition to appropriate state.
+New state could be pressed or hover depending on pressed state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_ModularToggle_OnPointerEnter_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IPointerEnterHandler// required interface when using the OnPointerEnter method.
+{
+    //Do this when the cursor enters the rect area of this selectable UI object.
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("The cursor entered the selectable UI element.");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_OnPointerExit_" data-uid="Fallencake.UI.ModularToggle.OnPointerExit*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.ModularToggle.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerExit(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluate current state and transition to normal state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_ModularToggle_OnPointerExit_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IPointerExitHandler// required interface when using the OnPointerExit method.
+{
+    //Do this when the cursor exits the rect area of this selectable UI object.
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.Log("The cursor exited the selectable UI element.");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_PlayOnDeselectSound_" data-uid="Fallencake.UI.ModularToggle.PlayOnDeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_PlayOnDeselectSound" data-uid="Fallencake.UI.ModularToggle.PlayOnDeselectSound">
+  PlayOnDeselectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOnDeselectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_PlayOnHoveredSound_" data-uid="Fallencake.UI.ModularToggle.PlayOnHoveredSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_PlayOnHoveredSound" data-uid="Fallencake.UI.ModularToggle.PlayOnHoveredSound">
+  PlayOnHoveredSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOnHoveredSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_PlayOnPressedSound_" data-uid="Fallencake.UI.ModularToggle.PlayOnPressedSound*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_PlayOnPressedSound" data-uid="Fallencake.UI.ModularToggle.PlayOnPressedSound">
+  PlayOnPressedSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOnPressedSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_PlaySwitchTween_" data-uid="Fallencake.UI.ModularToggle.PlaySwitchTween*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_PlaySwitchTween_System_Boolean_" data-uid="Fallencake.UI.ModularToggle.PlaySwitchTween(System.Boolean)">
+  PlaySwitchTween(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Play animated transition between states. Override in derived controls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PlaySwitchTween(bool isOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularToggle_SetActiveTextLabels_" data-uid="Fallencake.UI.ModularToggle.SetActiveTextLabels*"></a>
+
+  <h3 id="Fallencake_UI_ModularToggle_SetActiveTextLabels_System_Boolean_" data-uid="Fallencake.UI.ModularToggle.SetActiveTextLabels(System.Boolean)">
+  SetActiveTextLabels(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActiveTextLabels(bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

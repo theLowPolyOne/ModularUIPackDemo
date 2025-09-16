@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ToggleBase | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ToggleBase | ModularUIPack ">
+      
+      <meta name="description" content="Base toggle control that encapsulates toggle state, events and saving logic. Inherits from MultipleGraphicsSelectable to reuse transition and target graphics system.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ToggleBase">
+
+
+
+  <h1 id="Fallencake_UI_ToggleBase" data-uid="Fallencake.UI.ToggleBase" class="text-break">
+Class ToggleBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base toggle control that encapsulates toggle state, events and saving logic.
+Inherits from MultipleGraphicsSelectable to reuse transition and target graphics system.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ToggleBase : MultipleGraphicsSelectable, IMultiSelectable, ISaveable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">Selectable</span></div>
+      <div><a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a></div>
+      <div><span class="xref">ToggleBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IMultiSelectable.html">IMultiSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.ISaveable.html">ISaveable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ModularToggle.html">ModularToggle</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__colorableGraphics">MultipleGraphicsSelectable._colorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableGraphics">MultipleGraphicsSelectable._swappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableCanvasGroupe">MultipleGraphicsSelectable._swappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics">MultipleGraphicsSelectable.ColorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics">MultipleGraphicsSelectable.SwappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe">MultipleGraphicsSelectable.SwappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__transition">MultipleGraphicsSelectable._transition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition">MultipleGraphicsSelectable.SelectableTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__tweenCoroutine">MultipleGraphicsSelectable._tweenCoroutine</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_Start">MultipleGraphicsSelectable.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_OnDestroy">MultipleGraphicsSelectable.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">MultipleGraphicsSelectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics">MultipleGraphicsSelectable.AddNewColorableGraphics()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite">MultipleGraphicsSelectable.AddNewSwappableSprite()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_Fallencake_UI_SelectionColorBlock_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, SelectionColorBlock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_System_Single_System_Single_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, Color, Color, Color, Color, Color, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Graphic_Fallencake_UI_SelectionSpriteState_">MultipleGraphicsSelectable.AddSwappableSprite(Graphic, SelectionSpriteState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Image_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_">MultipleGraphicsSelectable.AddSwappableSprite(Image, Sprite, Sprite, Sprite, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_">MultipleGraphicsSelectable.SetFadingCanvasGroups(CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, float)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase_OnValueChanged" data-uid="Fallencake.UI.ToggleBase.OnValueChanged">
+  OnValueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invoked when the toggle value changes or when alwaysNotify is requested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SwitchEvent OnValueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SwitchEvent.html">SwitchEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__ease" data-uid="Fallencake.UI.ToggleBase._ease">
+  _ease
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected AnimationCurve _ease</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__group" data-uid="Fallencake.UI.ToggleBase._group">
+  _group
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ModularToggleGroup _group</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ModularToggleGroup.html">ModularToggleGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__handle" data-uid="Fallencake.UI.ToggleBase._handle">
+  _handle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _handle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__invokeEventsOnStart" data-uid="Fallencake.UI.ToggleBase._invokeEventsOnStart">
+  _invokeEventsOnStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _invokeEventsOnStart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__isInitialized" data-uid="Fallencake.UI.ToggleBase._isInitialized">
+  _isInitialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isInitialized</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__isOn" data-uid="Fallencake.UI.ToggleBase._isOn">
+  _isOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isOn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleBase__switchDuration" data-uid="Fallencake.UI.ToggleBase._switchDuration">
+  _switchDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0.1, 10)]
+protected float _switchDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ToggleBase_IsOn_" data-uid="Fallencake.UI.ToggleBase.IsOn*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_IsOn" data-uid="Fallencake.UI.ToggleBase.IsOn">
+  IsOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the toggle is currently active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_IsSavingEnabled_" data-uid="Fallencake.UI.ToggleBase.IsSavingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_IsSavingEnabled" data-uid="Fallencake.UI.ToggleBase.IsSavingEnabled">
+  IsSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables save/load behavior for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSavingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SaveKey_" data-uid="Fallencake.UI.ToggleBase.SaveKey*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SaveKey" data-uid="Fallencake.UI.ToggleBase.SaveKey">
+  SaveKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>PlayerPrefs key used to persist the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ToggleBase_AnimateSwitch_" data-uid="Fallencake.UI.ToggleBase.AnimateSwitch*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_AnimateSwitch" data-uid="Fallencake.UI.ToggleBase.AnimateSwitch">
+  AnimateSwitch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Toggle the current value and update visuals/events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AnimateSwitch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_Awake_" data-uid="Fallencake.UI.ToggleBase.Awake*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_Awake" data-uid="Fallencake.UI.ToggleBase.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to get the Animator component on the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_ToggleBase_Awake_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    private Animator buttonAnimator;
+    public Button button;
+
+    void Start()
+    {
+        //Assigns the "buttonAnimator" with the button's animator.
+        buttonAnimator = button.animator;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_EditorApplyIsOn_" data-uid="Fallencake.UI.ToggleBase.EditorApplyIsOn*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_EditorApplyIsOn" data-uid="Fallencake.UI.ToggleBase.EditorApplyIsOn">
+  EditorApplyIsOn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Apply IsOn from inspector instantly; safe for edit and play modes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EditorApplyIsOn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_Initialize_" data-uid="Fallencake.UI.ToggleBase.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_Initialize" data-uid="Fallencake.UI.ToggleBase.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_InstantSwitch_" data-uid="Fallencake.UI.ToggleBase.InstantSwitch*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_InstantSwitch_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.InstantSwitch(System.Boolean)">
+  InstantSwitch(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly update visuals of handle/background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InstantSwitch(bool isOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_LoadState_" data-uid="Fallencake.UI.ToggleBase.LoadState*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_LoadState" data-uid="Fallencake.UI.ToggleBase.LoadState">
+  LoadState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads component state from persistent storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_OnDisable_" data-uid="Fallencake.UI.ToggleBase.OnDisable*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_OnDisable" data-uid="Fallencake.UI.ToggleBase.OnDisable">
+  OnDisable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_OnEnable_" data-uid="Fallencake.UI.ToggleBase.OnEnable*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_OnEnable" data-uid="Fallencake.UI.ToggleBase.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_OnPointerClick_" data-uid="Fallencake.UI.ToggleBase.OnPointerClick*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.ToggleBase.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handle pointer click to toggle value when interactable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_OnSubmit_" data-uid="Fallencake.UI.ToggleBase.OnSubmit*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.ToggleBase.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handle submit (e.g., keyboard) to toggle value when interactable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_PlaySwitchTween_" data-uid="Fallencake.UI.ToggleBase.PlaySwitchTween*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_PlaySwitchTween_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.PlaySwitchTween(System.Boolean)">
+  PlaySwitchTween(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Play animated transition between states. Override in derived controls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PlaySwitchTween(bool isOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SaveState_" data-uid="Fallencake.UI.ToggleBase.SaveState*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SaveState" data-uid="Fallencake.UI.ToggleBase.SaveState">
+  SaveState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves component state to persistent storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_Set_" data-uid="Fallencake.UI.ToggleBase.Set*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_Set_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.Set(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  Set(bool, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Core setter with semantics similar to Unity's Toggle.Set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Set(bool value, bool sendCallback = true, bool animate = true, bool alwaysNotify = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">bool</span></dt>
+    <dd><p>Desired toggle value.</p>
+</dd>
+    <dt><code>sendCallback</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to invoke OnValueChanged.</p>
+</dd>
+    <dt><code>animate</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to animate transition (otherwise updates instantly).</p>
+</dd>
+    <dt><code>alwaysNotify</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, invokes OnValueChanged even if the value did not change.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SetIsOn_" data-uid="Fallencake.UI.ToggleBase.SetIsOn*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SetIsOn_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.SetIsOn(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  SetIsOn(bool, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the toggle value using the core Set(...) semantics.
+Exposes control over callbacks, animation and forced notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsOn(bool value, bool sendCallback = true, bool animate = true, bool alwaysNotify = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">bool</span></dt>
+    <dd><p>Desired toggle value.</p>
+</dd>
+    <dt><code>sendCallback</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to invoke OnValueChanged.</p>
+</dd>
+    <dt><code>animate</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to animate transition.</p>
+</dd>
+    <dt><code>alwaysNotify</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, invokes OnValueChanged even when value did not change.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SetIsOnWithoutNotify_" data-uid="Fallencake.UI.ToggleBase.SetIsOnWithoutNotify*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SetIsOnWithoutNotify_System_Boolean_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.SetIsOnWithoutNotify(System.Boolean,System.Boolean)">
+  SetIsOnWithoutNotify(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the toggle value without invoking OnValueChanged. Intended for group-internal updates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsOnWithoutNotify(bool value, bool animate = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">bool</span></dt>
+    <dd><p>Desired toggle value.</p>
+</dd>
+    <dt><code>animate</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to animate transition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SetOff_" data-uid="Fallencake.UI.ToggleBase.SetOff*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SetOff" data-uid="Fallencake.UI.ToggleBase.SetOff">
+  SetOff()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set toggle to Off state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetOff()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SetOn_" data-uid="Fallencake.UI.ToggleBase.SetOn*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SetOn" data-uid="Fallencake.UI.ToggleBase.SetOn">
+  SetOn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set toggle to On state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetOn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SetToggleGroup_" data-uid="Fallencake.UI.ToggleBase.SetToggleGroup*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SetToggleGroup_Fallencake_UI_ModularToggleGroup_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.SetToggleGroup(Fallencake.UI.ModularToggleGroup,System.Boolean)">
+  SetToggleGroup(ModularToggleGroup, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assigns toggle to a group, managing registration and initial notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetToggleGroup(ModularToggleGroup newGroup, bool setMemberValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newGroup</code> <a class="xref" href="Fallencake.UI.ModularToggleGroup.html">ModularToggleGroup</a></dt>
+    <dd></dd>
+    <dt><code>setMemberValue</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SwitchOff_" data-uid="Fallencake.UI.ToggleBase.SwitchOff*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SwitchOff" data-uid="Fallencake.UI.ToggleBase.SwitchOff">
+  SwitchOff()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchOff()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SwitchOn_" data-uid="Fallencake.UI.ToggleBase.SwitchOn*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SwitchOn" data-uid="Fallencake.UI.ToggleBase.SwitchOn">
+  SwitchOn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchOn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ToggleBase_SwitchView_" data-uid="Fallencake.UI.ToggleBase.SwitchView*"></a>
+
+  <h3 id="Fallencake_UI_ToggleBase_SwitchView_System_Boolean_System_Boolean_" data-uid="Fallencake.UI.ToggleBase.SwitchView(System.Boolean,System.Boolean)">
+  SwitchView(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update visuals either instantly or with tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SwitchView(bool isOn, bool isInstant = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>isInstant</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

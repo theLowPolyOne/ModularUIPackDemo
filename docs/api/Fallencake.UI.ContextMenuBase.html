@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ContextMenuBase | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ContextMenuBase | ModularUIPack ">
+      
+      <meta name="description" content="Base class for context menu implementations providing lifecycle, content management and popup animation orchestration via .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ContextMenuBase">
+
+
+
+  <h1 id="Fallencake_UI_ContextMenuBase" data-uid="Fallencake.UI.ContextMenuBase" class="text-break">
+Class ContextMenuBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for context menu implementations providing lifecycle, content management
+and popup animation orchestration via <a class="xref" href="Fallencake.UI.PopupTweenAnimator.html">PopupTweenAnimator</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ContextMenuBase : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">ContextMenuBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ContextSubMenu.html">ContextSubMenu</a></div>
+      <div><a class="xref" href="Fallencake.UI.ModularContextMenu.html">ModularContextMenu</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ContextMenuBase__content" data-uid="Fallencake.UI.ContextMenuBase._content">
+  _content
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Transform _content</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ContextMenuBase__contentRectTransform" data-uid="Fallencake.UI.ContextMenuBase._contentRectTransform">
+  _contentRectTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform _contentRectTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ContextMenuBase__isActive" data-uid="Fallencake.UI.ContextMenuBase._isActive">
+  _isActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isActive</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ContextMenuBase__itemsContainer" data-uid="Fallencake.UI.ContextMenuBase._itemsContainer">
+  _itemsContainer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Transform _itemsContainer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ContextMenuBase__popupAnimator" data-uid="Fallencake.UI.ContextMenuBase._popupAnimator">
+  _popupAnimator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected PopupTweenAnimator _popupAnimator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.PopupTweenAnimator.html">PopupTweenAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ContextMenuBase_isActive_" data-uid="Fallencake.UI.ContextMenuBase.isActive*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_isActive" data-uid="Fallencake.UI.ContextMenuBase.isActive">
+  isActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the menu is currently shown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ContextMenuBase_ClearAllItems_" data-uid="Fallencake.UI.ContextMenuBase.ClearAllItems*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_ClearAllItems" data-uid="Fallencake.UI.ContextMenuBase.ClearAllItems">
+  ClearAllItems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Destroys all child items from the items container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ClearAllItems()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_Close_" data-uid="Fallencake.UI.ContextMenuBase.Close*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_Close" data-uid="Fallencake.UI.ContextMenuBase.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers the popup animator to hide the context menu with animation and sets the menu as inactive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_CloseInstantly_" data-uid="Fallencake.UI.ContextMenuBase.CloseInstantly*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_CloseInstantly" data-uid="Fallencake.UI.ContextMenuBase.CloseInstantly">
+  CloseInstantly()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly hides the menu without animation by calling the popup animator's <a class="xref" href="Fallencake.UI.PopupTweenAnimator.html#Fallencake_UI_PopupTweenAnimator_HideInstantly_System_Action_">HideInstantly(Action)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CloseInstantly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_CloseOnClick_" data-uid="Fallencake.UI.ContextMenuBase.CloseOnClick*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_CloseOnClick" data-uid="Fallencake.UI.ContextMenuBase.CloseOnClick">
+  CloseOnClick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the menu on click.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CloseOnClick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_GetMenuWidth_" data-uid="Fallencake.UI.ContextMenuBase.GetMenuWidth*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_GetMenuWidth" data-uid="Fallencake.UI.ContextMenuBase.GetMenuWidth">
+  GetMenuWidth()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets current menu content width in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetMenuWidth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_InitContent_" data-uid="Fallencake.UI.ContextMenuBase.InitContent*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_InitContent" data-uid="Fallencake.UI.ContextMenuBase.InitContent">
+  InitContent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures content transform exists and caches <span class="xref">UnityEngine.RectTransform</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitContent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_InitItemsContainer_" data-uid="Fallencake.UI.ContextMenuBase.InitItemsContainer*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_InitItemsContainer" data-uid="Fallencake.UI.ContextMenuBase.InitItemsContainer">
+  InitItemsContainer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures items container exists under content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitItemsContainer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_InitPopupAnimator_" data-uid="Fallencake.UI.ContextMenuBase.InitPopupAnimator*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_InitPopupAnimator" data-uid="Fallencake.UI.ContextMenuBase.InitPopupAnimator">
+  InitPopupAnimator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures popup animator component is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitPopupAnimator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_Open_" data-uid="Fallencake.UI.ContextMenuBase.Open*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_Open" data-uid="Fallencake.UI.ContextMenuBase.Open">
+  Open()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Displays the context menu with an opening animation and sets its active state to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Open()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_SetProperty_" data-uid="Fallencake.UI.ContextMenuBase.SetProperty*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_SetProperty__1___0____0_System_Action_" data-uid="Fallencake.UI.ContextMenuBase.SetProperty``1(``0@,``0,System.Action)">
+  SetProperty&lt;T&gt;(ref T, T, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Helper method used to set a given property if it has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetProperty&lt;T&gt;(ref T currentValue, T newValue, Action onSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <span class="xref">T</span></dt>
+    <dd><p>Reference to the current value.</p>
+</dd>
+    <dt><code>newValue</code> <span class="xref">T</span></dt>
+    <dd><p>Proposed new value.</p>
+</dd>
+    <dt><code>onSet</code> <span class="xref">Action</span></dt>
+    <dd><p>Callback invoked when the value actually changes.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ContextMenuBase_UpdateItemsWithDelay_" data-uid="Fallencake.UI.ContextMenuBase.UpdateItemsWithDelay*"></a>
+
+  <h3 id="Fallencake_UI_ContextMenuBase_UpdateItemsWithDelay_System_Single_" data-uid="Fallencake.UI.ContextMenuBase.UpdateItemsWithDelay(System.Single)">
+  UpdateItemsWithDelay(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds items after a small delay to ensure layout is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator UpdateItemsWithDelay(float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>Delay in seconds (unscaled).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

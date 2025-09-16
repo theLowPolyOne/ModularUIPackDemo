@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ValueScrollerItem | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ValueScrollerItem | ModularUIPack ">
+      
+      <meta name="description" content="Represents a value scroller item with its own settings and target values. Can animate float or int values and trigger events for any component that accepts numeric input.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Examples.ValueScrollerItem">
+
+
+
+  <h1 id="Fallencake_UI_Examples_ValueScrollerItem" data-uid="Fallencake.UI.Examples.ValueScrollerItem" class="text-break">
+Class ValueScrollerItem  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a>.<a class="xref" href="Fallencake.UI.Examples.html">Examples</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a value scroller item with its own settings and target values.
+Can animate float or int values and trigger events for any component that accepts numeric input.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ValueScrollerItem</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ValueScrollerItem</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem__ctor_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.#ctor*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem__ctor" data-uid="Fallencake.UI.Examples.ValueScrollerItem.#ctor">
+  ValueScrollerItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueScrollerItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem__ctor_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.#ctor*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem__ctor_System_String_System_Single_System_Single_System_Single_System_Single_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.#ctor(System.String,System.Single,System.Single,System.Single,System.Single)">
+  ValueScrollerItem(string, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueScrollerItem(string name, float min, float max, float current = 0, float target = 100)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>min</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>max</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>current</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_currentValue" data-uid="Fallencake.UI.Examples.ValueScrollerItem.currentValue">
+  currentValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public float currentValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_decimalPlaces" data-uid="Fallencake.UI.Examples.ValueScrollerItem.decimalPlaces">
+  decimalPlaces
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public int decimalPlaces</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_isEnabled" data-uid="Fallencake.UI.Examples.ValueScrollerItem.isEnabled">
+  isEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public bool isEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_itemName" data-uid="Fallencake.UI.Examples.ValueScrollerItem.itemName">
+  itemName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Basic Settings&quot;)]
+[SerializeField]
+public string itemName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_maxValue" data-uid="Fallencake.UI.Examples.ValueScrollerItem.maxValue">
+  maxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public float maxValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_minValue" data-uid="Fallencake.UI.Examples.ValueScrollerItem.minValue">
+  minValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Value Range&quot;)]
+[SerializeField]
+public float minValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_onFloatValueChanged" data-uid="Fallencake.UI.Examples.ValueScrollerItem.onFloatValueChanged">
+  onFloatValueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Events&quot;)]
+[SerializeField]
+public UnityEvent&lt;float&gt; onFloatValueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<span class="xref">float</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_onIntValueChanged" data-uid="Fallencake.UI.Examples.ValueScrollerItem.onIntValueChanged">
+  onIntValueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public UnityEvent&lt;int&gt; onIntValueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_targetValue" data-uid="Fallencake.UI.Examples.ValueScrollerItem.targetValue">
+  targetValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public float targetValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_useWholeNumbers" data-uid="Fallencake.UI.Examples.ValueScrollerItem.useWholeNumbers">
+  useWholeNumbers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public bool useWholeNumbers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_valueModifier" data-uid="Fallencake.UI.Examples.ValueScrollerItem.valueModifier">
+  valueModifier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Animation Settings&quot;)]
+[SerializeField]
+public float valueModifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_valueType" data-uid="Fallencake.UI.Examples.ValueScrollerItem.valueType">
+  valueType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public SimpleValueScrollerExample.ValueType valueType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.html">SimpleValueScrollerExample</a>.<a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.ValueType.html">ValueType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_IsAnimating_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsAnimating*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_IsAnimating" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsAnimating">
+  IsAnimating
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnimating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_IsCompleted_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsCompleted*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_IsCompleted" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsCompleted">
+  IsCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompleted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_IsDecreasing_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsDecreasing*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_IsDecreasing" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsDecreasing">
+  IsDecreasing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDecreasing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_IsIncreasing_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsIncreasing*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_IsIncreasing" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsIncreasing">
+  IsIncreasing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIncreasing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_IsValid_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsValid*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_IsValid" data-uid="Fallencake.UI.Examples.ValueScrollerItem.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_NormalizedTarget_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.NormalizedTarget*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_NormalizedTarget" data-uid="Fallencake.UI.Examples.ValueScrollerItem.NormalizedTarget">
+  NormalizedTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NormalizedTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_NormalizedValue_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.NormalizedValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_NormalizedValue" data-uid="Fallencake.UI.Examples.ValueScrollerItem.NormalizedValue">
+  NormalizedValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NormalizedValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_AddValue_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.AddValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_AddValue_System_Single_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.AddValue(System.Single)">
+  AddValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a value to the current value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(float valueToAdd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueToAdd</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_PrepareAnimation_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.PrepareAnimation*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_PrepareAnimation" data-uid="Fallencake.UI.Examples.ValueScrollerItem.PrepareAnimation">
+  PrepareAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prepares the item for animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_ResetToStart_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.ResetToStart*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_ResetToStart" data-uid="Fallencake.UI.Examples.ValueScrollerItem.ResetToStart">
+  ResetToStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets to the starting value based on target direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetToStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_SetToTarget_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.SetToTarget*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_SetToTarget" data-uid="Fallencake.UI.Examples.ValueScrollerItem.SetToTarget">
+  SetToTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets value to the target immediately</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToTarget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_SetValue_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.SetValue*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_SetValue_System_Single_System_Boolean_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.SetValue(System.Single,System.Boolean)">
+  SetValue(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the current value with proper clamping and precision</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(float value, bool sendEvent = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>sendEvent</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_StartAnimation_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.StartAnimation*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_StartAnimation_UnityEngine_MonoBehaviour_System_Single_System_Boolean_System_Single_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.StartAnimation(UnityEngine.MonoBehaviour,System.Single,System.Boolean,System.Single)">
+  StartAnimation(MonoBehaviour, float, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts animation towards the target value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAnimation(MonoBehaviour owner, float duration, bool useStepDelay = false, float stepDelay = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>useStepDelay</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>stepDelay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Examples_ValueScrollerItem_StopAnimation_" data-uid="Fallencake.UI.Examples.ValueScrollerItem.StopAnimation*"></a>
+
+  <h3 id="Fallencake_UI_Examples_ValueScrollerItem_StopAnimation" data-uid="Fallencake.UI.Examples.ValueScrollerItem.StopAnimation">
+  StopAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the current animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

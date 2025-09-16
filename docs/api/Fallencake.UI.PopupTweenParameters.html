@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PopupTweenParameters | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PopupTweenParameters | ModularUIPack ">
+      
+      <meta name="description" content="Parameter container describing a single popup tween and its show/hide behavior.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.PopupTweenParameters">
+
+
+
+  <h1 id="Fallencake_UI_PopupTweenParameters" data-uid="Fallencake.UI.PopupTweenParameters" class="text-break">
+Class PopupTweenParameters  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Parameter container describing a single popup tween and its show/hide behavior.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class PopupTweenParameters : IPopupTweenParameters, ITweenBasicParameters</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">PopupTweenParameters</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IPopupTweenParameters.html">IPopupTweenParameters</a></div>
+      <div><a class="xref" href="Fallencake.UI.ITweenBasicParameters.html">ITweenBasicParameters</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="Fallencake_UI_PopupTweenParameters_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Contains per-mode easing and duration, as well as specific parameter blocks for each supported tween type,
+such as <a class="xref" href="Fallencake.UI.MovePopupTweenParameters.html">MovePopupTweenParameters</a>, <a class="xref" href="Fallencake.UI.ScalePopupTweenParameters.html">ScalePopupTweenParameters</a>,
+<a class="xref" href="Fallencake.UI.FadeCanvasGroupPopupTweenParameters.html">FadeCanvasGroupPopupTweenParameters</a>, <a class="xref" href="Fallencake.UI.OffsetPopupTweenParameters.html">OffsetPopupTweenParameters</a>,
+<a class="xref" href="Fallencake.UI.SizePopupTweenParameters.html">SizePopupTweenParameters</a> and <a class="xref" href="Fallencake.UI.TintGraphicPopupTweenParameters.html">TintGraphicPopupTweenParameters</a>.
+The active data is determined by <a class="xref" href="Fallencake.UI.PopupTweenParameters.html#Fallencake_UI_PopupTweenParameters_Type">Type</a>.</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_PopupTweenParameters__hideEase" data-uid="Fallencake.UI.PopupTweenParameters._hideEase">
+  _hideEase
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected AnimationCurve _hideEase</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_PopupTweenParameters__showEase" data-uid="Fallencake.UI.PopupTweenParameters._showEase">
+  _showEase
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected AnimationCurve _showEase</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_Coroutine_" data-uid="Fallencake.UI.PopupTweenParameters.Coroutine*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_Coroutine" data-uid="Fallencake.UI.PopupTweenParameters.Coroutine">
+  Coroutine
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runtime coroutine reference used during playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coroutine Coroutine { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_FadeParameters_" data-uid="Fallencake.UI.PopupTweenParameters.FadeParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_FadeParameters" data-uid="Fallencake.UI.PopupTweenParameters.FadeParameters">
+  FadeParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parameter block for CanvasGroup fade tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FadeCanvasGroupPopupTweenParameters FadeParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.FadeCanvasGroupPopupTweenParameters.html">FadeCanvasGroupPopupTweenParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_HideDuration_" data-uid="Fallencake.UI.PopupTweenParameters.HideDuration*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_HideDuration" data-uid="Fallencake.UI.PopupTweenParameters.HideDuration">
+  HideDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Duration in seconds for the hide phase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HideDuration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_HideEase_" data-uid="Fallencake.UI.PopupTweenParameters.HideEase*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_HideEase" data-uid="Fallencake.UI.PopupTweenParameters.HideEase">
+  HideEase
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Easing curve used for the hide phase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve HideEase { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_MoveParameters_" data-uid="Fallencake.UI.PopupTweenParameters.MoveParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_MoveParameters" data-uid="Fallencake.UI.PopupTweenParameters.MoveParameters">
+  MoveParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parameter block for move tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovePopupTweenParameters MoveParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.MovePopupTweenParameters.html">MovePopupTweenParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_OffsetParameters_" data-uid="Fallencake.UI.PopupTweenParameters.OffsetParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_OffsetParameters" data-uid="Fallencake.UI.PopupTweenParameters.OffsetParameters">
+  OffsetParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parameter block for RectTransform offset tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetPopupTweenParameters OffsetParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.OffsetPopupTweenParameters.html">OffsetPopupTweenParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_ScaleParameters_" data-uid="Fallencake.UI.PopupTweenParameters.ScaleParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_ScaleParameters" data-uid="Fallencake.UI.PopupTweenParameters.ScaleParameters">
+  ScaleParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parameter block for scale tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScalePopupTweenParameters ScaleParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ScalePopupTweenParameters.html">ScalePopupTweenParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_ShowDuration_" data-uid="Fallencake.UI.PopupTweenParameters.ShowDuration*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_ShowDuration" data-uid="Fallencake.UI.PopupTweenParameters.ShowDuration">
+  ShowDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Duration in seconds for the show phase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShowDuration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_ShowEase_" data-uid="Fallencake.UI.PopupTweenParameters.ShowEase*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_ShowEase" data-uid="Fallencake.UI.PopupTweenParameters.ShowEase">
+  ShowEase
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Easing curve used for the show phase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve ShowEase { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_SizeParameters_" data-uid="Fallencake.UI.PopupTweenParameters.SizeParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_SizeParameters" data-uid="Fallencake.UI.PopupTweenParameters.SizeParameters">
+  SizeParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parameter block for RectTransform size tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SizePopupTweenParameters SizeParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SizePopupTweenParameters.html">SizePopupTweenParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_TintParameters_" data-uid="Fallencake.UI.PopupTweenParameters.TintParameters*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_TintParameters" data-uid="Fallencake.UI.PopupTweenParameters.TintParameters">
+  TintParameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parameter block for Graphic tint tween.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TintGraphicPopupTweenParameters TintParameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.TintGraphicPopupTweenParameters.html">TintGraphicPopupTweenParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PopupTweenParameters_Type_" data-uid="Fallencake.UI.PopupTweenParameters.Type*"></a>
+
+  <h3 id="Fallencake_UI_PopupTweenParameters_Type" data-uid="Fallencake.UI.PopupTweenParameters.Type">
+  Type
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The tween type represented by this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TweenType Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.TweenType.html">TweenType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

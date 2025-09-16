@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ColorableCollection | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ColorableCollection | ModularUIPack ">
+      
+      <meta name="description" content="Component for applying colors or gradients from collections to multiple UI assets with optional tinting.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ColorableCollection">
+
+
+
+  <h1 id="Fallencake_UI_ColorableCollection" data-uid="Fallencake.UI.ColorableCollection" class="text-break">
+Class ColorableCollection  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Component for applying colors or gradients from collections to multiple UI assets with optional tinting.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ColorableCollection : UIBehaviour, IColorSetter, IColorAssetProvider, IGradientAssetProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">ColorableCollection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IColorSetter.html">IColorSetter</a></div>
+      <div><a class="xref" href="Fallencake.UI.IColorAssetProvider.html">IColorAssetProvider</a></div>
+      <div><a class="xref" href="Fallencake.UI.IGradientAssetProvider.html">IGradientAssetProvider</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ColorableCollection_ColorAssetCollection_" data-uid="Fallencake.UI.ColorableCollection.ColorAssetCollection*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_ColorAssetCollection" data-uid="Fallencake.UI.ColorableCollection.ColorAssetCollection">
+  ColorAssetCollection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lazily initialized color asset collection according to <a class="xref" href="Fallencake.UI.ColorableCollection.html#Fallencake_UI_ColorableCollection_ColorizingType">ColorizingType</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IColorAssetCollection&lt;Color&gt; ColorAssetCollection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.IColorAssetCollection-1.html">IColorAssetCollection</a>&lt;<span class="xref">Color</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_ColorAssetCollectionCount_" data-uid="Fallencake.UI.ColorableCollection.ColorAssetCollectionCount*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_ColorAssetCollectionCount" data-uid="Fallencake.UI.ColorableCollection.ColorAssetCollectionCount">
+  ColorAssetCollectionCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of available colors in the collection (excluding index 0 for UI purposes).
+Returns 0 if no collection is available or collection has only one item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ColorAssetCollectionCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_ColorCollectionData_" data-uid="Fallencake.UI.ColorableCollection.ColorCollectionData*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_ColorCollectionData" data-uid="Fallencake.UI.ColorableCollection.ColorCollectionData">
+  ColorCollectionData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the color collection data containing available colors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorCollectionData ColorCollectionData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ColorCollectionData.html">ColorCollectionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_ColorableAssets_" data-uid="Fallencake.UI.ColorableCollection.ColorableAssets*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_ColorableAssets" data-uid="Fallencake.UI.ColorableCollection.ColorableAssets">
+  ColorableAssets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of UI Graphics that will be affected by color changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Graphic&gt; ColorableAssets { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<span class="xref">Graphic</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_ColorizingType_" data-uid="Fallencake.UI.ColorableCollection.ColorizingType*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_ColorizingType" data-uid="Fallencake.UI.ColorableCollection.ColorizingType">
+  ColorizingType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current colorizing type that determines component behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorizingType ColorizingType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ColorizingType.html">ColorizingType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_GradientAssetCollection_" data-uid="Fallencake.UI.ColorableCollection.GradientAssetCollection*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_GradientAssetCollection" data-uid="Fallencake.UI.ColorableCollection.GradientAssetCollection">
+  GradientAssetCollection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lazily initialized gradient asset collection according to <a class="xref" href="Fallencake.UI.ColorableCollection.html#Fallencake_UI_ColorableCollection_ColorizingType">ColorizingType</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IColorAssetCollection&lt;Gradient&gt; GradientAssetCollection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.IColorAssetCollection-1.html">IColorAssetCollection</a>&lt;<span class="xref">Gradient</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_GradientAssetCollectionCount_" data-uid="Fallencake.UI.ColorableCollection.GradientAssetCollectionCount*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_GradientAssetCollectionCount" data-uid="Fallencake.UI.ColorableCollection.GradientAssetCollectionCount">
+  GradientAssetCollectionCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of available gradients excluding index 0 when using collection data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GradientAssetCollectionCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_GradientCollectionData_" data-uid="Fallencake.UI.ColorableCollection.GradientCollectionData*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_GradientCollectionData" data-uid="Fallencake.UI.ColorableCollection.GradientCollectionData">
+  GradientCollectionData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the gradient collection data containing available gradients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GradientCollectionData GradientCollectionData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.GradientCollectionData.html">GradientCollectionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_Gradients_" data-uid="Fallencake.UI.ColorableCollection.Gradients*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_Gradients" data-uid="Fallencake.UI.ColorableCollection.Gradients">
+  Gradients
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of UI Gradients that will be affected by gradient changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UIGradient&gt; Gradients { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.UIGradient.html">UIGradient</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_IsTintingEnabled_" data-uid="Fallencake.UI.ColorableCollection.IsTintingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_IsTintingEnabled" data-uid="Fallencake.UI.ColorableCollection.IsTintingEnabled">
+  IsTintingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets whether tinting is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTintingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SelectedColor_" data-uid="Fallencake.UI.ColorableCollection.SelectedColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SelectedColor" data-uid="Fallencake.UI.ColorableCollection.SelectedColor">
+  SelectedColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the currently selected color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color SelectedColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SelectedColorIndex_" data-uid="Fallencake.UI.ColorableCollection.SelectedColorIndex*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SelectedColorIndex" data-uid="Fallencake.UI.ColorableCollection.SelectedColorIndex">
+  SelectedColorIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the currently selected color index in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedColorIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SelectedGradient_" data-uid="Fallencake.UI.ColorableCollection.SelectedGradient*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SelectedGradient" data-uid="Fallencake.UI.ColorableCollection.SelectedGradient">
+  SelectedGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the currently selected gradient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gradient SelectedGradient { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Gradient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SelectedGradientIndex_" data-uid="Fallencake.UI.ColorableCollection.SelectedGradientIndex*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SelectedGradientIndex" data-uid="Fallencake.UI.ColorableCollection.SelectedGradientIndex">
+  SelectedGradientIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the currently selected gradient index in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedGradientIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_TintColor_" data-uid="Fallencake.UI.ColorableCollection.TintColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_TintColor" data-uid="Fallencake.UI.ColorableCollection.TintColor">
+  TintColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the tint color used for mixing with the selected color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TintColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_TintCurve_" data-uid="Fallencake.UI.ColorableCollection.TintCurve*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_TintCurve" data-uid="Fallencake.UI.ColorableCollection.TintCurve">
+  TintCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the animation curve used to control the tinting across colorable assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve TintCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_TweenCoroutine_" data-uid="Fallencake.UI.ColorableCollection.TweenCoroutine*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_TweenCoroutine" data-uid="Fallencake.UI.ColorableCollection.TweenCoroutine">
+  TweenCoroutine
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the current animation coroutine for color transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coroutine TweenCoroutine { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ColorableCollection_Awake_" data-uid="Fallencake.UI.ColorableCollection.Awake*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_Awake" data-uid="Fallencake.UI.ColorableCollection.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the component and sets up asset collections.
+Called automatically by Unity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SelectColor_" data-uid="Fallencake.UI.ColorableCollection.SelectColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SelectColor_System_Single_" data-uid="Fallencake.UI.ColorableCollection.SelectColor(System.Single)">
+  SelectColor(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dynamically selects a color from the collection based on a float index value.
+The float value is rounded to the nearest integer index (e.g., 1.2 → 1, 1.55 → 2).
+Values outside the collection bounds are clamped to valid range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectColor(float floatIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>floatIndex</code> <span class="xref">float</span></dt>
+    <dd><p>Float index value that will be rounded and clamped to collection indices</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SetColor_" data-uid="Fallencake.UI.ColorableCollection.SetColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SetColor_System_Int32_" data-uid="Fallencake.UI.ColorableCollection.SetColor(System.Int32)">
+  SetColor(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the color by index and updates the selected index and color/gradient values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>The index of the color/gradient to select</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SetColor_" data-uid="Fallencake.UI.ColorableCollection.SetColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SetColor_System_Int32_System_Single_" data-uid="Fallencake.UI.ColorableCollection.SetColor(System.Int32,System.Single)">
+  SetColor(int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the color by index with animation duration and updates the selected index and color/gradient values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(int index, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>The index of the color/gradient to select</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration in seconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SetColor_" data-uid="Fallencake.UI.ColorableCollection.SetColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SetColor_UnityEngine_Color_" data-uid="Fallencake.UI.ColorableCollection.SetColor(UnityEngine.Color)">
+  SetColor(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a specific color directly and updates the selected color value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd><p>The color to set</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SetColor_" data-uid="Fallencake.UI.ColorableCollection.SetColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SetColor_UnityEngine_Color_System_Single_" data-uid="Fallencake.UI.ColorableCollection.SetColor(UnityEngine.Color,System.Single)">
+  SetColor(Color, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a specific color with animation duration and updates the selected color value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Color color, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd><p>The color to set</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration in seconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SetColor_" data-uid="Fallencake.UI.ColorableCollection.SetColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SetColor_UnityEngine_Gradient_" data-uid="Fallencake.UI.ColorableCollection.SetColor(UnityEngine.Gradient)">
+  SetColor(Gradient)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a specific gradient directly and updates the selected gradient value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Gradient gradient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gradient</code> <span class="xref">Gradient</span></dt>
+    <dd><p>The gradient to set</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_SetColor_" data-uid="Fallencake.UI.ColorableCollection.SetColor*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_SetColor_UnityEngine_Gradient_System_Single_" data-uid="Fallencake.UI.ColorableCollection.SetColor(UnityEngine.Gradient,System.Single)">
+  SetColor(Gradient, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a specific gradient with animation duration and updates the selected gradient value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Gradient gradient, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gradient</code> <span class="xref">Gradient</span></dt>
+    <dd><p>The gradient to set</p>
+</dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd><p>Animation duration in seconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ColorableCollection_Start_" data-uid="Fallencake.UI.ColorableCollection.Start*"></a>
+
+  <h3 id="Fallencake_UI_ColorableCollection_Start" data-uid="Fallencake.UI.ColorableCollection.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

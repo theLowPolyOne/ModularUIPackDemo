@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Slider | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Slider | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Slider">
+
+
+
+  <h1 id="Fallencake_UI_Slider" data-uid="Fallencake.UI.Slider" class="text-break">
+Class Slider  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Slider : MultipleGraphicsSelectable, IMultiSelectable, ISlider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">Selectable</span></div>
+      <div><a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a></div>
+      <div><span class="xref">Slider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IMultiSelectable.html">IMultiSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.ISlider.html">ISlider</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.LinearSlider.html">LinearSlider</a></div>
+      <div><a class="xref" href="Fallencake.UI.RadialSlider.html">RadialSlider</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__colorableGraphics">MultipleGraphicsSelectable._colorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableGraphics">MultipleGraphicsSelectable._swappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableCanvasGroupe">MultipleGraphicsSelectable._swappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics">MultipleGraphicsSelectable.ColorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics">MultipleGraphicsSelectable.SwappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe">MultipleGraphicsSelectable.SwappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__transition">MultipleGraphicsSelectable._transition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition">MultipleGraphicsSelectable.SelectableTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__tweenCoroutine">MultipleGraphicsSelectable._tweenCoroutine</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_OnDestroy">MultipleGraphicsSelectable.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">MultipleGraphicsSelectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics">MultipleGraphicsSelectable.AddNewColorableGraphics()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite">MultipleGraphicsSelectable.AddNewSwappableSprite()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_Fallencake_UI_SelectionColorBlock_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, SelectionColorBlock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_System_Single_System_Single_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, Color, Color, Color, Color, Color, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Graphic_Fallencake_UI_SelectionSpriteState_">MultipleGraphicsSelectable.AddSwappableSprite(Graphic, SelectionSpriteState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Image_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_">MultipleGraphicsSelectable.AddSwappableSprite(Image, Sprite, Sprite, Sprite, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_">MultipleGraphicsSelectable.SetFadingCanvasGroups(CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, float)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_Slider__axis" data-uid="Fallencake.UI.Slider._axis">
+  _axis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Slider.SliderAxis _axis</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Slider.html">Slider</a>.<a class="xref" href="Fallencake.UI.Slider.SliderAxis.html">SliderAxis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__currentValueOnPointerDown" data-uid="Fallencake.UI.Slider._currentValueOnPointerDown">
+  _currentValueOnPointerDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _currentValueOnPointerDown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__decimals" data-uid="Fallencake.UI.Slider._decimals">
+  _decimals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0, 5)]
+protected int _decimals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__displayedValuePrecision" data-uid="Fallencake.UI.Slider._displayedValuePrecision">
+  _displayedValuePrecision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _displayedValuePrecision</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__fillImage" data-uid="Fallencake.UI.Slider._fillImage">
+  _fillImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _fillImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__handle" data-uid="Fallencake.UI.Slider._handle">
+  _handle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _handle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__hitRectTransform" data-uid="Fallencake.UI.Slider._hitRectTransform">
+  _hitRectTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform _hitRectTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__inputField" data-uid="Fallencake.UI.Slider._inputField">
+  _inputField
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected TMP_InputField _inputField</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_InputField</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isAutoSizeEnabled" data-uid="Fallencake.UI.Slider._isAutoSizeEnabled">
+  _isAutoSizeEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isAutoSizeEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isInputFieldEnabled" data-uid="Fallencake.UI.Slider._isInputFieldEnabled">
+  _isInputFieldEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isInputFieldEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isLoadedFromSave" data-uid="Fallencake.UI.Slider._isLoadedFromSave">
+  _isLoadedFromSave
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isLoadedFromSave</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isPercent" data-uid="Fallencake.UI.Slider._isPercent">
+  _isPercent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isPercent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isPointerDown" data-uid="Fallencake.UI.Slider._isPointerDown">
+  _isPointerDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isPointerDown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isPointerUp" data-uid="Fallencake.UI.Slider._isPointerUp">
+  _isPointerUp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isPointerUp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isSavingEnabled" data-uid="Fallencake.UI.Slider._isSavingEnabled">
+  _isSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isSavingEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isValueTextEnabled" data-uid="Fallencake.UI.Slider._isValueTextEnabled">
+  _isValueTextEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isValueTextEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__isWholeNumbers" data-uid="Fallencake.UI.Slider._isWholeNumbers">
+  _isWholeNumbers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isWholeNumbers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__maxValue" data-uid="Fallencake.UI.Slider._maxValue">
+  _maxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float _maxValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__minValue" data-uid="Fallencake.UI.Slider._minValue">
+  _minValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float _minValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__reverseValue" data-uid="Fallencake.UI.Slider._reverseValue">
+  _reverseValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _reverseValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__value" data-uid="Fallencake.UI.Slider._value">
+  _value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float _value</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__valueChanged" data-uid="Fallencake.UI.Slider._valueChanged">
+  _valueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _valueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__valueSaveKey" data-uid="Fallencake.UI.Slider._valueSaveKey">
+  _valueSaveKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected string _valueSaveKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider__valueTextLabel" data-uid="Fallencake.UI.Slider._valueTextLabel">
+  _valueTextLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected TMP_Text _valueTextLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_k_savingTag" data-uid="Fallencake.UI.Slider.k_savingTag">
+  k_savingTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string k_savingTag = &quot;_Saved_Value&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_onPointerEnter" data-uid="Fallencake.UI.Slider.onPointerEnter">
+  onPointerEnter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent onPointerEnter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_onPointerExit" data-uid="Fallencake.UI.Slider.onPointerExit">
+  onPointerExit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent onPointerExit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_onValueChanged" data-uid="Fallencake.UI.Slider.onValueChanged">
+  onValueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public Slider.SliderEvent onValueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Slider.html">Slider</a>.<a class="xref" href="Fallencake.UI.Slider.SliderEvent.html">SliderEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_s_FillImageWarning" data-uid="Fallencake.UI.Slider.s_FillImageWarning">
+  s_FillImageWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly string s_FillImageWarning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_s_HandleWarning" data-uid="Fallencake.UI.Slider.s_HandleWarning">
+  s_HandleWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly string s_HandleWarning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_Slider_s_ValueTextWarning" data-uid="Fallencake.UI.Slider.s_ValueTextWarning">
+  s_ValueTextWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly string s_ValueTextWarning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_Slider_Axis_" data-uid="Fallencake.UI.Slider.Axis*"></a>
+
+  <h3 id="Fallencake_UI_Slider_Axis" data-uid="Fallencake.UI.Slider.Axis">
+  Axis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Slider.SliderAxis Axis { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Slider.html">Slider</a>.<a class="xref" href="Fallencake.UI.Slider.SliderAxis.html">SliderAxis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_Decimals_" data-uid="Fallencake.UI.Slider.Decimals*"></a>
+
+  <h3 id="Fallencake_UI_Slider_Decimals" data-uid="Fallencake.UI.Slider.Decimals">
+  Decimals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Decimals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_DisplayedValue_" data-uid="Fallencake.UI.Slider.DisplayedValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_DisplayedValue" data-uid="Fallencake.UI.Slider.DisplayedValue">
+  DisplayedValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Readable value rendered according to configured precision/format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DisplayedValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_IsAutoSizeEnabled_" data-uid="Fallencake.UI.Slider.IsAutoSizeEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Slider_IsAutoSizeEnabled" data-uid="Fallencake.UI.Slider.IsAutoSizeEnabled">
+  IsAutoSizeEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAutoSizeEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_IsInputFieldEnabled_" data-uid="Fallencake.UI.Slider.IsInputFieldEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Slider_IsInputFieldEnabled" data-uid="Fallencake.UI.Slider.IsInputFieldEnabled">
+  IsInputFieldEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the input field is enabled to change the value of the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInputFieldEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_IsPercent_" data-uid="Fallencake.UI.Slider.IsPercent*"></a>
+
+  <h3 id="Fallencake_UI_Slider_IsPercent" data-uid="Fallencake.UI.Slider.IsPercent">
+  IsPercent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPercent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_IsSavingEnabled_" data-uid="Fallencake.UI.Slider.IsSavingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Slider_IsSavingEnabled" data-uid="Fallencake.UI.Slider.IsSavingEnabled">
+  IsSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSavingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_IsValueTextEnabled_" data-uid="Fallencake.UI.Slider.IsValueTextEnabled*"></a>
+
+  <h3 id="Fallencake_UI_Slider_IsValueTextEnabled" data-uid="Fallencake.UI.Slider.IsValueTextEnabled">
+  IsValueTextEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValueTextEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_IsWholeNumbers_" data-uid="Fallencake.UI.Slider.IsWholeNumbers*"></a>
+
+  <h3 id="Fallencake_UI_Slider_IsWholeNumbers" data-uid="Fallencake.UI.Slider.IsWholeNumbers">
+  IsWholeNumbers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWholeNumbers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_MaxValue_" data-uid="Fallencake.UI.Slider.MaxValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_MaxValue" data-uid="Fallencake.UI.Slider.MaxValue">
+  MaxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum allowed value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_MinValue_" data-uid="Fallencake.UI.Slider.MinValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_MinValue" data-uid="Fallencake.UI.Slider.MinValue">
+  MinValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum allowed value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_NormalizedValue_" data-uid="Fallencake.UI.Slider.NormalizedValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_NormalizedValue" data-uid="Fallencake.UI.Slider.NormalizedValue">
+  NormalizedValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Value normalized to [0..1] considering <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_MinValue">MinValue</a>, <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_MaxValue">MaxValue</a> and <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsWholeNumbers">IsWholeNumbers</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float NormalizedValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_ReverseValue_" data-uid="Fallencake.UI.Slider.ReverseValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_ReverseValue" data-uid="Fallencake.UI.Slider.ReverseValue">
+  ReverseValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReverseValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_Value_" data-uid="Fallencake.UI.Slider.Value*"></a>
+
+  <h3 id="Fallencake_UI_Slider_Value" data-uid="Fallencake.UI.Slider.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current slider value in real units.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_ValueText_" data-uid="Fallencake.UI.Slider.ValueText*"></a>
+
+  <h3 id="Fallencake_UI_Slider_ValueText" data-uid="Fallencake.UI.Slider.ValueText">
+  ValueText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ValueText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider__stepSize_" data-uid="Fallencake.UI.Slider._stepSize*"></a>
+
+  <h3 id="Fallencake_UI_Slider__stepSize" data-uid="Fallencake.UI.Slider._stepSize">
+  _stepSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _stepSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_Slider_FindSelectableOnDown_" data-uid="Fallencake.UI.Slider.FindSelectableOnDown*"></a>
+
+  <h3 id="Fallencake_UI_Slider_FindSelectableOnDown" data-uid="Fallencake.UI.Slider.FindSelectableOnDown">
+  FindSelectableOnDown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find the selectable object below this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_FindSelectableOnLeft_" data-uid="Fallencake.UI.Slider.FindSelectableOnLeft*"></a>
+
+  <h3 id="Fallencake_UI_Slider_FindSelectableOnLeft" data-uid="Fallencake.UI.Slider.FindSelectableOnLeft">
+  FindSelectableOnLeft()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find the selectable object to the left of this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnLeft()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_FindSelectableOnRight_" data-uid="Fallencake.UI.Slider.FindSelectableOnRight*"></a>
+
+  <h3 id="Fallencake_UI_Slider_FindSelectableOnRight" data-uid="Fallencake.UI.Slider.FindSelectableOnRight">
+  FindSelectableOnRight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find the selectable object to the right of this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnRight()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_FindSelectableOnUp_" data-uid="Fallencake.UI.Slider.FindSelectableOnUp*"></a>
+
+  <h3 id="Fallencake_UI_Slider_FindSelectableOnUp" data-uid="Fallencake.UI.Slider.FindSelectableOnUp">
+  FindSelectableOnUp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Selectable object above current</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnUp()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_ForceUpdateVisuals_" data-uid="Fallencake.UI.Slider.ForceUpdateVisuals*"></a>
+
+  <h3 id="Fallencake_UI_Slider_ForceUpdateVisuals" data-uid="Fallencake.UI.Slider.ForceUpdateVisuals">
+  ForceUpdateVisuals()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force-update the slider. Useful if you've changed the properties and want it to update visually.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ForceUpdateVisuals()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_HandleSliderMouseInput_" data-uid="Fallencake.UI.Slider.HandleSliderMouseInput*"></a>
+
+  <h3 id="Fallencake_UI_Slider_HandleSliderMouseInput_UnityEngine_EventSystems_PointerEventData_System_Boolean_" data-uid="Fallencake.UI.Slider.HandleSliderMouseInput(UnityEngine.EventSystems.PointerEventData,System.Boolean)">
+  HandleSliderMouseInput(PointerEventData, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void HandleSliderMouseInput(PointerEventData eventData, bool isValueClamped)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+    <dt><code>isValueClamped</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_HasValueChanged_" data-uid="Fallencake.UI.Slider.HasValueChanged*"></a>
+
+  <h3 id="Fallencake_UI_Slider_HasValueChanged" data-uid="Fallencake.UI.Slider.HasValueChanged">
+  HasValueChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool HasValueChanged()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_Initialize_" data-uid="Fallencake.UI.Slider.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_Slider_Initialize" data-uid="Fallencake.UI.Slider.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_LoadState_" data-uid="Fallencake.UI.Slider.LoadState*"></a>
+
+  <h3 id="Fallencake_UI_Slider_LoadState" data-uid="Fallencake.UI.Slider.LoadState">
+  LoadState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_OnDisable_" data-uid="Fallencake.UI.Slider.OnDisable*"></a>
+
+  <h3 id="Fallencake_UI_Slider_OnDisable" data-uid="Fallencake.UI.Slider.OnDisable">
+  OnDisable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_OnEnable_" data-uid="Fallencake.UI.Slider.OnEnable*"></a>
+
+  <h3 id="Fallencake_UI_Slider_OnEnable" data-uid="Fallencake.UI.Slider.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_OnPointerEnter_" data-uid="Fallencake.UI.Slider.OnPointerEnter*"></a>
+
+  <h3 id="Fallencake_UI_Slider_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.Slider.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerEnter(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluate current state and transition to appropriate state.
+New state could be pressed or hover depending on pressed state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_Slider_OnPointerEnter_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IPointerEnterHandler// required interface when using the OnPointerEnter method.
+{
+    //Do this when the cursor enters the rect area of this selectable UI object.
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("The cursor entered the selectable UI element.");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_OnPointerExit_" data-uid="Fallencake.UI.Slider.OnPointerExit*"></a>
+
+  <h3 id="Fallencake_UI_Slider_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.Slider.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerExit(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluate current state and transition to normal state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Fallencake_UI_Slider_OnPointerExit_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IPointerExitHandler// required interface when using the OnPointerExit method.
+{
+    //Do this when the cursor exits the rect area of this selectable UI object.
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.Log("The cursor exited the selectable UI element.");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_OnRectTransformDimensionsChange_" data-uid="Fallencake.UI.Slider.OnRectTransformDimensionsChange*"></a>
+
+  <h3 id="Fallencake_UI_Slider_OnRectTransformDimensionsChange" data-uid="Fallencake.UI.Slider.OnRectTransformDimensionsChange">
+  OnRectTransformDimensionsChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This callback is called when the dimensions of an associated RectTransform change. It is always called before Awake, OnEnable, or Start. The call is also made to all child RectTransforms, regardless of whether their dimensions change (which depends on how they are anchored).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SaveState_" data-uid="Fallencake.UI.Slider.SaveState*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SaveState" data-uid="Fallencake.UI.Slider.SaveState">
+  SaveState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetActiveInputField_" data-uid="Fallencake.UI.Slider.SetActiveInputField*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetActiveInputField_System_Boolean_" data-uid="Fallencake.UI.Slider.SetActiveInputField(System.Boolean)">
+  SetActiveInputField(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetActiveInputField(bool isEnabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isEnabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetActiveValueTextLabel_" data-uid="Fallencake.UI.Slider.SetActiveValueTextLabel*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetActiveValueTextLabel_System_Boolean_" data-uid="Fallencake.UI.Slider.SetActiveValueTextLabel(System.Boolean)">
+  SetActiveValueTextLabel(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetActiveValueTextLabel(bool isEnabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isEnabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetFillImage_" data-uid="Fallencake.UI.Slider.SetFillImage*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetFillImage" data-uid="Fallencake.UI.Slider.SetFillImage">
+  SetFillImage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetFillImage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetHandlePosition_" data-uid="Fallencake.UI.Slider.SetHandlePosition*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetHandlePosition" data-uid="Fallencake.UI.Slider.SetHandlePosition">
+  SetHandlePosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void SetHandlePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetInputFieldValue_" data-uid="Fallencake.UI.Slider.SetInputFieldValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetInputFieldValue_System_String_" data-uid="Fallencake.UI.Slider.SetInputFieldValue(System.String)">
+  SetInputFieldValue(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetInputFieldValue(string inputValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputValue</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetOrigin_" data-uid="Fallencake.UI.Slider.SetOrigin*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetOrigin" data-uid="Fallencake.UI.Slider.SetOrigin">
+  SetOrigin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void SetOrigin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetValue_" data-uid="Fallencake.UI.Slider.SetValue*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetValue_System_Single_System_Boolean_" data-uid="Fallencake.UI.Slider.SetValue(System.Single,System.Boolean)">
+  SetValue(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetValue(float input, bool sendCallback = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>sendCallback</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_SetValueText_" data-uid="Fallencake.UI.Slider.SetValueText*"></a>
+
+  <h3 id="Fallencake_UI_Slider_SetValueText" data-uid="Fallencake.UI.Slider.SetValueText">
+  SetValueText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetValueText()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_Start_" data-uid="Fallencake.UI.Slider.Start*"></a>
+
+  <h3 id="Fallencake_UI_Slider_Start" data-uid="Fallencake.UI.Slider.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_UpdateInputField_" data-uid="Fallencake.UI.Slider.UpdateInputField*"></a>
+
+  <h3 id="Fallencake_UI_Slider_UpdateInputField" data-uid="Fallencake.UI.Slider.UpdateInputField">
+  UpdateInputField()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateInputField()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_UpdateInputFieldListener_" data-uid="Fallencake.UI.Slider.UpdateInputFieldListener*"></a>
+
+  <h3 id="Fallencake_UI_Slider_UpdateInputFieldListener" data-uid="Fallencake.UI.Slider.UpdateInputFieldListener">
+  UpdateInputFieldListener()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateInputFieldListener()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_UpdateTextAutoSize_" data-uid="Fallencake.UI.Slider.UpdateTextAutoSize*"></a>
+
+  <h3 id="Fallencake_UI_Slider_UpdateTextAutoSize" data-uid="Fallencake.UI.Slider.UpdateTextAutoSize">
+  UpdateTextAutoSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateTextAutoSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Slider_UpdateVisuals_" data-uid="Fallencake.UI.Slider.UpdateVisuals*"></a>
+
+  <h3 id="Fallencake_UI_Slider_UpdateVisuals" data-uid="Fallencake.UI.Slider.UpdateVisuals">
+  UpdateVisuals()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateVisuals()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MultipleGraphicsSelectable | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MultipleGraphicsSelectable | ModularUIPack ">
+      
+      <meta name="description" content="Base selectable that orchestrates transitions for multiple UI graphics when its selection state changes.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.MultipleGraphicsSelectable">
+
+
+
+  <h1 id="Fallencake_UI_MultipleGraphicsSelectable" data-uid="Fallencake.UI.MultipleGraphicsSelectable" class="text-break">
+Class MultipleGraphicsSelectable  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base selectable that orchestrates transitions for multiple UI graphics when its selection state changes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultipleGraphicsSelectable : Selectable, IMultiSelectable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">Selectable</span></div>
+      <div><span class="xref">MultipleGraphicsSelectable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IMultiSelectable.html">IMultiSelectable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.Button.html">Button</a></div>
+      <div><a class="xref" href="Fallencake.UI.Slider.html">Slider</a></div>
+      <div><a class="xref" href="Fallencake.UI.ToggleBase.html">ToggleBase</a></div>
+    </dd>
+  </dl>
+
+
+
+
+  <h2 id="Fallencake_UI_MultipleGraphicsSelectable_examples">Examples</h2>
+  <p>Button: quickly add a ColorableGraphic with explicit colors and timings:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using Fallencake.UI;
+
+public class MyCustomButton : Button
+{
+    [SerializeField] private Graphic _titleGraphic;
+
+    protected override void Start()
+    {
+        base.Start();
+        SelectableTransition = SelectableTransition.ColorTint;
+
+        // Add color-tint target with explicit state colors, multiplier and fade
+        AddColorableGraphic(
+            target: _titleGraphic,
+            normal: Color.white,
+            highlighted: new Color(0.95f, 0.95f, 1f, 1f),
+            pressed: new Color(0.85f, 0.85f, 0.95f, 1f),
+            selected: new Color(0.95f, 0.95f, 1f, 1f),
+            disabled: new Color(1f, 1f, 1f, 0.5f),
+            colorMultiplier: 1.0f,
+            fadeDuration: 0.1f);
+    }
+}</code></pre>
+<p>Slider: configure CanvasGroup-based fading via method:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using Fallencake.UI;
+
+public class MyVolumeSlider : Slider
+{
+    [SerializeField] private CanvasGroup _normal;
+    [SerializeField] private CanvasGroup _highlighted;
+    [SerializeField] private CanvasGroup _pressed;
+    [SerializeField] private CanvasGroup _selected;
+    [SerializeField] private CanvasGroup _disabled;
+
+    protected override void Start()
+    {
+        base.Start();
+        SelectableTransition = SelectableTransition.CanvasGroupFading;
+
+        // Assign groups and fade duration
+        SetFadingCanvasGroups(_normal, _highlighted, _pressed, _selected, _disabled, fadeDuration: 0.15f);
+    }
+}</code></pre>
+
+
+  <h2 id="Fallencake_UI_MultipleGraphicsSelectable_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Uses Unity's <span class="xref">UnityEngine.UI.Selectable</span> state machine and extends it to control collections of
+colorable graphics, swappable sprites, and a CanvasGroup fading setup. Derived classes can customize
+behavior by adjusting <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition">SelectableTransition</a> and editing the collections.</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable__colorableGraphics" data-uid="Fallencake.UI.MultipleGraphicsSelectable._colorableGraphics">
+  _colorableGraphics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected List&lt;ColorableGraphic&gt; _colorableGraphics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable__swappableCanvasGroupe" data-uid="Fallencake.UI.MultipleGraphicsSelectable._swappableCanvasGroupe">
+  _swappableCanvasGroupe
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected SwappableCanvasGroup _swappableCanvasGroupe</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SwappableCanvasGroup.html">SwappableCanvasGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable__swappableGraphics" data-uid="Fallencake.UI.MultipleGraphicsSelectable._swappableGraphics">
+  _swappableGraphics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected List&lt;SwappableSprite&gt; _swappableGraphics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable__transition" data-uid="Fallencake.UI.MultipleGraphicsSelectable._transition">
+  _transition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected SelectableTransition _transition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SelectableTransition.html">SelectableTransition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable__tweenCoroutine" data-uid="Fallencake.UI.MultipleGraphicsSelectable._tweenCoroutine">
+  _tweenCoroutine
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Coroutine _tweenCoroutine</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.ColorableGraphics*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics" data-uid="Fallencake.UI.MultipleGraphicsSelectable.ColorableGraphics">
+  ColorableGraphics
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collection of graphic elements that can be color-tinted during button state transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ColorableGraphic&gt; ColorableGraphics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SelectableTransition*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SelectableTransition">
+  SelectableTransition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of transition that will be applied to the targetGraphic when the state changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectableTransition SelectableTransition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SelectableTransition.html">SelectableTransition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SwappableCanvasGroupe*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SwappableCanvasGroupe">
+  SwappableCanvasGroupe
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Settings for CanvasGroups that can be swapped during button state transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SwappableCanvasGroup SwappableCanvasGroupe { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SwappableCanvasGroup.html">SwappableCanvasGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SwappableGraphics*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SwappableGraphics">
+  SwappableGraphics
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collection of graphic elements that can be swapped during button state transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SwappableSprite&gt; SwappableGraphics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddColorableGraphic*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_Fallencake_UI_SelectionColorBlock_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddColorableGraphic(UnityEngine.UI.Graphic,Fallencake.UI.SelectionColorBlock)">
+  AddColorableGraphic(Graphic, SelectionColorBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds a <a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a> configured with a target and color block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorableGraphic AddColorableGraphic(Graphic target, SelectionColorBlock colors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd><p>The <span class="xref">UnityEngine.UI.Graphic</span> to be color-tinted on state changes.</p>
+</dd>
+    <dt><code>colors</code> <a class="xref" href="Fallencake.UI.SelectionColorBlock.html">SelectionColorBlock</a></dt>
+    <dd><p>The <a class="xref" href="Fallencake.UI.SelectionColorBlock.html">SelectionColorBlock</a> defining colors and timings.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a></dt>
+    <dd><p>The created <a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddColorableGraphic*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_System_Single_System_Single_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddColorableGraphic(UnityEngine.UI.Graphic,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,System.Single,System.Single)">
+  AddColorableGraphic(Graphic, Color, Color, Color, Color, Color, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds a <a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a> using explicit state colors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorableGraphic AddColorableGraphic(Graphic target, Color normal, Color highlighted, Color pressed, Color selected, Color disabled, float colorMultiplier = 1, float fadeDuration = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd><p>The <span class="xref">UnityEngine.UI.Graphic</span> to be color-tinted.</p>
+</dd>
+    <dt><code>normal</code> <span class="xref">Color</span></dt>
+    <dd><p>Color for Normal state.</p>
+</dd>
+    <dt><code>highlighted</code> <span class="xref">Color</span></dt>
+    <dd><p>Color for Highlighted state.</p>
+</dd>
+    <dt><code>pressed</code> <span class="xref">Color</span></dt>
+    <dd><p>Color for Pressed state.</p>
+</dd>
+    <dt><code>selected</code> <span class="xref">Color</span></dt>
+    <dd><p>Color for Selected state.</p>
+</dd>
+    <dt><code>disabled</code> <span class="xref">Color</span></dt>
+    <dd><p>Color for Disabled state.</p>
+</dd>
+    <dt><code>colorMultiplier</code> <span class="xref">float</span></dt>
+    <dd><p>Multiplier applied to colors.</p>
+</dd>
+    <dt><code>fadeDuration</code> <span class="xref">float</span></dt>
+    <dd><p>Color transition duration in seconds.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a></dt>
+    <dd><p>The created <a class="xref" href="Fallencake.UI.ColorableGraphic.html">ColorableGraphic</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddNewColorableGraphics*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddNewColorableGraphics">
+  AddNewColorableGraphics()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new ColorableGraphic to the list of colorable graphics.
+This method is used when you need to dynamically add new UI elements that should change color based on button state.
+Typically called from the Unity Editor when configuring button appearance or programmatically when adding new colorable elements at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use AddColorableGraphic(Graphic, SelectionColorBlock) or the color overload instead.&quot;)]
+public void AddNewColorableGraphics()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddNewSwappableSprite*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddNewSwappableSprite">
+  AddNewSwappableSprite()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new SwappableSprite to the list of swappable sprites.
+This method is used when you need to dynamically add new UI elements that should change sprite based on button state.
+Typically called from the Unity Editor when configuring button appearance or programmatically when adding new swappable elements at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use AddSwappableSprite(Graphic, SelectionSpriteState) or the sprite overload instead.&quot;)]
+public void AddNewSwappableSprite()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddSwappableSprite*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Graphic_Fallencake_UI_SelectionSpriteState_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddSwappableSprite(UnityEngine.UI.Graphic,Fallencake.UI.SelectionSpriteState)">
+  AddSwappableSprite(Graphic, SelectionSpriteState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds a <a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a> configured with a target and sprite state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SwappableSprite AddSwappableSprite(Graphic target, SelectionSpriteState spriteState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Graphic</span></dt>
+    <dd><p>The <span class="xref">UnityEngine.UI.Graphic</span> whose sprite will be swapped.</p>
+</dd>
+    <dt><code>spriteState</code> <a class="xref" href="Fallencake.UI.SelectionSpriteState.html">SelectionSpriteState</a></dt>
+    <dd><p>The <a class="xref" href="Fallencake.UI.SelectionSpriteState.html">SelectionSpriteState</a> defining sprites per state.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a></dt>
+    <dd><p>The created <a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddSwappableSprite*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Image_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.AddSwappableSprite(UnityEngine.UI.Image,UnityEngine.Sprite,UnityEngine.Sprite,UnityEngine.Sprite,UnityEngine.Sprite)">
+  AddSwappableSprite(Image, Sprite, Sprite, Sprite, Sprite)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds a <a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a> using explicit state sprites.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SwappableSprite AddSwappableSprite(Image targetImage, Sprite highlighted, Sprite pressed, Sprite selected, Sprite disabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetImage</code> <span class="xref">Image</span></dt>
+    <dd><p>The <span class="xref">UnityEngine.UI.Image</span> to receive swapped sprites.</p>
+</dd>
+    <dt><code>highlighted</code> <span class="xref">Sprite</span></dt>
+    <dd><p>Sprite for Highlighted state.</p>
+</dd>
+    <dt><code>pressed</code> <span class="xref">Sprite</span></dt>
+    <dd><p>Sprite for Pressed state.</p>
+</dd>
+    <dt><code>selected</code> <span class="xref">Sprite</span></dt>
+    <dd><p>Sprite for Selected state.</p>
+</dd>
+    <dt><code>disabled</code> <span class="xref">Sprite</span></dt>
+    <dd><p>Sprite for Disabled state.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a></dt>
+    <dd><p>The created <a class="xref" href="Fallencake.UI.SwappableSprite.html">SwappableSprite</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.DoStateTransition*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.DoStateTransition(UnityEngine.UI.Selectable.SelectionState,System.Boolean)">
+  DoStateTransition(SelectionState, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transition the Selectable to the entered state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DoStateTransition(Selectable.SelectionState state, bool instant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <span class="xref">Selectable</span>.<span class="xref">SelectionState</span></dt>
+    <dd><p>State to transition to</p>
+</dd>
+    <dt><code>instant</code> <span class="xref">bool</span></dt>
+    <dd><p>Should the transition occur instantly.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_OnDestroy_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.OnDestroy*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_OnDestroy" data-uid="Fallencake.UI.MultipleGraphicsSelectable.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_OnDisable_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.OnDisable*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_OnDisable" data-uid="Fallencake.UI.MultipleGraphicsSelectable.OnDisable">
+  OnDisable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SetFadingCanvasGroups*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.SetFadingCanvasGroups(UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,UnityEngine.CanvasGroup,System.Single)">
+  SetFadingCanvasGroups(CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures <a class="xref" href="Fallencake.UI.IMultiSelectable.html#Fallencake_UI_IMultiSelectable_SwappableCanvasGroupe">SwappableCanvasGroupe</a> with CanvasGroups per state and fade duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFadingCanvasGroups(CanvasGroup normal, CanvasGroup highlighted, CanvasGroup pressed, CanvasGroup selected, CanvasGroup disabled, float fadeDuration = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>normal</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup for Normal state.</p>
+</dd>
+    <dt><code>highlighted</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup for Highlighted state.</p>
+</dd>
+    <dt><code>pressed</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup for Pressed state.</p>
+</dd>
+    <dt><code>selected</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup for Selected state.</p>
+</dd>
+    <dt><code>disabled</code> <span class="xref">CanvasGroup</span></dt>
+    <dd><p>CanvasGroup for Disabled state.</p>
+</dd>
+    <dt><code>fadeDuration</code> <span class="xref">float</span></dt>
+    <dd><p>Alpha fade duration in seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_MultipleGraphicsSelectable_Start_" data-uid="Fallencake.UI.MultipleGraphicsSelectable.Start*"></a>
+
+  <h3 id="Fallencake_UI_MultipleGraphicsSelectable_Start" data-uid="Fallencake.UI.MultipleGraphicsSelectable.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

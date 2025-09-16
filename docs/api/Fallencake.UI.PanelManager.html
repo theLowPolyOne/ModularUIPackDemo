@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PanelManager | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PanelManager | ModularUIPack ">
+      
+      <meta name="description" content="Modular Panel Manager. Handles switching between panels with optional popup animations, editor-friendly preview, and button synchronization.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.PanelManager">
+
+
+
+  <h1 id="Fallencake_UI_PanelManager" data-uid="Fallencake.UI.PanelManager" class="text-break">
+Class PanelManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Modular Panel Manager. Handles switching between panels with optional popup animations,
+editor-friendly preview, and button synchronization.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Modular UI/Panel Manager&quot;)]
+public class PanelManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">PanelManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_PanelManager_OnPanelChanged" data-uid="Fallencake.UI.PanelManager.OnPanelChanged">
+  OnPanelChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelManager.PanelChangeEvent OnPanelChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.PanelManager.html">PanelManager</a>.<a class="xref" href="Fallencake.UI.PanelManager.PanelChangeEvent.html">PanelChangeEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_PanelManager_Panels" data-uid="Fallencake.UI.PanelManager.Panels">
+  Panels
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PanelData&gt; Panels</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.PanelData.html">PanelData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_PanelManager_currentPanelIndex" data-uid="Fallencake.UI.PanelManager.currentPanelIndex">
+  currentPanelIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int currentPanelIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_PanelManager_DeactivateUnselectedPanelsInEditor_" data-uid="Fallencake.UI.PanelManager.DeactivateUnselectedPanelsInEditor*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_DeactivateUnselectedPanelsInEditor" data-uid="Fallencake.UI.PanelManager.DeactivateUnselectedPanelsInEditor">
+  DeactivateUnselectedPanelsInEditor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deactivate unselected panels in editor mode (runtime always deactivates).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeactivateUnselectedPanelsInEditor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_IsActivePanelOnTop_" data-uid="Fallencake.UI.PanelManager.IsActivePanelOnTop*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_IsActivePanelOnTop" data-uid="Fallencake.UI.PanelManager.IsActivePanelOnTop">
+  IsActivePanelOnTop
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Move active panel to top of hierarchy during animated transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActivePanelOnTop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_IsAnimatedPanelSwitch_" data-uid="Fallencake.UI.PanelManager.IsAnimatedPanelSwitch*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_IsAnimatedPanelSwitch" data-uid="Fallencake.UI.PanelManager.IsAnimatedPanelSwitch">
+  IsAnimatedPanelSwitch
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable animated transitions between panels using <a class="xref" href="Fallencake.UI.PopupTweenAnimator.html">PopupTweenAnimator</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnimatedPanelSwitch { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_initializeButtons_" data-uid="Fallencake.UI.PanelManager.initializeButtons*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_initializeButtons" data-uid="Fallencake.UI.PanelManager.initializeButtons">
+  initializeButtons
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Automatically initialize buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool initializeButtons { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_PanelManager_AddNewItem_" data-uid="Fallencake.UI.PanelManager.AddNewItem*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_AddNewItem" data-uid="Fallencake.UI.PanelManager.AddNewItem">
+  AddNewItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNewItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_GetCurrentPanelIndex_" data-uid="Fallencake.UI.PanelManager.GetCurrentPanelIndex*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_GetCurrentPanelIndex" data-uid="Fallencake.UI.PanelManager.GetCurrentPanelIndex">
+  GetCurrentPanelIndex()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the currently selected panel index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCurrentPanelIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>Current panel index</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_GetPanelCount_" data-uid="Fallencake.UI.PanelManager.GetPanelCount*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_GetPanelCount" data-uid="Fallencake.UI.PanelManager.GetPanelCount">
+  GetPanelCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total number of panels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPanelCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>Number of panels</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_HideCurrentButton_" data-uid="Fallencake.UI.PanelManager.HideCurrentButton*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_HideCurrentButton" data-uid="Fallencake.UI.PanelManager.HideCurrentButton">
+  HideCurrentButton()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideCurrentButton()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_HideCurrentPanel_" data-uid="Fallencake.UI.PanelManager.HideCurrentPanel*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_HideCurrentPanel" data-uid="Fallencake.UI.PanelManager.HideCurrentPanel">
+  HideCurrentPanel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideCurrentPanel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_Initialize_" data-uid="Fallencake.UI.PanelManager.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_Initialize" data-uid="Fallencake.UI.PanelManager.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_NextPanel_" data-uid="Fallencake.UI.PanelManager.NextPanel*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_NextPanel" data-uid="Fallencake.UI.PanelManager.NextPanel">
+  NextPanel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NextPanel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_OpenFirstTab_" data-uid="Fallencake.UI.PanelManager.OpenFirstTab*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_OpenFirstTab" data-uid="Fallencake.UI.PanelManager.OpenFirstTab">
+  OpenFirstTab()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenFirstTab()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_OpenPanel_" data-uid="Fallencake.UI.PanelManager.OpenPanel*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_OpenPanel_System_String_" data-uid="Fallencake.UI.PanelManager.OpenPanel(System.String)">
+  OpenPanel(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenPanel(string newPanel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newPanel</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_OpenPanelByIndex_" data-uid="Fallencake.UI.PanelManager.OpenPanelByIndex*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_OpenPanelByIndex_System_Int32_" data-uid="Fallencake.UI.PanelManager.OpenPanelByIndex(System.Int32)">
+  OpenPanelByIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenPanelByIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_PrevPanel_" data-uid="Fallencake.UI.PanelManager.PrevPanel*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_PrevPanel" data-uid="Fallencake.UI.PanelManager.PrevPanel">
+  PrevPanel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrevPanel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_RefreshPanelStates_" data-uid="Fallencake.UI.PanelManager.RefreshPanelStates*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_RefreshPanelStates" data-uid="Fallencake.UI.PanelManager.RefreshPanelStates">
+  RefreshPanelStates()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Public method to manually trigger panel state update.
+Respects the IsAnimatedPanelSwitch setting for proper behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshPanelStates()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_SelectPanel_" data-uid="Fallencake.UI.PanelManager.SelectPanel*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_SelectPanel_System_Int32_" data-uid="Fallencake.UI.PanelManager.SelectPanel(System.Int32)">
+  SelectPanel(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Public method to select panel by index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectPanel(int panelIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>panelIndex</code> <span class="xref">int</span></dt>
+    <dd><p>Index of panel to select</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_ShowCurrentButton_" data-uid="Fallencake.UI.PanelManager.ShowCurrentButton*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_ShowCurrentButton" data-uid="Fallencake.UI.PanelManager.ShowCurrentButton">
+  ShowCurrentButton()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowCurrentButton()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_PanelManager_ShowCurrentPanel_" data-uid="Fallencake.UI.PanelManager.ShowCurrentPanel*"></a>
+
+  <h3 id="Fallencake_UI_PanelManager_ShowCurrentPanel" data-uid="Fallencake.UI.PanelManager.ShowCurrentPanel">
+  ShowCurrentPanel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowCurrentPanel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RadialSlider | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RadialSlider | ModularUIPack ">
+      
+      <meta name="description" content="Radial slider implementation that maps value to 360&#176; arc with configurable origin and clockwise/counterclockwise fill direction.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.RadialSlider">
+
+
+
+  <h1 id="Fallencake_UI_RadialSlider" data-uid="Fallencake.UI.RadialSlider" class="text-break">
+Class RadialSlider  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Radial slider implementation that maps value to 360° arc with configurable origin
+and clockwise/counterclockwise fill direction.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RadialSlider : Slider, IMultiSelectable, ISlider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">Selectable</span></div>
+      <div><a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html">MultipleGraphicsSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.Slider.html">Slider</a></div>
+      <div><span class="xref">RadialSlider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.IMultiSelectable.html">IMultiSelectable</a></div>
+      <div><a class="xref" href="Fallencake.UI.ISlider.html">ISlider</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__fillImage">Slider._fillImage</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__handle">Slider._handle</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__valueTextLabel">Slider._valueTextLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__inputField">Slider._inputField</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__minValue">Slider._minValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_MinValue">Slider.MinValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__maxValue">Slider._maxValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_MaxValue">Slider.MaxValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__value">Slider._value</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_Value">Slider.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__decimals">Slider._decimals</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_Decimals">Slider.Decimals</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isPercent">Slider._isPercent</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsPercent">Slider.IsPercent</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isAutoSizeEnabled">Slider._isAutoSizeEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsAutoSizeEnabled">Slider.IsAutoSizeEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isValueTextEnabled">Slider._isValueTextEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsValueTextEnabled">Slider.IsValueTextEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isInputFieldEnabled">Slider._isInputFieldEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsInputFieldEnabled">Slider.IsInputFieldEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isWholeNumbers">Slider._isWholeNumbers</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsWholeNumbers">Slider.IsWholeNumbers</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__axis">Slider._axis</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_Axis">Slider.Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__reverseValue">Slider._reverseValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_ReverseValue">Slider.ReverseValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__stepSize">Slider._stepSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isSavingEnabled">Slider._isSavingEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_IsSavingEnabled">Slider.IsSavingEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__valueSaveKey">Slider._valueSaveKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_onValueChanged">Slider.onValueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_onPointerEnter">Slider.onPointerEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_onPointerExit">Slider.onPointerExit</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_DisplayedValue">Slider.DisplayedValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_ValueText">Slider.ValueText</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__hitRectTransform">Slider._hitRectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__currentValueOnPointerDown">Slider._currentValueOnPointerDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__displayedValuePrecision">Slider._displayedValuePrecision</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isLoadedFromSave">Slider._isLoadedFromSave</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__valueChanged">Slider._valueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_k_savingTag">Slider.k_savingTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_s_HandleWarning">Slider.s_HandleWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_s_FillImageWarning">Slider.s_FillImageWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_s_ValueTextWarning">Slider.s_ValueTextWarning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isPointerDown">Slider._isPointerDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider__isPointerUp">Slider._isPointerUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_NormalizedValue">Slider.NormalizedValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_OnRectTransformDimensionsChange">Slider.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_Start">Slider.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_OnEnable">Slider.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_OnDisable">Slider.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_Initialize">Slider.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_UpdateInputFieldListener">Slider.UpdateInputFieldListener()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_FindSelectableOnLeft">Slider.FindSelectableOnLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_FindSelectableOnRight">Slider.FindSelectableOnRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_FindSelectableOnUp">Slider.FindSelectableOnUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_FindSelectableOnDown">Slider.FindSelectableOnDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_">Slider.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_OnPointerExit_UnityEngine_EventSystems_PointerEventData_">Slider.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_LoadState">Slider.LoadState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SaveState">Slider.SaveState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SetValue_System_Single_System_Boolean_">Slider.SetValue(float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_ForceUpdateVisuals">Slider.ForceUpdateVisuals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_UpdateVisuals">Slider.UpdateVisuals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SetFillImage">Slider.SetFillImage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SetValueText">Slider.SetValueText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SetActiveValueTextLabel_System_Boolean_">Slider.SetActiveValueTextLabel(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SetInputFieldValue_System_String_">Slider.SetInputFieldValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_SetActiveInputField_System_Boolean_">Slider.SetActiveInputField(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_UpdateInputField">Slider.UpdateInputField()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_UpdateTextAutoSize">Slider.UpdateTextAutoSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.Slider.html#Fallencake_UI_Slider_HasValueChanged">Slider.HasValueChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__colorableGraphics">MultipleGraphicsSelectable._colorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableGraphics">MultipleGraphicsSelectable._swappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__swappableCanvasGroupe">MultipleGraphicsSelectable._swappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_ColorableGraphics">MultipleGraphicsSelectable.ColorableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableGraphics">MultipleGraphicsSelectable.SwappableGraphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SwappableCanvasGroupe">MultipleGraphicsSelectable.SwappableCanvasGroupe</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__transition">MultipleGraphicsSelectable._transition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SelectableTransition">MultipleGraphicsSelectable.SelectableTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable__tweenCoroutine">MultipleGraphicsSelectable._tweenCoroutine</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_OnDestroy">MultipleGraphicsSelectable.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">MultipleGraphicsSelectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewColorableGraphics">MultipleGraphicsSelectable.AddNewColorableGraphics()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddNewSwappableSprite">MultipleGraphicsSelectable.AddNewSwappableSprite()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_Fallencake_UI_SelectionColorBlock_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, SelectionColorBlock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddColorableGraphic_UnityEngine_UI_Graphic_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_UnityEngine_Color_System_Single_System_Single_">MultipleGraphicsSelectable.AddColorableGraphic(Graphic, Color, Color, Color, Color, Color, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Graphic_Fallencake_UI_SelectionSpriteState_">MultipleGraphicsSelectable.AddSwappableSprite(Graphic, SelectionSpriteState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_AddSwappableSprite_UnityEngine_UI_Image_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_UnityEngine_Sprite_">MultipleGraphicsSelectable.AddSwappableSprite(Image, Sprite, Sprite, Sprite, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fallencake.UI.MultipleGraphicsSelectable.html#Fallencake_UI_MultipleGraphicsSelectable_SetFadingCanvasGroups_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_UnityEngine_CanvasGroup_System_Single_">MultipleGraphicsSelectable.SetFadingCanvasGroups(CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, CanvasGroup, float)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_RadialSlider_CurrentAngle_" data-uid="Fallencake.UI.RadialSlider.CurrentAngle*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_CurrentAngle" data-uid="Fallencake.UI.RadialSlider.CurrentAngle">
+  CurrentAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Angle derived from normalized value (0..360 degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CurrentAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_CurrentAngleRaw_" data-uid="Fallencake.UI.RadialSlider.CurrentAngleRaw*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_CurrentAngleRaw" data-uid="Fallencake.UI.RadialSlider.CurrentAngleRaw">
+  CurrentAngleRaw
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Angle derived from raw value without normalization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CurrentAngleRaw { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_Direction_" data-uid="Fallencake.UI.RadialSlider.Direction*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_Direction" data-uid="Fallencake.UI.RadialSlider.Direction">
+  Direction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fill direction around the circle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RadialSlider.FillDirection Direction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.RadialSlider.html">RadialSlider</a>.<a class="xref" href="Fallencake.UI.RadialSlider.FillDirection.html">FillDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_RadialSlider_GraphicUpdateComplete_" data-uid="Fallencake.UI.RadialSlider.GraphicUpdateComplete*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_GraphicUpdateComplete" data-uid="Fallencake.UI.RadialSlider.GraphicUpdateComplete">
+  GraphicUpdateComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ICanvasElement.GraphicUpdateComplete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_HandleSliderMouseInput_" data-uid="Fallencake.UI.RadialSlider.HandleSliderMouseInput*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_HandleSliderMouseInput_UnityEngine_EventSystems_PointerEventData_System_Boolean_" data-uid="Fallencake.UI.RadialSlider.HandleSliderMouseInput(UnityEngine.EventSystems.PointerEventData,System.Boolean)">
+  HandleSliderMouseInput(PointerEventData, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void HandleSliderMouseInput(PointerEventData eventData, bool isValueClamped)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+    <dt><code>isValueClamped</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_LayoutComplete_" data-uid="Fallencake.UI.RadialSlider.LayoutComplete*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_LayoutComplete" data-uid="Fallencake.UI.RadialSlider.LayoutComplete">
+  LayoutComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ICanvasElement.LayoutComplete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_Rebuild_" data-uid="Fallencake.UI.RadialSlider.Rebuild*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="Fallencake.UI.RadialSlider.Rebuild(UnityEngine.UI.CanvasUpdate)">
+  Rebuild(CanvasUpdate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuild the element for the given stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate executing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>executing</code> <span class="xref">CanvasUpdate</span></dt>
+    <dd><p>The current CanvasUpdate stage being rebuild.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_SetHandlePosition_" data-uid="Fallencake.UI.RadialSlider.SetHandlePosition*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_SetHandlePosition" data-uid="Fallencake.UI.RadialSlider.SetHandlePosition">
+  SetHandlePosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetHandlePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_RadialSlider_SetOrigin_" data-uid="Fallencake.UI.RadialSlider.SetOrigin*"></a>
+
+  <h3 id="Fallencake_UI_RadialSlider_SetOrigin" data-uid="Fallencake.UI.RadialSlider.SetOrigin">
+  SetOrigin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetOrigin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

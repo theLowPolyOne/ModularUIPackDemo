@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BaseSelector | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BaseSelector | ModularUIPack ">
+      
+      <meta name="description" content="Base component for selectable UI controls that manage a list of items and synchronize labels, icons, indicators, animations, and saving behavior.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.BaseSelector">
+
+
+
+  <h1 id="Fallencake_UI_BaseSelector" data-uid="Fallencake.UI.BaseSelector" class="text-break">
+Class BaseSelector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base component for selectable UI controls that manage a list of items and synchronize
+labels, icons, indicators, animations, and saving behavior.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseSelector : MonoBehaviour, ISaveable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">BaseSelector</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ISaveable.html">ISaveable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.Selector.html">Selector</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+  <h2 id="Fallencake_UI_BaseSelector_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Provides common properties for visibility, spacing, scaling, saving, and events. Derived selectors
+implement content update hooks and selection logic via <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_SelectItem_System_Int32_">SelectItem(int)</a>.</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector_OnSelectedIndexChanged" data-uid="Fallencake.UI.BaseSelector.OnSelectedIndexChanged">
+  OnSelectedIndexChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invoked when the selected index changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectedIndexEvent OnSelectedIndexChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SelectedIndexEvent.html">SelectedIndexEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector_OnSelectedTextChanged" data-uid="Fallencake.UI.BaseSelector.OnSelectedTextChanged">
+  OnSelectedTextChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invoked when the displayed text changes due to selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectedTextEvent OnSelectedTextChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.SelectedTextEvent.html">SelectedTextEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector_PlayerPrefsKeyPrefix" data-uid="Fallencake.UI.BaseSelector.PlayerPrefsKeyPrefix">
+  PlayerPrefsKeyPrefix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string PlayerPrefsKeyPrefix = &quot;ModularSelector_&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__basicContentLayout" data-uid="Fallencake.UI.BaseSelector._basicContentLayout">
+  _basicContentLayout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected HorizontalOrVerticalLayoutGroup _basicContentLayout</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HorizontalOrVerticalLayoutGroup</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__basicIcon" data-uid="Fallencake.UI.BaseSelector._basicIcon">
+  _basicIcon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _basicIcon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__basicTextLabel" data-uid="Fallencake.UI.BaseSelector._basicTextLabel">
+  _basicTextLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected TMP_Text _basicTextLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__contentSpacing" data-uid="Fallencake.UI.BaseSelector._contentSpacing">
+  _contentSpacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The spacing between the content components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0, 100)]
+protected int _contentSpacing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__defaultItemIndex" data-uid="Fallencake.UI.BaseSelector._defaultItemIndex">
+  _defaultItemIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of the default item in the items list used when the selector is initialized if saving is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected int _defaultItemIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__iconScale" data-uid="Fallencake.UI.BaseSelector._iconScale">
+  _iconScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The scale of the icon component when it is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0.25, 5)]
+protected float _iconScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__indicatorPrefab" data-uid="Fallencake.UI.BaseSelector._indicatorPrefab">
+  _indicatorPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected GameObject _indicatorPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__indicatorsContainer" data-uid="Fallencake.UI.BaseSelector._indicatorsContainer">
+  _indicatorsContainer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Transform _indicatorsContainer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__invertAnimation" data-uid="Fallencake.UI.BaseSelector._invertAnimation">
+  _invertAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When enabled, creates an inverted animation behavior.
+When selecting the next item in the Items list, it will play the previous animation, and when selecting the previous item,
+it will play the next animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _invertAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__invokeOnInitialization" data-uid="Fallencake.UI.BaseSelector._invokeOnInitialization">
+  _invokeOnInitialization
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether callbacks should be invoked when the selector is initialized.
+When enabled, the events will be triggered during initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _invokeOnInitialization</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__isIconEnabled" data-uid="Fallencake.UI.BaseSelector._isIconEnabled">
+  _isIconEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls the visibility of icon components and affects the layout of selector content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isIconEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__isIndicatorsEnabled" data-uid="Fallencake.UI.BaseSelector._isIndicatorsEnabled">
+  _isIndicatorsEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls the visibility of indicators container component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isIndicatorsEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__isInitialized" data-uid="Fallencake.UI.BaseSelector._isInitialized">
+  _isInitialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isInitialized</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__isSavingEnabled" data-uid="Fallencake.UI.BaseSelector._isSavingEnabled">
+  _isSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the selector's state can be saved and loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isSavingEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__isTextEnabled" data-uid="Fallencake.UI.BaseSelector._isTextEnabled">
+  _isTextEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls the visibility of text components and affects the layout of selector content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isTextEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__items" data-uid="Fallencake.UI.BaseSelector._items">
+  _items
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected List&lt;SelectorItem&gt; _items</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.SelectorItem.html">SelectorItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__loopSelection" data-uid="Fallencake.UI.BaseSelector._loopSelection">
+  _loopSelection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When enabled, the selector will loop through the items when the first or last item is selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _loopSelection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__nextAnimator" data-uid="Fallencake.UI.BaseSelector._nextAnimator">
+  _nextAnimator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ModularAnimator _nextAnimator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ModularAnimator.html">ModularAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__previousAnimator" data-uid="Fallencake.UI.BaseSelector._previousAnimator">
+  _previousAnimator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ModularAnimator _previousAnimator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ModularAnimator.html">ModularAnimator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__saveKey" data-uid="Fallencake.UI.BaseSelector._saveKey">
+  _saveKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The string key used to save and load the selector's state in PlayerPrefs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected string _saveKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__secondaryContentLayout" data-uid="Fallencake.UI.BaseSelector._secondaryContentLayout">
+  _secondaryContentLayout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected HorizontalOrVerticalLayoutGroup _secondaryContentLayout</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HorizontalOrVerticalLayoutGroup</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__secondaryIcon" data-uid="Fallencake.UI.BaseSelector._secondaryIcon">
+  _secondaryIcon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _secondaryIcon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__secondaryTextLabel" data-uid="Fallencake.UI.BaseSelector._secondaryTextLabel">
+  _secondaryTextLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected TMP_Text _secondaryTextLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector__selectedItemIndex" data-uid="Fallencake.UI.BaseSelector._selectedItemIndex">
+  _selectedItemIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _selectedItemIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector_s_IndicatorWarning" data-uid="Fallencake.UI.BaseSelector.s_IndicatorWarning">
+  s_IndicatorWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly string s_IndicatorWarning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector_s_ItemsValidationWarning" data-uid="Fallencake.UI.BaseSelector.s_ItemsValidationWarning">
+  s_ItemsValidationWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly string s_ItemsValidationWarning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_BaseSelector_s_TextLabelWarning" data-uid="Fallencake.UI.BaseSelector.s_TextLabelWarning">
+  s_TextLabelWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly string s_TextLabelWarning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_BaseSelector_ContentSpacing_" data-uid="Fallencake.UI.BaseSelector.ContentSpacing*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_ContentSpacing" data-uid="Fallencake.UI.BaseSelector.ContentSpacing">
+  ContentSpacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ContentSpacing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_DefaultItemIndex_" data-uid="Fallencake.UI.BaseSelector.DefaultItemIndex*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_DefaultItemIndex" data-uid="Fallencake.UI.BaseSelector.DefaultItemIndex">
+  DefaultItemIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DefaultItemIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IconScale_" data-uid="Fallencake.UI.BaseSelector.IconScale*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IconScale" data-uid="Fallencake.UI.BaseSelector.IconScale">
+  IconScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float IconScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_InvertAnimation_" data-uid="Fallencake.UI.BaseSelector.InvertAnimation*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_InvertAnimation" data-uid="Fallencake.UI.BaseSelector.InvertAnimation">
+  InvertAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvertAnimation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_InvokeOnInitialization_" data-uid="Fallencake.UI.BaseSelector.InvokeOnInitialization*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_InvokeOnInitialization" data-uid="Fallencake.UI.BaseSelector.InvokeOnInitialization">
+  InvokeOnInitialization
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvokeOnInitialization { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IsIconEnabled_" data-uid="Fallencake.UI.BaseSelector.IsIconEnabled*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IsIconEnabled" data-uid="Fallencake.UI.BaseSelector.IsIconEnabled">
+  IsIconEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIconEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IsIndicatorsEnabled_" data-uid="Fallencake.UI.BaseSelector.IsIndicatorsEnabled*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IsIndicatorsEnabled" data-uid="Fallencake.UI.BaseSelector.IsIndicatorsEnabled">
+  IsIndicatorsEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIndicatorsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IsInitialized_" data-uid="Fallencake.UI.BaseSelector.IsInitialized*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IsInitialized" data-uid="Fallencake.UI.BaseSelector.IsInitialized">
+  IsInitialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the selector finished its initialization routine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IsSavingEnabled_" data-uid="Fallencake.UI.BaseSelector.IsSavingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IsSavingEnabled" data-uid="Fallencake.UI.BaseSelector.IsSavingEnabled">
+  IsSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables save/load behavior for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSavingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IsTextEnabled_" data-uid="Fallencake.UI.BaseSelector.IsTextEnabled*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IsTextEnabled" data-uid="Fallencake.UI.BaseSelector.IsTextEnabled">
+  IsTextEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTextEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_LoopSelection_" data-uid="Fallencake.UI.BaseSelector.LoopSelection*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_LoopSelection" data-uid="Fallencake.UI.BaseSelector.LoopSelection">
+  LoopSelection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoopSelection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_SaveKey_" data-uid="Fallencake.UI.BaseSelector.SaveKey*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_SaveKey" data-uid="Fallencake.UI.BaseSelector.SaveKey">
+  SaveKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>PlayerPrefs key used to persist the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_SelectedItemIndex_" data-uid="Fallencake.UI.BaseSelector.SelectedItemIndex*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_SelectedItemIndex" data-uid="Fallencake.UI.BaseSelector.SelectedItemIndex">
+  SelectedItemIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current selected item index within <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector__items">_items</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedItemIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_BaseSelector_Awake_" data-uid="Fallencake.UI.BaseSelector.Awake*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_Awake" data-uid="Fallencake.UI.BaseSelector.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_HandleSelectedIndexChanged_" data-uid="Fallencake.UI.BaseSelector.HandleSelectedIndexChanged*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_HandleSelectedIndexChanged" data-uid="Fallencake.UI.BaseSelector.HandleSelectedIndexChanged">
+  HandleSelectedIndexChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleSelectedIndexChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_HandleSelectedTextChanged_" data-uid="Fallencake.UI.BaseSelector.HandleSelectedTextChanged*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_HandleSelectedTextChanged" data-uid="Fallencake.UI.BaseSelector.HandleSelectedTextChanged">
+  HandleSelectedTextChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleSelectedTextChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_Initialize_" data-uid="Fallencake.UI.BaseSelector.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_Initialize" data-uid="Fallencake.UI.BaseSelector.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_InvokeInitialSelection_" data-uid="Fallencake.UI.BaseSelector.InvokeInitialSelection*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_InvokeInitialSelection" data-uid="Fallencake.UI.BaseSelector.InvokeInitialSelection">
+  InvokeInitialSelection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvokeInitialSelection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_IsDestroyed_" data-uid="Fallencake.UI.BaseSelector.IsDestroyed*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_IsDestroyed" data-uid="Fallencake.UI.BaseSelector.IsDestroyed">
+  IsDestroyed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this component has been destroyed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsDestroyed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if the component instance is no longer valid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_LoadState_" data-uid="Fallencake.UI.BaseSelector.LoadState*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_LoadState" data-uid="Fallencake.UI.BaseSelector.LoadState">
+  LoadState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the current selection from persistent storage, or uses <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_DefaultItemIndex">DefaultItemIndex</a> if disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_SaveState_" data-uid="Fallencake.UI.BaseSelector.SaveState*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_SaveState" data-uid="Fallencake.UI.BaseSelector.SaveState">
+  SaveState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Persists the current selected index if <a class="xref" href="Fallencake.UI.BaseSelector.html#Fallencake_UI_BaseSelector_IsSavingEnabled">IsSavingEnabled</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_SelectItem_" data-uid="Fallencake.UI.BaseSelector.SelectItem*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_SelectItem_System_Int32_" data-uid="Fallencake.UI.BaseSelector.SelectItem(System.Int32)">
+  SelectItem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects an item by index and updates visuals in derived implementations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SelectItem(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>Zero-based index of the item to select.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_UpdateContentLayout_" data-uid="Fallencake.UI.BaseSelector.UpdateContentLayout*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_UpdateContentLayout" data-uid="Fallencake.UI.BaseSelector.UpdateContentLayout">
+  UpdateContentLayout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void UpdateContentLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_UpdateIndicators_" data-uid="Fallencake.UI.BaseSelector.UpdateIndicators*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_UpdateIndicators" data-uid="Fallencake.UI.BaseSelector.UpdateIndicators">
+  UpdateIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void UpdateIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_UpdateLabelAndIcon_" data-uid="Fallencake.UI.BaseSelector.UpdateLabelAndIcon*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_UpdateLabelAndIcon" data-uid="Fallencake.UI.BaseSelector.UpdateLabelAndIcon">
+  UpdateLabelAndIcon()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void UpdateLabelAndIcon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_UpdateVisuals_" data-uid="Fallencake.UI.BaseSelector.UpdateVisuals*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_UpdateVisuals" data-uid="Fallencake.UI.BaseSelector.UpdateVisuals">
+  UpdateVisuals()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateVisuals()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_BaseSelector_ValidateComponents_" data-uid="Fallencake.UI.BaseSelector.ValidateComponents*"></a>
+
+  <h3 id="Fallencake_UI_BaseSelector_ValidateComponents" data-uid="Fallencake.UI.BaseSelector.ValidateComponents">
+  ValidateComponents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ValidateComponents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Fallencake.UI.Selector.html">Selector</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

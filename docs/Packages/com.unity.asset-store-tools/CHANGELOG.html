@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this package will be documented in this file.</p>
+<h2 id="1201---2025-01-16">[12.0.1] - 2025-01-16</h2>
+<h3 id="preview-generator-changes">Preview Generator changes</h3>
+<ul>
+<li>Updated generated preview collection UI to display the asset extension</li>
+<li>Fixed an issue with some prefab and model asset types not generating previews</li>
+<li>Fixed an error that could occur when changing scenes after deleting a preview source asset</li>
+</ul>
+<h2 id="1200---2025-01-13">[12.0.0] - 2025-01-13</h2>
+<h3 id="general-changes">General changes</h3>
+<ul>
+<li>The code comprising the Asset Store Publishing Tools has been refactored.</li>
+<li>Added dependency on Newtonsoft Json</li>
+</ul>
+<h3 id="uploader-changes">Uploader changes</h3>
+<ul>
+<li>Updated window to retain its state if closed unless a domain reload occurs</li>
+<li>Added option to generate higher resolution asset previews when exporting</li>
+<li>Fixed a rare issue where authentication would fail</li>
+<li>Minor UI tweaks</li>
+</ul>
+<h3 id="validator-changes">Validator changes</h3>
+<ul>
+<li>Added validation tests for:
+<ul>
+<li>Package naming</li>
+<li>Project Template assets</li>
+</ul>
+</li>
+<li>Updated the Type Namespace validation test to check for Unity top level namespaces</li>
+</ul>
+<h3 id="exporter-changes">Exporter changes</h3>
+<ul>
+<li>Updated how asset previews are generated/included for the  package that is being exported</li>
+</ul>
+<h3 id="preview-generator">Preview Generator</h3>
+<ul>
+<li>Added a Preview Generator window that can be used to pre-generate and inspect package previews before exporting</li>
+</ul>
+<h2 id="1144---2024-11-29">[11.4.4] - 2024-11-29</h2>
+<h3 id="validator-changes-1">Validator Changes</h3>
+<ul>
+<li>The validator UI window description section can now be expanded or shrunk to take up less screen space</li>
+<li>Updated severity of the Model Importer Logs validation test</li>
+</ul>
+<h3 id="exporter-changes-1">Exporter Changes</h3>
+<ul>
+<li>Updated exporter to always exclude hidden files and folders beginning with the dot symbol (e.g.: .hiddenFolder/ or .hiddenfile.txt)</li>
+<li>Updated exporter to explicitly exclude extended attribute files when exporting packages on macOS systems</li>
+</ul>
+<h3 id="other">Other</h3>
+<ul>
+<li>Moved the Asset Store Tools toolbar items into the Tools section</li>
+<li>Fixed several window-related compilation warnings when using Unity 6 versions of the Editor</li>
+</ul>
+<h2 id="1143---2024-08-01">[11.4.3] - 2024-08-01</h2>
+<h3 id="validator-changes-2">Validator Changes</h3>
+<ul>
+<li>Hotfix: Remove non-ascii characters from the demo scene validation</li>
+</ul>
+<h2 id="1142---2024-07-30">[11.4.2] - 2024-07-30</h2>
+<h3 id="validator-changes-3">Validator Changes</h3>
+<ul>
+<li>Check for nested .unitypackage files in the demo scene validation</li>
+<li>Prevent normal map test from erroring when misc importer types are detected</li>
+<li>Remove Templates category from the uncompressed images requirement list</li>
+</ul>
+<h2 id="1141---2024-05-10">[11.4.1] - 2024-05-10</h2>
+<h3 id="exporter-changes-2">Exporter Changes</h3>
+<ul>
+<li>Fixed an issue with bundled plugin folder contents not being exported</li>
+</ul>
+<h3 id="other-1">Other</h3>
+<ul>
+<li>Miscellaneous internal changes</li>
+</ul>
+<h2 id="1140---2024-01-23">[11.4.0] - 2024-01-23</h2>
+<h3 id="uploader-changes-1">Uploader Changes</h3>
+<ul>
+<li>Added prevention of uploading packages larger than 6 GB</li>
+<li>Added a prompt to allow automatically generating meta files within hidden folders</li>
+<li>Fixed some obsolete API usage warnings in newer Unity versions</li>
+</ul>
+<h3 id="validator-changes-4">Validator Changes</h3>
+<ul>
+<li>Added validation tests for:
+<ul>
+<li>Animation Clip take names</li>
+<li>Model import logs</li>
+<li>Uncompressed Package size</li>
+</ul>
+</li>
+<li>Updated the fail severity of Audio Clipping validation test</li>
+<li>Updated the Demo Scene test to treat default scenes with custom skyboxes as valid demo scenes</li>
+<li>Fixed some obsolete API usage warnings in newer Unity versions</li>
+</ul>
+<h3 id="other-2">Other</h3>
+<ul>
+<li>Added an option to check for Asset Store Publishing Tools updates</li>
+</ul>
+<h2 id="1131---2023-08-14">[11.3.1] - 2023-08-14</h2>
+<h3 id="uploader-changes-2">Uploader Changes</h3>
+<ul>
+<li>Added the option to select indirect package dependencies from the project (e.g. Mathematics package installed by the Burst package)</li>
+</ul>
+<h3 id="validator-changes-5">Validator Changes</h3>
+<ul>
+<li>Updated the Texture Dimensions test to ignore 'Sprite' and 'Editor GUI' texture types</li>
+</ul>
+<h3 id="exporter-changes-3">Exporter Changes</h3>
+<ul>
+<li>Updated exporter to ignore the 'ProjectSettings/ProjectVersion.txt' asset when exporting 'Complete Project' category packages</li>
+</ul>
+<h2 id="1130---2023-07-04">[11.3.0] - 2023-07-04</h2>
+<h3 id="uploader-changes-3">Uploader Changes</h3>
+<ul>
+<li>Added the option to validate a pre-exported package</li>
+<li>Added the option to export a .unitypackage file without uploading</li>
+<li>Updated the dependency selection UI</li>
+</ul>
+<h3 id="validator-changes-6">Validator Changes</h3>
+<ul>
+<li>Added the option to validate several asset paths at once
+<ul>
+<li>Note: when validating package that is comprised of several folders (e.g. Assets/MyPackage +
+Assets/StreamingAssets + Assets/WebGLTemplates), please select all applicable paths that would be included in the package</li>
+</ul>
+</li>
+<li>Added several new validation tests for:
+<ul>
+<li>File Menu Names</li>
+<li>Compressed files</li>
+<li>Model Types</li>
+<li>Texture Dimensions</li>
+<li>Particle Systems</li>
+<li>Normal Map Textures</li>
+<li>Audio Clipping</li>
+<li>Path Lengths</li>
+<li>Script Compilation</li>
+</ul>
+</li>
+<li>Updated validation test severities based on package category</li>
+<li>Updated validation tests to each have their own test logic class</li>
+<li>Updated validation tests to be displayed in alphabetical order</li>
+<li>Fixed several issues with the namespace check test</li>
+<li>Fixed scenes in Samples~ folders not being taken into account for the sample scene check test</li>
+<li>Other internal changes</li>
+</ul>
+<h3 id="exporter-changes-4">Exporter Changes</h3>
+<ul>
+<li>Package exporter is now a separate module (similar to Uploader and Validator)</li>
+<li>Fixed hidden folders being included when exporting package content
+<ul>
+<li>Note: this prevents an issue with the Unity Editor, where exported hidden folders would appear in the Project window
+as empty folders when imported, despite having content on disk. Content nested within hidden folders is still collected,
+provided it contains unique .meta files</li>
+</ul>
+</li>
+</ul>
+<h2 id="1122---2023-02-23">[11.2.2] - 2023-02-23</h2>
+<h3 id="validator-changes-7">Validator Changes</h3>
+<ul>
+<li>Updated the 'LOD Setup' test to address some issues
+<ul>
+<li>Added additional checks for LOD renderers (inactive renderer check, LOD Group reference check, relative hierarchy position to LOD Group check)</li>
+<li>LOD Group Component is no longer required to be on the root of the Prefab</li>
+<li>Updated the test result message interface when invalid Prefabs are found</li>
+</ul>
+</li>
+</ul>
+<h2 id="1121---2023-01-17">[11.2.1] - 2023-01-17</h2>
+<h3 id="uploader-changes-4">Uploader Changes</h3>
+<ul>
+<li>Added a more informative error when exporting content with clashing guid meta files in hidden folders</li>
+<li>Fixed a compilation issue for Unity 2020.1 and 2020.2</li>
+<li>Fixed a rare error condition when queueing multiple package uploads in quick succession</li>
+<li>Fixed Asset Store Uploader state not being properly reset if the uploading process fails</li>
+</ul>
+<h3 id="validator-changes-8">Validator Changes</h3>
+<ul>
+<li>Updated the Asset Store Validator description</li>
+<li>Fixed a rare memory overflow issue when performing package validation</li>
+</ul>
+<h2 id="1120---2022-11-03">[11.2.0] - 2022-11-03</h2>
+<h3 id="uploader-changes-5">Uploader Changes</h3>
+<ul>
+<li>Uploader will now use the custom package exporter by default
+<ul>
+<li>An option to use the legacy (native) exporter can be found in the Asset Store Publishing Tools' settings window</li>
+</ul>
+</li>
+<li>When exporting from the Assets folder, package dependencies can now be selected individually instead of being a choice between 'All' or 'None'
+<ul>
+<li>This option is only available with the custom exporter</li>
+</ul>
+</li>
+<li>Changed the way the Uploader reports completed uploading tasks
+<ul>
+<li>Modal pop-up has been replaced by a new UI view state</li>
+<li>Added an option to the Asset Store Publishing Tools' Settings to display the pop-up after a completed upload</li>
+</ul>
+</li>
+<li>Changed exported .unitypackage files to have distinguishable file names</li>
+<li>Fixed the Uploader window indefinitely stalling at 100% upload progress when a response from the Asset Store server is not received</li>
+<li>Fixed native package exporter producing broken packages when the export path contained hidden folders</li>
+<li>Fixed an issue with high CPU usage when uploading packages</li>
+<li>Fixed Asset Store Publishing Tools' settings not being saved between Editor sessions on macOS</li>
+<li>Other minor changes and tweaks</li>
+</ul>
+<h3 id="validator-changes-9">Validator Changes</h3>
+<ul>
+<li>Added two new tests:
+<ul>
+<li>'Types have namespaces': checks whether scripts and native libraries under the validated path are nested under a namespace</li>
+<li>'Consistent line endings': checks whether scripts under the validated path have consistent line endings. This is similar to the warning from the Unity Editor compilation pipeline when a script contains both Windows and UNIX line endings.</li>
+</ul>
+</li>
+<li>Improved 'Reset Prefabs' test to display and be more informative about prefabs with unusually low transform values</li>
+<li>Improved 'SpeedTree asset inclusion' test to search for '.st' files</li>
+<li>Improved 'Documentation inclusion' test to treat '.md' files as valid documentation files</li>
+<li>Improved 'Lossy audio file inclusion' test to treat '.aif' and '.aiff' files as valid non-lossy audio files</li>
+<li>Improved 'Lossy audio file inclusion' test to search the project for non-lossy variants of existing lossy audio files</li>
+<li>Removed 'Duplicate animation names' test</li>
+<li>Tweaked validation severities for several tests</li>
+<li>Other minor changes and tweaks</li>
+</ul>
+<h2 id="1110---2022-09-14">[11.1.0] - 2022-09-14</h2>
+<h3 id="uploader-changes-6">Uploader Changes</h3>
+<ul>
+<li>Package Publisher Portal links can now be opened for all packages regardless of package status</li>
+<li>External Dependency Manager can now be selected as a 'Special Folder' if found in the root Assets folder</li>
+</ul>
+<h3 id="validator-changes-10">Validator Changes</h3>
+<ul>
+<li>Added category selection for the Validator
+<ul>
+<li>Categories help determine the outcome of package validation more accurately. For example, documentation is not crucial for art packages, but is required for tooling packages.</li>
+</ul>
+</li>
+<li>Added a list of prefabs with missing mesh references to 'Meshes have Prefabs' test when the test fails</li>
+<li>Corrected the message for a passing 'Shader compilation errors' test</li>
+<li>Improved the floating point precision accuracy of 'Reset Prefabs' test</li>
+<li>Fixed 'Missing Components in Assets' test checking all project folders instead of only the set path</li>
+<li>Fixed 'Prefabs for meshes' test not checking meshes in certain paths</li>
+<li>Fixed 'Reset Prefabs' test failing because of Prefabs with a Rect Transform Component</li>
+<li>Fixed 'Reset Prefabs' test ignoring Transform rotation</li>
+<li>Fixed test description text overlapping in some cases</li>
+<li>Other minor changes and tweaks</li>
+</ul>
+<h2 id="1102---2022-08-09">[11.0.2] - 2022-08-09</h2>
+<ul>
+<li>Corrected some namespaces which were causing issues when deriving classes from Editor class</li>
+</ul>
+<h2 id="1101---2022-08-05">[11.0.1] - 2022-08-05</h2>
+<h3 id="uploader-changes-7">Uploader Changes</h3>
+<ul>
+<li>Added Settings window (Asset Store Tools &gt; Settings)</li>
+<li>Added Soft/Junction Symlink support (enable through Settings)</li>
+<li>Added workflow and path selection serialization (workflow saved locally, paths locally and online)</li>
+<li>No more logs when using the <code>-nullable</code> compiler option (thanks @alfish)</li>
+<li>Some API refactoring in preparation for CLI support</li>
+<li>Other minor fixes/improvements</li>
+</ul>
+<p><strong>Note:</strong> when updating Asset Store Tools from the Package Manager, don't forget to remove the old version from the project (V11.0.0) before importing the new one (V11.0.1)</p>
+<h2 id="1100---2022-07-20">[11.0.0] - 2022-07-20</h2>
+<h3 id="uploader-changes-8">Uploader changes</h3>
+<ul>
+<li>UI has been reworked using UI Toolkit</li>
+<li>New login window, allowing to login using Unity Cloud Services</li>
+<li>Improved top bar, including search and sorting</li>
+<li>Draft packages moved to the top</li>
+<li>Added category, size, and last modified date next to the package</li>
+<li>Added a link to the publishing portal next to the package</li>
+<li>New uploading flow: “Pre-exported .unitypackage”</li>
+<li>Previous uploading flow (folder selection) has been renamed to “From Assets Folder”</li>
+<li>Dependencies check has been renamed to “Include Package Manifest” for clarity</li>
+<li>Special Folders can now be selected and uploaded together with the package’s main folder (i.e. StreamingAssets, Plugins)</li>
+<li>You can now upload to multiple packages at the same time without waiting for the first one to finish</li>
+<li>Package can now be validated in the Uploading window by pressing the “Validate” button</li>
+<li>Added refresh and logout buttons to the bottom toolbar for easier access</li>
+<li>Packages caching - package information will no longer be redownloaded every time you open the Uploader window during the same Editor session</li>
+<li>(Experimental) Custom exporter - will export your package ~2 times faster, but may miss some asset previews in the final product. To enable it - click three dots on the top left side of the window and enable “Use Custom Exporting”</li>
+</ul>
+<h3 id="validator-changes-11">Validator changes</h3>
+<ul>
+<li>UI has been reworked using UI Toolkit</li>
+<li>New tests based on the new guidelines</li>
+<li>Updated tests’ titles, descriptions, and error reporting</li>
+</ul>
+<h2 id="505---2021-11-04">[5.0.5] - 2021-11-04</h2>
+<ul>
+<li>Fixed namespace issues</li>
+</ul>
+<h2 id="504---2020-07-28">[5.0.4] - 2020-07-28</h2>
+<ul>
+<li>Fixed issues with Unity 2020.1</li>
+</ul>
+<h2 id="503---2020-05-07">[5.0.3] - 2020-05-07</h2>
+<ul>
+<li>Remove &quot;Remove Standard Assets&quot; check</li>
+</ul>
+<h2 id="502---2020-04-21">[5.0.2] - 2020-04-21</h2>
+<ul>
+<li>Enable auto login with Unity account</li>
+<li>Upload package with thread</li>
+</ul>
+<h2 id="501---2020-03-23">[5.0.1] - 2020-03-23</h2>
+<ul>
+<li>Fix domain resolve issue</li>
+</ul>
+<h2 id="500---2019-10-09">[5.0.0] - 2019-10-09</h2>
+<ul>
+<li>Added &quot;Package Validator&quot; tool</li>
+<li>Added Help window</li>
+<li>Added logout confirmation popup</li>
+<li>Updated toolbar menu layout</li>
+<li>Removed &quot;Mass Labeler&quot; tool</li>
+<li>Updated layout of Login and Package Upload windows</li>
+<li>Error messages are now more elaborate and user-friendly</li>
+<li>Removed deprecated &quot;Main Assets&quot; step from the Package Upload window</li>
+<li>Package Upload window now has a step for including package manager dependencies</li>
+<li>Tooltips are now added to each upload process step</li>
+</ul>
+<h2 id="410---2018-05-14">[4.1.0] - 2018-05-14</h2>
+<ul>
+<li>Made Tool compatible with 2017.1</li>
+</ul>
+<h2 id="407---2017-07-10">[4.0.7] - 2017-07-10</h2>
+<ul>
+<li>Tweaked menu items.</li>
+</ul>
+<h2 id="406---2016-07-15">[4.0.6] - 2016-07-15</h2>
+<ul>
+<li>Improved error messages.</li>
+</ul>
+<h2 id="405---2016-03-17">[4.0.5] - 2016-03-17</h2>
+<ul>
+<li>Enabling upload of fbm files.</li>
+</ul>
+<h2 id="404---2015-11-16">[4.0.4] - 2015-11-16</h2>
+<ul>
+<li>Login improvements</li>
+</ul>
+<h2 id="403---2015-11-16">[4.0.3] - 2015-11-16</h2>
+<ul>
+<li>Prepare the Tools for Unity 5.3</li>
+</ul>
+<h2 id="402---2015-10-23">[4.0.2] - 2015-10-23</h2>
+<ul>
+<li>Fixed issue where Upload button would not work for some projects.</li>
+<li>Fixed issues for publishers that only had one package.</li>
+</ul>
+<h2 id="400---2015-09-01">[4.0.0] - 2015-09-01</h2>
+<ul>
+<li>Replaced Package Manager with Package Upload. Package management is now handled by Publisher Administration</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

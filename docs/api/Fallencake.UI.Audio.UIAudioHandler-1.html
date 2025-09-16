@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UIAudioHandler&lt;T&gt; | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UIAudioHandler&lt;T&gt; | ModularUIPack ">
+      
+      <meta name="description" content="Generic base class for UI audio handlers that wires UI events to sound playback and provides shared management via .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Audio.UIAudioHandler`1">
+
+
+
+  <h1 id="Fallencake_UI_Audio_UIAudioHandler_1" data-uid="Fallencake.UI.Audio.UIAudioHandler`1" class="text-break">
+Class UIAudioHandler&lt;T&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a>.<a class="xref" href="Fallencake.UI.Audio.html">Audio</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Generic base class for UI audio handlers that wires UI events to sound playback
+and provides shared management via <a class="xref" href="Fallencake.UI.Audio.AudioManager.html">AudioManager</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UIAudioHandler&lt;T&gt; : IAudioHandler, IAudioEventHandler where T : IAudioProvider</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">UIAudioHandler&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.Audio.IAudioHandler.html">IAudioHandler</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IAudioEventHandler.html">IAudioEventHandler</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.Audio.DropdownAudioHandler.html">DropdownAudioHandler</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.InputFieldAudioHandler.html">InputFieldAudioHandler</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.ProgressBarAudioHandler.html">ProgressBarAudioHandler</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.ToggleAudioHandler.html">ToggleAudioHandler</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1__ctor_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.#ctor*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1__ctor__0_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.#ctor(`0)">
+  UIAudioHandler(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIAudioHandler(T provider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>provider</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_AudioSource_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.AudioSource*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_AudioSource" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.AudioSource">
+  AudioSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Audio source for playing sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AudioSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_Component_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Component*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_Component" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Component">
+  Component
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Component used for coroutines and context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour Component { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_EnableSounds_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.EnableSounds*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_EnableSounds" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.EnableSounds">
+  EnableSounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether sounds are enabled for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableSounds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_Selectable_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Selectable*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_Selectable" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Selectable">
+  Selectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Associated selectable used to attach event triggers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable Selectable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_Volume_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Volume*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_Volume" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Volume">
+  Volume
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Volume for sound playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1__provider_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1._provider*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1__provider" data-uid="Fallencake.UI.Audio.UIAudioHandler`1._provider">
+  _provider
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T _provider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_AddEventTriggers_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.AddEventTriggers*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_AddEventTriggers" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.AddEventTriggers">
+  AddEventTriggers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds event handlers to the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddEventTriggers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_Dispose_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Dispose*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_Dispose" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases resources and unregisters from the manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_IsInteractable_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.IsInteractable*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_IsInteractable" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.IsInteractable">
+  IsInteractable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the component is available for interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsInteractable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_OnDeselect_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnDeselect*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_OnDeselect_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnDeselect(UnityEngine.EventSystems.BaseEventData)">
+  OnDeselect(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the element is deselected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDeselect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_OnPointerClick_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnPointerClick*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the element is clicked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_OnPointerEnter_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnPointerEnter*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerEnter(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the pointer enters the element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_OnPointerExit_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnPointerExit*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerExit(PointerEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the pointer exits the element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_OnSelect_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnSelect*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_OnSelect_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnSelect(UnityEngine.EventSystems.BaseEventData)">
+  OnSelect(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the element is selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSelect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_OnSubmit_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnSubmit*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the element is submitted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_PlayDeselectSound_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.PlayDeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_PlayDeselectSound" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.PlayDeselectSound">
+  PlayDeselectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the deselect sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PlayDeselectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_PlayPressSound_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.PlayPressSound*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_PlayPressSound" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.PlayPressSound">
+  PlayPressSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the press sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PlayPressSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_PlaySelectSound_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.PlaySelectSound*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_PlaySelectSound" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.PlaySelectSound">
+  PlaySelectSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the select sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PlaySelectSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_RemoveEventTriggers_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.RemoveEventTriggers*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_RemoveEventTriggers" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.RemoveEventTriggers">
+  RemoveEventTriggers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes event handlers from the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RemoveEventTriggers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_Audio_UIAudioHandler_1_UpdateInteractable_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.UpdateInteractable*"></a>
+
+  <h3 id="Fallencake_UI_Audio_UIAudioHandler_1_UpdateInteractable_System_Boolean_" data-uid="Fallencake.UI.Audio.UIAudioHandler`1.UpdateInteractable(System.Boolean)">
+  UpdateInteractable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the interactable state and event handlers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateInteractable(bool isInteractable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInteractable</code> <span class="xref">bool</span></dt>
+    <dd><p>New interactable state.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

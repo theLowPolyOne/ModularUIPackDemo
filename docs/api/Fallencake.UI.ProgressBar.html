@@ -1,0 +1,3629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ProgressBar | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ProgressBar | ModularUIPack ">
+      
+      <meta name="description" content="A modular progress bar component with support for different fill types, directions, animations, and audio feedback.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ProgressBar">
+
+
+
+  <h1 id="Fallencake_UI_ProgressBar" data-uid="Fallencake.UI.ProgressBar" class="text-break">
+Class ProgressBar  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A modular progress bar component with support for different fill types, directions, animations, and audio feedback.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Modular UI/Progress Bar&quot;)]
+[ExecuteAlways]
+public class ProgressBar : UIBehaviour, ISaveable, IProgressBarAudioProvider, IAudioProvider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">ProgressBar</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ISaveable.html">ISaveable</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IProgressBarAudioProvider.html">IProgressBarAudioProvider</a></div>
+      <div><a class="xref" href="Fallencake.UI.Audio.IAudioProvider.html">IAudioProvider</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar_MAX_INDICATORS" data-uid="Fallencake.UI.ProgressBar.MAX_INDICATORS">
+  MAX_INDICATORS
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum number of indicators that can be created automatically.
+This limit exists to prevent performance issues with too many UI elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MAX_INDICATORS = 100</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__backgroundImage" data-uid="Fallencake.UI.ProgressBar._backgroundImage">
+  _backgroundImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _backgroundImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__fillContainer" data-uid="Fallencake.UI.ProgressBar._fillContainer">
+  _fillContainer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _fillContainer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__fillImage" data-uid="Fallencake.UI.ProgressBar._fillImage">
+  _fillImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Image _fillImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__fillLabel" data-uid="Fallencake.UI.ProgressBar._fillLabel">
+  _fillLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected RectTransform _fillLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__fillType" data-uid="Fallencake.UI.ProgressBar._fillType">
+  _fillType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ProgressBar.FillType _fillType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">FillType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__indicatorAmount" data-uid="Fallencake.UI.ProgressBar._indicatorAmount">
+  _indicatorAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected int _indicatorAmount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__indicatorPrefab" data-uid="Fallencake.UI.ProgressBar._indicatorPrefab">
+  _indicatorPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected GameObject _indicatorPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__indicators" data-uid="Fallencake.UI.ProgressBar._indicators">
+  _indicators
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected List&lt;ImageIndicator&gt; _indicators</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ImageIndicator.html">ImageIndicator</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__indicatorsContainer" data-uid="Fallencake.UI.ProgressBar._indicatorsContainer">
+  _indicatorsContainer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Transform _indicatorsContainer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__isDifferentIndicators" data-uid="Fallencake.UI.ProgressBar._isDifferentIndicators">
+  _isDifferentIndicators
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isDifferentIndicators</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__isWholeNumbers" data-uid="Fallencake.UI.ProgressBar._isWholeNumbers">
+  _isWholeNumbers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool _isWholeNumbers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__maxValue" data-uid="Fallencake.UI.ProgressBar._maxValue">
+  _maxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float _maxValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__minValue" data-uid="Fallencake.UI.ProgressBar._minValue">
+  _minValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float _minValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__progressText" data-uid="Fallencake.UI.ProgressBar._progressText">
+  _progressText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected TMP_Text _progressText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ProgressBar__value" data-uid="Fallencake.UI.ProgressBar._value">
+  _value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Range(0, 1)]
+protected float _value</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ProgressBar_AnimationDuration_" data-uid="Fallencake.UI.ProgressBar.AnimationDuration*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_AnimationDuration" data-uid="Fallencake.UI.ProgressBar.AnimationDuration">
+  AnimationDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationDuration { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_AudioSource_" data-uid="Fallencake.UI.ProgressBar.AudioSource*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_AudioSource" data-uid="Fallencake.UI.ProgressBar.AudioSource">
+  AudioSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>AudioSource used to play sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AudioSource { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_AutoConfigureLayoutGroup_" data-uid="Fallencake.UI.ProgressBar.AutoConfigureLayoutGroup*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_AutoConfigureLayoutGroup" data-uid="Fallencake.UI.ProgressBar.AutoConfigureLayoutGroup">
+  AutoConfigureLayoutGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Auto-configure <span class="xref">UnityEngine.UI.LayoutGroup</span> settings for indicators container.
+When enabled, automatically adds and configures <span class="xref">UnityEngine.UI.HorizontalLayoutGroup</span> or <span class="xref">UnityEngine.UI.VerticalLayoutGroup</span>
+based on the progress <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_Direction">Direction</a>. Also sets spacing, alignment, and force expand settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoConfigureLayoutGroup { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_BackgroundImage_" data-uid="Fallencake.UI.ProgressBar.BackgroundImage*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_BackgroundImage" data-uid="Fallencake.UI.ProgressBar.BackgroundImage">
+  BackgroundImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image BackgroundImage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Component_" data-uid="Fallencake.UI.ProgressBar.Component*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Component" data-uid="Fallencake.UI.ProgressBar.Component">
+  Component
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Owning component used by handlers for context and coroutines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour Component { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MonoBehaviour</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_CurrentAnimationType_" data-uid="Fallencake.UI.ProgressBar.CurrentAnimationType*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_CurrentAnimationType" data-uid="Fallencake.UI.ProgressBar.CurrentAnimationType">
+  CurrentAnimationType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.AnimationType CurrentAnimationType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.AnimationType.html">AnimationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_CurrentFillType_" data-uid="Fallencake.UI.ProgressBar.CurrentFillType*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_CurrentFillType" data-uid="Fallencake.UI.ProgressBar.CurrentFillType">
+  CurrentFillType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ProgressBar.FillType CurrentFillType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">FillType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_CustomTextFormat_" data-uid="Fallencake.UI.ProgressBar.CustomTextFormat*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_CustomTextFormat" data-uid="Fallencake.UI.ProgressBar.CustomTextFormat">
+  CustomTextFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomTextFormat { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_DeselectSound_" data-uid="Fallencake.UI.ProgressBar.DeselectSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_DeselectSound" data-uid="Fallencake.UI.ProgressBar.DeselectSound">
+  DeselectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on deselect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData DeselectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Direction_" data-uid="Fallencake.UI.ProgressBar.Direction*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Direction" data-uid="Fallencake.UI.ProgressBar.Direction">
+  Direction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressDirection Direction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressDirection.html">ProgressDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_DisplayMode_" data-uid="Fallencake.UI.ProgressBar.DisplayMode*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_DisplayMode" data-uid="Fallencake.UI.ProgressBar.DisplayMode">
+  DisplayMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.TextDisplayMode DisplayMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.TextDisplayMode.html">TextDisplayMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_EnableSounds_" data-uid="Fallencake.UI.ProgressBar.EnableSounds*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_EnableSounds" data-uid="Fallencake.UI.ProgressBar.EnableSounds">
+  EnableSounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables/disables sound playback for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableSounds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_FillImage_" data-uid="Fallencake.UI.ProgressBar.FillImage*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_FillImage" data-uid="Fallencake.UI.ProgressBar.FillImage">
+  FillImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image FillImage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_FillLabel_" data-uid="Fallencake.UI.ProgressBar.FillLabel*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_FillLabel" data-uid="Fallencake.UI.ProgressBar.FillLabel">
+  FillLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The RectTransform that is placed at the current value position on the progress bar if <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IsFillLabelEnabled">IsFillLabelEnabled</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform FillLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IndicatorAmount_" data-uid="Fallencake.UI.ProgressBar.IndicatorAmount*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IndicatorAmount" data-uid="Fallencake.UI.ProgressBar.IndicatorAmount">
+  IndicatorAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of indicators to create automatically (only used when <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IsDifferentIndicators">IsDifferentIndicators</a> is false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndicatorAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IndicatorPrefab_" data-uid="Fallencake.UI.ProgressBar.IndicatorPrefab*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IndicatorPrefab" data-uid="Fallencake.UI.ProgressBar.IndicatorPrefab">
+  IndicatorPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prefab GameObject with <a class="xref" href="Fallencake.UI.ImageIndicator.html">ImageIndicator</a> component for automatic indicator creation.
+Used if <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">ProgressBar.FillType</a> is <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Indicators">Indicators</a> and <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IsDifferentIndicators">IsDifferentIndicators</a> is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject IndicatorPrefab { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IndicatorSpacing_" data-uid="Fallencake.UI.ProgressBar.IndicatorSpacing*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IndicatorSpacing" data-uid="Fallencake.UI.ProgressBar.IndicatorSpacing">
+  IndicatorSpacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Spacing between indicators in <span class="xref">UnityEngine.UI.LayoutGroup</span>. Used if <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">ProgressBar.FillType</a> is <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Indicators">Indicators</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float IndicatorSpacing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Indicators_" data-uid="Fallencake.UI.ProgressBar.Indicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Indicators" data-uid="Fallencake.UI.ProgressBar.Indicators">
+  Indicators
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of indicator components.
+Used if <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">ProgressBar.FillType</a> is <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Indicators">Indicators</a>.
+Filled automatically if <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IsDifferentIndicators">IsDifferentIndicators</a> is false, or manually by user if true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ImageIndicator&gt; Indicators { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.ImageIndicator.html">ImageIndicator</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IndicatorsContainer_" data-uid="Fallencake.UI.ProgressBar.IndicatorsContainer*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IndicatorsContainer" data-uid="Fallencake.UI.ProgressBar.IndicatorsContainer">
+  IndicatorsContainer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transform container where indicators will be instantiated.
+LayoutGroup will be automatically added based on progress <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_Direction">Direction</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform IndicatorsContainer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsAnimating_" data-uid="Fallencake.UI.ProgressBar.IsAnimating*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsAnimating" data-uid="Fallencake.UI.ProgressBar.IsAnimating">
+  IsAnimating
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnimating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsBackgroundEnabled_" data-uid="Fallencake.UI.ProgressBar.IsBackgroundEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsBackgroundEnabled" data-uid="Fallencake.UI.ProgressBar.IsBackgroundEnabled">
+  IsBackgroundEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBackgroundEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsChangePitchUpdateSound_" data-uid="Fallencake.UI.ProgressBar.IsChangePitchUpdateSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsChangePitchUpdateSound" data-uid="Fallencake.UI.ProgressBar.IsChangePitchUpdateSound">
+  IsChangePitchUpdateSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsChangePitchUpdateSound { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsColorizingEnabled_" data-uid="Fallencake.UI.ProgressBar.IsColorizingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsColorizingEnabled" data-uid="Fallencake.UI.ProgressBar.IsColorizingEnabled">
+  IsColorizingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables colorizing the progress bar using a gradient or color range.
+When is true, the bar color is updated in <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_UpdateColors">UpdateColors()</a> based on the current value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsColorizingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsDifferentIndicators_" data-uid="Fallencake.UI.ProgressBar.IsDifferentIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsDifferentIndicators" data-uid="Fallencake.UI.ProgressBar.IsDifferentIndicators">
+  IsDifferentIndicators
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If false - indicators for <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Indicators">Indicators</a> list are created automatically from prefab. If true - indicators are set manually by user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsDifferentIndicators { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsFillLabelEnabled_" data-uid="Fallencake.UI.ProgressBar.IsFillLabelEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsFillLabelEnabled" data-uid="Fallencake.UI.ProgressBar.IsFillLabelEnabled">
+  IsFillLabelEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFillLabelEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsIndicatorForceExpand_" data-uid="Fallencake.UI.ProgressBar.IsIndicatorForceExpand*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsIndicatorForceExpand" data-uid="Fallencake.UI.ProgressBar.IsIndicatorForceExpand">
+  IsIndicatorForceExpand
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable force expand for indicators in <span class="xref">UnityEngine.UI.LayoutGroup</span>. Used if <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">ProgressBar.FillType</a> is <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Indicators">Indicators</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIndicatorForceExpand { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsSavingEnabled_" data-uid="Fallencake.UI.ProgressBar.IsSavingEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsSavingEnabled" data-uid="Fallencake.UI.ProgressBar.IsSavingEnabled">
+  IsSavingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables save/load behavior for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSavingEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsSecondaryBarEnabled_" data-uid="Fallencake.UI.ProgressBar.IsSecondaryBarEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsSecondaryBarEnabled" data-uid="Fallencake.UI.ProgressBar.IsSecondaryBarEnabled">
+  IsSecondaryBarEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Secondary bar with custom Triggers And Delay:</p>
+<p>The secondary bar can work in two modes:</p>
+<ol>
+<li>Proportional mode (<span class="xref">Fallencake.UI.ProgressBar._useCustomTriggers</span> = false): Secondary bar value equals primary bar value</li>
+<li>Custom triggers mode (<span class="xref">Fallencake.UI.ProgressBar._useCustomTriggers</span> = true): Secondary bar value determined by trigger pairs</li>
+</ol>
+<p>Example usage with custom triggers:</p>
+<ul>
+<li>Trigger 1: primaryValue = 25, secondaryValue = 10 (when primary reaches 25, secondary shows 10)</li>
+<li>Trigger 2: primaryValue = 50, secondaryValue = 30 (when primary reaches 50, secondary shows 30)</li>
+<li>Trigger 3: primaryValue = 100, secondaryValue = 50 (when primary reaches 100, secondary shows 50)</li>
+<li><span class="xref">Fallencake.UI.ProgressBar._secondaryBarDelay</span> = 0.3 (primary updates first, then secondary after 0.3 seconds)</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSecondaryBarEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsTextEnabled_" data-uid="Fallencake.UI.ProgressBar.IsTextEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsTextEnabled" data-uid="Fallencake.UI.ProgressBar.IsTextEnabled">
+  IsTextEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTextEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_IsWholeNumbers_" data-uid="Fallencake.UI.ProgressBar.IsWholeNumbers*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_IsWholeNumbers" data-uid="Fallencake.UI.ProgressBar.IsWholeNumbers">
+  IsWholeNumbers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsWholeNumbers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_MaxValue_" data-uid="Fallencake.UI.ProgressBar.MaxValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_MaxValue" data-uid="Fallencake.UI.ProgressBar.MaxValue">
+  MaxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float MaxValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_MinValue_" data-uid="Fallencake.UI.ProgressBar.MinValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_MinValue" data-uid="Fallencake.UI.ProgressBar.MinValue">
+  MinValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_NormalizedValue_" data-uid="Fallencake.UI.ProgressBar.NormalizedValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_NormalizedValue" data-uid="Fallencake.UI.ProgressBar.NormalizedValue">
+  NormalizedValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NormalizedValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnProgressComplete_" data-uid="Fallencake.UI.ProgressBar.OnProgressComplete*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnProgressComplete" data-uid="Fallencake.UI.ProgressBar.OnProgressComplete">
+  OnProgressComplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressEvent OnProgressComplete { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressEvent.html">ProgressEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnProgressUpdateEnd_" data-uid="Fallencake.UI.ProgressBar.OnProgressUpdateEnd*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnProgressUpdateEnd" data-uid="Fallencake.UI.ProgressBar.OnProgressUpdateEnd">
+  OnProgressUpdateEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressEvent OnProgressUpdateEnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressEvent.html">ProgressEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnProgressUpdateStart_" data-uid="Fallencake.UI.ProgressBar.OnProgressUpdateStart*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnProgressUpdateStart" data-uid="Fallencake.UI.ProgressBar.OnProgressUpdateStart">
+  OnProgressUpdateStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressEvent OnProgressUpdateStart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressEvent.html">ProgressEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnSecondaryUpdateEnd_" data-uid="Fallencake.UI.ProgressBar.OnSecondaryUpdateEnd*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnSecondaryUpdateEnd" data-uid="Fallencake.UI.ProgressBar.OnSecondaryUpdateEnd">
+  OnSecondaryUpdateEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressEvent OnSecondaryUpdateEnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressEvent.html">ProgressEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnSecondaryUpdateStart_" data-uid="Fallencake.UI.ProgressBar.OnSecondaryUpdateStart*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnSecondaryUpdateStart" data-uid="Fallencake.UI.ProgressBar.OnSecondaryUpdateStart">
+  OnSecondaryUpdateStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressEvent OnSecondaryUpdateStart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressEvent.html">ProgressEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnValueChanged_" data-uid="Fallencake.UI.ProgressBar.OnValueChanged*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnValueChanged" data-uid="Fallencake.UI.ProgressBar.OnValueChanged">
+  OnValueChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.ProgressValueEvent OnValueChanged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressValueEvent.html">ProgressValueEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_PitchResetTimeSeconds_" data-uid="Fallencake.UI.ProgressBar.PitchResetTimeSeconds*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_PitchResetTimeSeconds" data-uid="Fallencake.UI.ProgressBar.PitchResetTimeSeconds">
+  PitchResetTimeSeconds
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PitchResetTimeSeconds { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_PressSound_" data-uid="Fallencake.UI.ProgressBar.PressSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_PressSound" data-uid="Fallencake.UI.ProgressBar.PressSound">
+  PressSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on press/submit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData PressSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ProgressCompleteSound_" data-uid="Fallencake.UI.ProgressBar.ProgressCompleteSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ProgressCompleteSound" data-uid="Fallencake.UI.ProgressBar.ProgressCompleteSound">
+  ProgressCompleteSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound data for completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData ProgressCompleteSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ProgressText_" data-uid="Fallencake.UI.ProgressBar.ProgressText*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ProgressText" data-uid="Fallencake.UI.ProgressBar.ProgressText">
+  ProgressText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TMP_Text ProgressText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ProgressUpdateSound_" data-uid="Fallencake.UI.ProgressBar.ProgressUpdateSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ProgressUpdateSound" data-uid="Fallencake.UI.ProgressBar.ProgressUpdateSound">
+  ProgressUpdateSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound data for progress update (loop/step).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData ProgressUpdateSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SaveKey_" data-uid="Fallencake.UI.ProgressBar.SaveKey*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SaveKey" data-uid="Fallencake.UI.ProgressBar.SaveKey">
+  SaveKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>PlayerPrefs key used to persist the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SecondaryBarDelay_" data-uid="Fallencake.UI.ProgressBar.SecondaryBarDelay*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SecondaryBarDelay" data-uid="Fallencake.UI.ProgressBar.SecondaryBarDelay">
+  SecondaryBarDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delay in seconds between primary and secondary bar updates.</p>
+<ul>
+<li>Positive value: primary bar updates first, then secondary bar after delay</li>
+<li>Negative value: secondary bar updates first, then primary bar after delay</li>
+<li>Zero: both bars update simultaneously
+This delay works for both proportional mode and custom triggers mode.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SecondaryBarDelay { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SecondaryFillImage_" data-uid="Fallencake.UI.ProgressBar.SecondaryFillImage*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SecondaryFillImage" data-uid="Fallencake.UI.ProgressBar.SecondaryFillImage">
+  SecondaryFillImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fill image used for the secondary progress bar (only used when <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_UseCustomSecondaryBar">UseCustomSecondaryBar</a> is false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image SecondaryFillImage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SecondaryFillType_" data-uid="Fallencake.UI.ProgressBar.SecondaryFillType*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SecondaryFillType" data-uid="Fallencake.UI.ProgressBar.SecondaryFillType">
+  SecondaryFillType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the visual representation of the secondary bar.
+Can be either <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Filled">Filled</a> or <a class="xref" href="Fallencake.UI.ProgressBar.FillType.html#Fallencake_UI_ProgressBar_FillType_Sliced">Sliced</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar.FillType SecondaryFillType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.FillType.html">FillType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SecondaryProgressBar_" data-uid="Fallencake.UI.ProgressBar.SecondaryProgressBar*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SecondaryProgressBar" data-uid="Fallencake.UI.ProgressBar.SecondaryProgressBar">
+  SecondaryProgressBar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressBar SecondaryProgressBar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SecondaryTriggers_" data-uid="Fallencake.UI.ProgressBar.SecondaryTriggers*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SecondaryTriggers" data-uid="Fallencake.UI.ProgressBar.SecondaryTriggers">
+  SecondaryTriggers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Custom trigger pairs that define secondary bar values for specific primary bar values.
+Only used when UseCustomTriggers is true.</p>
+<p>Example usage with custom triggers:</p>
+<ul>
+<li>Trigger 1: primaryValue = 25, secondaryValue = 10 (when primary reaches 25, secondary shows 10)</li>
+<li>Trigger 2: primaryValue = 50, secondaryValue = 30 (when primary reaches 50, secondary shows 30)</li>
+<li>Trigger 3: primaryValue = 100, secondaryValue = 50 (when primary reaches 100, secondary shows 50)</li>
+<li>_secondaryBarDelay = 0.3 (primary updates first, then secondary after 0.3 seconds)</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SecondaryBarTrigger&gt; SecondaryTriggers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.SecondaryBarTrigger.html">SecondaryBarTrigger</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SelectSound_" data-uid="Fallencake.UI.ProgressBar.SelectSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SelectSound" data-uid="Fallencake.UI.ProgressBar.SelectSound">
+  SelectSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sound played on select/hover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData SelectSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.Audio.AudioData.html">AudioData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Selectable_" data-uid="Fallencake.UI.ProgressBar.Selectable*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Selectable" data-uid="Fallencake.UI.ProgressBar.Selectable">
+  Selectable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>UI selectable to bind event triggers to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable Selectable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Selectable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_UseCustomSecondaryBar_" data-uid="Fallencake.UI.ProgressBar.UseCustomSecondaryBar*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_UseCustomSecondaryBar" data-uid="Fallencake.UI.ProgressBar.UseCustomSecondaryBar">
+  UseCustomSecondaryBar
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When enabled, uses custom trigger pairs to determine secondary bar values.
+When disabled, secondary bar value equals primary bar value (proportional mode).
+In custom triggers mode, you define trigger pairs (SecondaryBarTrigger) where:</p>
+<ul>
+<li>primaryValue: When primary bar reaches this value</li>
+<li>secondaryValue: Secondary bar should display this value</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseCustomSecondaryBar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_UseCustomTriggers_" data-uid="Fallencake.UI.ProgressBar.UseCustomTriggers*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_UseCustomTriggers" data-uid="Fallencake.UI.ProgressBar.UseCustomTriggers">
+  UseCustomTriggers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When enabled, uses custom trigger pairs to determine secondary bar values.
+When disabled, secondary bar value equals primary bar value (proportional mode).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseCustomTriggers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Value_" data-uid="Fallencake.UI.ProgressBar.Value*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Value" data-uid="Fallencake.UI.ProgressBar.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Volume_" data-uid="Fallencake.UI.ProgressBar.Volume*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Volume" data-uid="Fallencake.UI.ProgressBar.Volume">
+  Volume
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Per-component volume multiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ProgressBar_AddValue_" data-uid="Fallencake.UI.ProgressBar.AddValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_AddValue_System_Single_" data-uid="Fallencake.UI.ProgressBar.AddValue(System.Single)">
+  AddValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddValue(float amount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ApplyIndicatorColor_" data-uid="Fallencake.UI.ProgressBar.ApplyIndicatorColor*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ApplyIndicatorColor_Fallencake_UI_ImageIndicator_System_Single_" data-uid="Fallencake.UI.ProgressBar.ApplyIndicatorColor(Fallencake.UI.ImageIndicator,System.Single)">
+  ApplyIndicatorColor(ImageIndicator, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies dynamic color to indicator based on progress value and settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyIndicatorColor(ImageIndicator indicator, float alpha)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indicator</code> <a class="xref" href="Fallencake.UI.ImageIndicator.html">ImageIndicator</a></dt>
+    <dd></dd>
+    <dt><code>alpha</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Awake_" data-uid="Fallencake.UI.ProgressBar.Awake*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Awake" data-uid="Fallencake.UI.ProgressBar.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ClearAutoIndicators_" data-uid="Fallencake.UI.ProgressBar.ClearAutoIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ClearAutoIndicators" data-uid="Fallencake.UI.ProgressBar.ClearAutoIndicators">
+  ClearAutoIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ClearAutoIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_CompleteProgress_" data-uid="Fallencake.UI.ProgressBar.CompleteProgress*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_CompleteProgress" data-uid="Fallencake.UI.ProgressBar.CompleteProgress">
+  CompleteProgress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the progress bar to the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteProgress()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ConfigureIndicatorsLayoutGroup_" data-uid="Fallencake.UI.ProgressBar.ConfigureIndicatorsLayoutGroup*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ConfigureIndicatorsLayoutGroup" data-uid="Fallencake.UI.ProgressBar.ConfigureIndicatorsLayoutGroup">
+  ConfigureIndicatorsLayoutGroup()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ConfigureIndicatorsLayoutGroup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_CreateExampleTriggers_" data-uid="Fallencake.UI.ProgressBar.CreateExampleTriggers*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_CreateExampleTriggers" data-uid="Fallencake.UI.ProgressBar.CreateExampleTriggers">
+  CreateExampleTriggers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates example trigger configuration for testing purposes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Create Example Secondary Bar Triggers&quot;)]
+public void CreateExampleTriggers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_CreateIndicatorFromPrefab_" data-uid="Fallencake.UI.ProgressBar.CreateIndicatorFromPrefab*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_CreateIndicatorFromPrefab_UnityEngine_GameObject_" data-uid="Fallencake.UI.ProgressBar.CreateIndicatorFromPrefab(UnityEngine.GameObject)">
+  CreateIndicatorFromPrefab(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ImageIndicator CreateIndicatorFromPrefab(GameObject prefab)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ImageIndicator.html">ImageIndicator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ForceCleanupExcessIndicators_" data-uid="Fallencake.UI.ProgressBar.ForceCleanupExcessIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ForceCleanupExcessIndicators" data-uid="Fallencake.UI.ProgressBar.ForceCleanupExcessIndicators">
+  ForceCleanupExcessIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force cleanup of excess auto indicators in container.
+This method ensures the container has exactly _indicatorAmount auto indicators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Force Cleanup Excess Indicators&quot;)]
+public void ForceCleanupExcessIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ForceCreateIndicators_" data-uid="Fallencake.UI.ProgressBar.ForceCreateIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ForceCreateIndicators_System_Int32_" data-uid="Fallencake.UI.ProgressBar.ForceCreateIndicators(System.Int32)">
+  ForceCreateIndicators(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force creates the specified number of indicators immediately.
+Used in ForceRefreshIndicators to avoid timing issues with delayed destruction in editor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ForceCreateIndicators(int targetCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetCount</code> <span class="xref">int</span></dt>
+    <dd><p>Number of indicators to create</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ForceRefreshIndicators_" data-uid="Fallencake.UI.ProgressBar.ForceRefreshIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ForceRefreshIndicators" data-uid="Fallencake.UI.ProgressBar.ForceRefreshIndicators">
+  ForceRefreshIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force refresh of indicators (useful for debugging).
+If using auto indicators (<a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IsDifferentIndicators">IsDifferentIndicators</a> = false), removes all existing indicators
+and recreates them from the prefab with <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IndicatorPrefab">IndicatorPrefab</a> according to <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_IndicatorAmount">IndicatorAmount</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Force Refresh Indicators&quot;)]
+public void ForceRefreshIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_GetCurrentAutoIndicatorCount_" data-uid="Fallencake.UI.ProgressBar.GetCurrentAutoIndicatorCount*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_GetCurrentAutoIndicatorCount" data-uid="Fallencake.UI.ProgressBar.GetCurrentAutoIndicatorCount">
+  GetCurrentAutoIndicatorCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetCurrentAutoIndicatorCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_GraphicUpdateComplete_" data-uid="Fallencake.UI.ProgressBar.GraphicUpdateComplete*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_GraphicUpdateComplete" data-uid="Fallencake.UI.ProgressBar.GraphicUpdateComplete">
+  GraphicUpdateComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback sent when this ICanvasElement has completed Graphic rebuild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_InitializeIndicators_" data-uid="Fallencake.UI.ProgressBar.InitializeIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_InitializeIndicators" data-uid="Fallencake.UI.ProgressBar.InitializeIndicators">
+  InitializeIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_LayoutComplete_" data-uid="Fallencake.UI.ProgressBar.LayoutComplete*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_LayoutComplete" data-uid="Fallencake.UI.ProgressBar.LayoutComplete">
+  LayoutComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback sent when this ICanvasElement has completed layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_LoadState_" data-uid="Fallencake.UI.ProgressBar.LoadState*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_LoadState" data-uid="Fallencake.UI.ProgressBar.LoadState">
+  LoadState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads component state from persistent storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_OnDestroy_" data-uid="Fallencake.UI.ProgressBar.OnDestroy*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_OnDestroy" data-uid="Fallencake.UI.ProgressBar.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_PlayProgressCompleteSound_" data-uid="Fallencake.UI.ProgressBar.PlayProgressCompleteSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_PlayProgressCompleteSound" data-uid="Fallencake.UI.ProgressBar.PlayProgressCompleteSound">
+  PlayProgressCompleteSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayProgressCompleteSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_PlayProgressUpdateSound_" data-uid="Fallencake.UI.ProgressBar.PlayProgressUpdateSound*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_PlayProgressUpdateSound" data-uid="Fallencake.UI.ProgressBar.PlayProgressUpdateSound">
+  PlayProgressUpdateSound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayProgressUpdateSound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Rebuild_" data-uid="Fallencake.UI.ProgressBar.Rebuild*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="Fallencake.UI.ProgressBar.Rebuild(UnityEngine.UI.CanvasUpdate)">
+  Rebuild(CanvasUpdate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuild the element for the given stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate executing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>executing</code> <span class="xref">CanvasUpdate</span></dt>
+    <dd><p>The current CanvasUpdate stage being rebuild.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ResetProgress_" data-uid="Fallencake.UI.ProgressBar.ResetProgress*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ResetProgress" data-uid="Fallencake.UI.ProgressBar.ResetProgress">
+  ResetProgress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the progress bar to the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetProgress()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SafeDestroyGameObject_" data-uid="Fallencake.UI.ProgressBar.SafeDestroyGameObject*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SafeDestroyGameObject_UnityEngine_GameObject_" data-uid="Fallencake.UI.ProgressBar.SafeDestroyGameObject(UnityEngine.GameObject)">
+  SafeDestroyGameObject(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SafeDestroyGameObject(GameObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SaveState_" data-uid="Fallencake.UI.ProgressBar.SaveState*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SaveState" data-uid="Fallencake.UI.ProgressBar.SaveState">
+  SaveState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves component state to persistent storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetBackgroundEnabled_" data-uid="Fallencake.UI.ProgressBar.SetBackgroundEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetBackgroundEnabled_System_Boolean_" data-uid="Fallencake.UI.ProgressBar.SetBackgroundEnabled(System.Boolean)">
+  SetBackgroundEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBackgroundEnabled(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetDirection_" data-uid="Fallencake.UI.ProgressBar.SetDirection*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetDirection_Fallencake_UI_ProgressBar_ProgressDirection_" data-uid="Fallencake.UI.ProgressBar.SetDirection(Fallencake.UI.ProgressBar.ProgressDirection)">
+  SetDirection(ProgressDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDirection(ProgressBar.ProgressDirection direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="Fallencake.UI.ProgressBar.html">ProgressBar</a>.<a class="xref" href="Fallencake.UI.ProgressBar.ProgressDirection.html">ProgressDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetFillLabelEnabled_" data-uid="Fallencake.UI.ProgressBar.SetFillLabelEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetFillLabelEnabled_System_Boolean_" data-uid="Fallencake.UI.ProgressBar.SetFillLabelEnabled(System.Boolean)">
+  SetFillLabelEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFillLabelEnabled(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetTextEnabled_" data-uid="Fallencake.UI.ProgressBar.SetTextEnabled*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetTextEnabled_System_Boolean_" data-uid="Fallencake.UI.ProgressBar.SetTextEnabled(System.Boolean)">
+  SetTextEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextEnabled(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetValue_" data-uid="Fallencake.UI.ProgressBar.SetValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetValue_System_Single_System_Boolean_" data-uid="Fallencake.UI.ProgressBar.SetValue(System.Single,System.Boolean)">
+  SetValue(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the progress bar, optionally animating the transition.
+This method validates the input, clamps it within the allowed range, and updates the progress bar's visual state.
+If the value is changed, it triggers value change events and handles secondary bar logic if enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(float newValue, bool animate = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newValue</code> <span class="xref">float</span></dt>
+    <dd><p>The new value to assign to the progress bar. This value will be clamped between <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar__minValue">_minValue</a> and <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar__maxValue">_maxValue</a>.</p>
+</dd>
+    <dt><code>animate</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, the progress bar will animate smoothly to the new value (if animation is enabled and the application is playing); otherwise, the value will update instantly.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetValueImmediate_" data-uid="Fallencake.UI.ProgressBar.SetValueImmediate*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetValueImmediate_System_Single_" data-uid="Fallencake.UI.ProgressBar.SetValueImmediate(System.Single)">
+  SetValueImmediate(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the progress bar without animation.
+This method is used internally by <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_SetValue_System_Single_System_Boolean_">SetValue(float, bool)</a> when animation is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetValueImmediate(float newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newValue</code> <span class="xref">float</span></dt>
+    <dd><p>The new value to assign to the progress bar. This value will be clamped between <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar__minValue">_minValue</a> and <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar__maxValue">_maxValue</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetValueImmediate_" data-uid="Fallencake.UI.ProgressBar.SetValueImmediate*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetValueImmediate_System_Single_System_Boolean_System_Boolean_" data-uid="Fallencake.UI.ProgressBar.SetValueImmediate(System.Single,System.Boolean,System.Boolean)">
+  SetValueImmediate(float, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the progress bar without animation.
+This method is used internally by <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar_SetValue_System_Single_System_Boolean_">SetValue(float, bool)</a> when animation is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValueImmediate(float newValue, bool updateVisuals = true, bool triggerEvents = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newValue</code> <span class="xref">float</span></dt>
+    <dd><p>The new value to assign to the progress bar. This value will be clamped between <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar__minValue">_minValue</a> and <a class="xref" href="Fallencake.UI.ProgressBar.html#Fallencake_UI_ProgressBar__maxValue">_maxValue</a>.</p>
+</dd>
+    <dt><code>updateVisuals</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, the progress bar will update its visuals.</p>
+</dd>
+    <dt><code>triggerEvents</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, the progress bar will trigger events.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SetupLayoutGroupSettings_" data-uid="Fallencake.UI.ProgressBar.SetupLayoutGroupSettings*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SetupLayoutGroupSettings_UnityEngine_UI_LayoutGroup_" data-uid="Fallencake.UI.ProgressBar.SetupLayoutGroupSettings(UnityEngine.UI.LayoutGroup)">
+  SetupLayoutGroupSettings(LayoutGroup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetupLayoutGroupSettings(LayoutGroup layoutGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layoutGroup</code> <span class="xref">LayoutGroup</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Start_" data-uid="Fallencake.UI.ProgressBar.Start*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Start" data-uid="Fallencake.UI.ProgressBar.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_SubtractValue_" data-uid="Fallencake.UI.ProgressBar.SubtractValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_SubtractValue_System_Single_" data-uid="Fallencake.UI.ProgressBar.SubtractValue(System.Single)">
+  SubtractValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubtractValue(float amount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_Update_" data-uid="Fallencake.UI.ProgressBar.Update*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_Update" data-uid="Fallencake.UI.ProgressBar.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_UpdateColors_" data-uid="Fallencake.UI.ProgressBar.UpdateColors*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_UpdateColors" data-uid="Fallencake.UI.ProgressBar.UpdateColors">
+  UpdateColors()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateColors()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_UpdateIndicators_" data-uid="Fallencake.UI.ProgressBar.UpdateIndicators*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_UpdateIndicators" data-uid="Fallencake.UI.ProgressBar.UpdateIndicators">
+  UpdateIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_UpdateVisuals_" data-uid="Fallencake.UI.ProgressBar.UpdateVisuals*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_UpdateVisuals" data-uid="Fallencake.UI.ProgressBar.UpdateVisuals">
+  UpdateVisuals()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the visual representation of the progress bar based on its current fill type.
+This method handles the visual update for both regular fill types and indicators.
+It also updates the secondary bar and the fill label position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateVisuals()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ValidateAndFixIndicatorCount_" data-uid="Fallencake.UI.ProgressBar.ValidateAndFixIndicatorCount*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ValidateAndFixIndicatorCount" data-uid="Fallencake.UI.ProgressBar.ValidateAndFixIndicatorCount">
+  ValidateAndFixIndicatorCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates and fixes indicator count discrepancies.
+Call this if you suspect there are issues with indicator count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Validate &amp; Fix Indicator Count&quot;)]
+public void ValidateAndFixIndicatorCount()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ProgressBar_ValidateValue_" data-uid="Fallencake.UI.ProgressBar.ValidateValue*"></a>
+
+  <h3 id="Fallencake_UI_ProgressBar_ValidateValue" data-uid="Fallencake.UI.ProgressBar.ValidateValue">
+  ValidateValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

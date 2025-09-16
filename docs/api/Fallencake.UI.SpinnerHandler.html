@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SpinnerHandler | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SpinnerHandler | ModularUIPack ">
+      
+      <meta name="description" content="Base implementation of  that manages a set of  wrappers and coordinates their start/stop, timing and layout queries.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.SpinnerHandler">
+
+
+
+  <h1 id="Fallencake_UI_SpinnerHandler" data-uid="Fallencake.UI.SpinnerHandler" class="text-break">
+Class SpinnerHandler  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base implementation of <a class="xref" href="Fallencake.UI.ISpinnerHandler.html">ISpinnerHandler</a> that manages a set of <a class="xref" href="Fallencake.UI.UISpinner.html">UISpinner</a>
+wrappers and coordinates their start/stop, timing and layout queries.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SpinnerHandler : ISpinnerHandler</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">SpinnerHandler</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ISpinnerHandler.html">ISpinnerHandler</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.AxialSpinnerHandler.html">AxialSpinnerHandler</a></div>
+      <div><a class="xref" href="Fallencake.UI.EllipticalSpinnerHandler.html">EllipticalSpinnerHandler</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_SpinnerHandler__elementsAmount" data-uid="Fallencake.UI.SpinnerHandler._elementsAmount">
+  _elementsAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _elementsAmount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_SpinnerHandler__isInitialized" data-uid="Fallencake.UI.SpinnerHandler._isInitialized">
+  _isInitialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _isInitialized</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_SpinnerHandler__size" data-uid="Fallencake.UI.SpinnerHandler._size">
+  _size
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 _size</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_SpinnerHandler__spinner" data-uid="Fallencake.UI.SpinnerHandler._spinner">
+  _spinner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ModularSpinner _spinner</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ModularSpinner.html">ModularSpinner</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_SpinnerHandler__spinners" data-uid="Fallencake.UI.SpinnerHandler._spinners">
+  _spinners
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;UISpinner&gt; _spinners</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Fallencake.UI.UISpinner.html">UISpinner</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_SpinnerHandler__allNotSpinning_" data-uid="Fallencake.UI.SpinnerHandler._allNotSpinning*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler__allNotSpinning" data-uid="Fallencake.UI.SpinnerHandler._allNotSpinning">
+  _allNotSpinning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _allNotSpinning { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_elementStartPosition_" data-uid="Fallencake.UI.SpinnerHandler.elementStartPosition*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_elementStartPosition" data-uid="Fallencake.UI.SpinnerHandler.elementStartPosition">
+  elementStartPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initial layout policy for elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementStartPosition elementStartPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ElementStartPosition.html">ElementStartPosition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_elementsAmount_" data-uid="Fallencake.UI.SpinnerHandler.elementsAmount*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_elementsAmount" data-uid="Fallencake.UI.SpinnerHandler.elementsAmount">
+  elementsAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of managed spinning elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int elementsAmount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_facingDirection_" data-uid="Fallencake.UI.SpinnerHandler.facingDirection*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_facingDirection" data-uid="Fallencake.UI.SpinnerHandler.facingDirection">
+  facingDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Facing direction used when <a class="xref" href="Fallencake.UI.ISpinnerHandler.html#Fallencake_UI_ISpinnerHandler_isLookForward">isLookForward</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacingDirection facingDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.FacingDirection.html">FacingDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_isClockwise_" data-uid="Fallencake.UI.SpinnerHandler.isClockwise*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_isClockwise" data-uid="Fallencake.UI.SpinnerHandler.isClockwise">
+  isClockwise
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether rotation is clockwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isClockwise { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_isContinuousSpin_" data-uid="Fallencake.UI.SpinnerHandler.isContinuousSpin*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_isContinuousSpin" data-uid="Fallencake.UI.SpinnerHandler.isContinuousSpin">
+  isContinuousSpin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether continuous spinning mode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isContinuousSpin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_isLookForward_" data-uid="Fallencake.UI.SpinnerHandler.isLookForward*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_isLookForward" data-uid="Fallencake.UI.SpinnerHandler.isLookForward">
+  isLookForward
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether elements rotate to face forward along their path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isLookForward { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_isSimpleDelay_" data-uid="Fallencake.UI.SpinnerHandler.isSimpleDelay*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_isSimpleDelay" data-uid="Fallencake.UI.SpinnerHandler.isSimpleDelay">
+  isSimpleDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether a simplified delay model is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isSimpleDelay { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_movementCurve_" data-uid="Fallencake.UI.SpinnerHandler.movementCurve*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_movementCurve" data-uid="Fallencake.UI.SpinnerHandler.movementCurve">
+  movementCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Easing curve for element movement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve movementCurve { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_rotationDelay_" data-uid="Fallencake.UI.SpinnerHandler.rotationDelay*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_rotationDelay" data-uid="Fallencake.UI.SpinnerHandler.rotationDelay">
+  rotationDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delay between starts of subsequent elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rotationDelay { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_rotationTime_" data-uid="Fallencake.UI.SpinnerHandler.rotationTime*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_rotationTime" data-uid="Fallencake.UI.SpinnerHandler.rotationTime">
+  rotationTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Duration (seconds) for one full rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rotationTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_size_" data-uid="Fallencake.UI.SpinnerHandler.size*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_size" data-uid="Fallencake.UI.SpinnerHandler.size">
+  size
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Computed layout size used for positioning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 size { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_startAngle_" data-uid="Fallencake.UI.SpinnerHandler.startAngle*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_startAngle" data-uid="Fallencake.UI.SpinnerHandler.startAngle">
+  startAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base rotation angle in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int startAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_SpinnerHandler_CalculateAreaSize_" data-uid="Fallencake.UI.SpinnerHandler.CalculateAreaSize*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_CalculateAreaSize" data-uid="Fallencake.UI.SpinnerHandler.CalculateAreaSize">
+  CalculateAreaSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates layout size used for positioning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CalculateAreaSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_GetFirstCompletedElementSpeed_" data-uid="Fallencake.UI.SpinnerHandler.GetFirstCompletedElementSpeed*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_GetFirstCompletedElementSpeed" data-uid="Fallencake.UI.SpinnerHandler.GetFirstCompletedElementSpeed">
+  GetFirstCompletedElementSpeed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns rotation speed of the first element that completed rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFirstCompletedElementSpeed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_GetSpinner_" data-uid="Fallencake.UI.SpinnerHandler.GetSpinner*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_GetSpinner_System_Int32_" data-uid="Fallencake.UI.SpinnerHandler.GetSpinner(System.Int32)">
+  GetSpinner(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the wrapper spinner for an element by index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISpinner GetSpinner(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>Element index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.UISpinner.html">UISpinner</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_HasFirstElementCompletedRotation_" data-uid="Fallencake.UI.SpinnerHandler.HasFirstElementCompletedRotation*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_HasFirstElementCompletedRotation" data-uid="Fallencake.UI.SpinnerHandler.HasFirstElementCompletedRotation">
+  HasFirstElementCompletedRotation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether any element has completed its first rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFirstElementCompletedRotation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_InitSpinners_" data-uid="Fallencake.UI.SpinnerHandler.InitSpinners*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_InitSpinners" data-uid="Fallencake.UI.SpinnerHandler.InitSpinners">
+  InitSpinners()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates/initializes <a class="xref" href="Fallencake.UI.UISpinner.html">UISpinner</a> wrappers for each element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitSpinners()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_Initialize_" data-uid="Fallencake.UI.SpinnerHandler.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_Initialize" data-uid="Fallencake.UI.SpinnerHandler.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes internal state and places elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_MoveTangently_" data-uid="Fallencake.UI.SpinnerHandler.MoveTangently*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_MoveTangently_System_Int32_" data-uid="Fallencake.UI.SpinnerHandler.MoveTangently(System.Int32)">
+  MoveTangently(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves an element along the tangent of the path (per frame update).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void MoveTangently(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_SetElementsStartPosition_" data-uid="Fallencake.UI.SpinnerHandler.SetElementsStartPosition*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_SetElementsStartPosition" data-uid="Fallencake.UI.SpinnerHandler.SetElementsStartPosition">
+  SetElementsStartPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Places elements to their start positions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetElementsStartPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_Spin_" data-uid="Fallencake.UI.SpinnerHandler.Spin*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_Spin" data-uid="Fallencake.UI.SpinnerHandler.Spin">
+  Spin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a spin sequence according to handler policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Spin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_StartSynchronizedContinuousSpin_" data-uid="Fallencake.UI.SpinnerHandler.StartSynchronizedContinuousSpin*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_StartSynchronizedContinuousSpin_System_Single_" data-uid="Fallencake.UI.SpinnerHandler.StartSynchronizedContinuousSpin(System.Single)">
+  StartSynchronizedContinuousSpin(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts continuous spinning for all elements with the provided synchronized speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartSynchronizedContinuousSpin(float synchronizedSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>synchronizedSpeed</code> <span class="xref">float</span></dt>
+    <dd><p>Speed value to apply to all elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_Stop_" data-uid="Fallencake.UI.SpinnerHandler.Stop*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_Stop" data-uid="Fallencake.UI.SpinnerHandler.Stop">
+  Stop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the current spin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_SpinnerHandler_StopImmediate_" data-uid="Fallencake.UI.SpinnerHandler.StopImmediate*"></a>
+
+  <h3 id="Fallencake_UI_SpinnerHandler_StopImmediate" data-uid="Fallencake.UI.SpinnerHandler.StopImmediate">
+  StopImmediate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops immediately without transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopImmediate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

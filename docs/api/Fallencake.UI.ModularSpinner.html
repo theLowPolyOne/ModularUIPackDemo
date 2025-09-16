@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModularSpinner | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModularSpinner | ModularUIPack ">
+      
+      <meta name="description" content="Configurable spinner control that delegates movement to a strategy handler and exposes a rich set of options for rotation geometry and behavior.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.ModularSpinner">
+
+
+
+  <h1 id="Fallencake_UI_ModularSpinner" data-uid="Fallencake.UI.ModularSpinner" class="text-break">
+Class ModularSpinner  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Fallencake.html">Fallencake</a>.<a class="xref" href="Fallencake.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Fallencake.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Configurable spinner control that delegates movement to a strategy handler
+and exposes a rich set of options for rotation geometry and behavior.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ModularSpinner : UIBehaviour, ISpinner</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">ModularSpinner</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Fallencake.UI.ISpinner.html">ISpinner</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+  <h2 id="Fallencake_UI_ModularSpinner_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Uses a pluggable <code>ISpinnerHandler</code> implementation (e.g., Elliptical or Axial) selected by
+<a class="xref" href="Fallencake.UI.SpinningType.html">SpinningType</a> to animate <a class="xref" href="Fallencake.UI.ModularSpinner.html#Fallencake_UI_ModularSpinner_elements">elements</a> inside <a class="xref" href="Fallencake.UI.ModularSpinner.html#Fallencake_UI_ModularSpinner_rotationArea">rotationArea</a>.
+Provides utility methods to initialize from code and control play state via <a class="xref" href="Fallencake.UI.ModularSpinner.html#Fallencake_UI_ModularSpinner_Spin">Spin()</a>/<a class="xref" href="Fallencake.UI.ModularSpinner.html#Fallencake_UI_ModularSpinner_Stop">Stop()</a>.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Fallencake_UI_ModularSpinner_ElementsOffset_" data-uid="Fallencake.UI.ModularSpinner.ElementsOffset*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_ElementsOffset" data-uid="Fallencake.UI.ModularSpinner.ElementsOffset">
+  ElementsOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Spacing factor between elements along the path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ElementsOffset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_elementStartPosition_" data-uid="Fallencake.UI.ModularSpinner.elementStartPosition*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_elementStartPosition" data-uid="Fallencake.UI.ModularSpinner.elementStartPosition">
+  elementStartPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starting positions of elements along the path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementStartPosition elementStartPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.ElementStartPosition.html">ElementStartPosition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_elements_" data-uid="Fallencake.UI.ModularSpinner.elements*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_elements" data-uid="Fallencake.UI.ModularSpinner.elements">
+  elements
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The transforms of individual spinning elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RectTransform&gt; elements { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<span class="xref">RectTransform</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_facingDirection_" data-uid="Fallencake.UI.ModularSpinner.facingDirection*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_facingDirection" data-uid="Fallencake.UI.ModularSpinner.facingDirection">
+  facingDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initial facing direction for elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacingDirection facingDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Fallencake.UI.FacingDirection.html">FacingDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_isClockwise_" data-uid="Fallencake.UI.ModularSpinner.isClockwise*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_isClockwise" data-uid="Fallencake.UI.ModularSpinner.isClockwise">
+  isClockwise
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether elements rotate clockwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isClockwise { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_isContinuousSpin_" data-uid="Fallencake.UI.ModularSpinner.isContinuousSpin*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_isContinuousSpin" data-uid="Fallencake.UI.ModularSpinner.isContinuousSpin">
+  isContinuousSpin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether to transition to synchronized continuous spin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isContinuousSpin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_isLookForward_" data-uid="Fallencake.UI.ModularSpinner.isLookForward*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_isLookForward" data-uid="Fallencake.UI.ModularSpinner.isLookForward">
+  isLookForward
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether elements should face forward along the path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isLookForward { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_isSimpleDelay_" data-uid="Fallencake.UI.ModularSpinner.isSimpleDelay*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_isSimpleDelay" data-uid="Fallencake.UI.ModularSpinner.isSimpleDelay">
+  isSimpleDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether a simple delay model is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isSimpleDelay { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_movementCurve_" data-uid="Fallencake.UI.ModularSpinner.movementCurve*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_movementCurve" data-uid="Fallencake.UI.ModularSpinner.movementCurve">
+  movementCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Movement easing curve for element rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve movementCurve { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_rotationArea_" data-uid="Fallencake.UI.ModularSpinner.rotationArea*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_rotationArea" data-uid="Fallencake.UI.ModularSpinner.rotationArea">
+  rotationArea
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The area within which the animation is laid out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform rotationArea { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_rotationDelay_" data-uid="Fallencake.UI.ModularSpinner.rotationDelay*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_rotationDelay" data-uid="Fallencake.UI.ModularSpinner.rotationDelay">
+  rotationDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delay between starting consecutive element rotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rotationDelay { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_rotationSpeed_" data-uid="Fallencake.UI.ModularSpinner.rotationSpeed*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_rotationSpeed" data-uid="Fallencake.UI.ModularSpinner.rotationSpeed">
+  rotationSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Duration (in seconds) for a full rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rotationSpeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_startAngle_" data-uid="Fallencake.UI.ModularSpinner.startAngle*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_startAngle" data-uid="Fallencake.UI.ModularSpinner.startAngle">
+  startAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starting rotation angle in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int startAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Fallencake_UI_ModularSpinner_InitSpinners_" data-uid="Fallencake.UI.ModularSpinner.InitSpinners*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_InitSpinners" data-uid="Fallencake.UI.ModularSpinner.InitSpinners">
+  InitSpinners()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops current animation, re-initializes internals and updates the play flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitSpinners()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_Initialize_" data-uid="Fallencake.UI.ModularSpinner.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_Initialize_System_Collections_Generic_List_UnityEngine_RectTransform__UnityEngine_RectTransform_System_Int32_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Fallencake_UI_SpinningType_Fallencake_UI_FacingDirection_UnityEngine_AnimationCurve_" data-uid="Fallencake.UI.ModularSpinner.Initialize(System.Collections.Generic.List{UnityEngine.RectTransform},UnityEngine.RectTransform,System.Int32,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Fallencake.UI.SpinningType,Fallencake.UI.FacingDirection,UnityEngine.AnimationCurve)">
+  Initialize(List&lt;RectTransform&gt;, RectTransform, int, float, float, float, bool, bool, bool, bool, bool, bool, SpinningType, FacingDirection, AnimationCurve)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fully initializes the spinner with explicit elements, area, angles and behavior options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(List&lt;RectTransform&gt; elements, RectTransform rotationArea, int startAngle, float rotationTime, float elementsOffset, float rotationDelay, bool isPlayOnEnable, bool isSpinning, bool isClockwise, bool isLookForward, bool isSimpleDelay, bool isContinuousSpin, SpinningType spinningType, FacingDirection facingDirection, AnimationCurve movementCurve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <span class="xref">List</span>&lt;<span class="xref">RectTransform</span>&gt;</dt>
+    <dd><p>Spinning elements.</p>
+</dd>
+    <dt><code>rotationArea</code> <span class="xref">RectTransform</span></dt>
+    <dd><p>The bounds used to layout spinning.</p>
+</dd>
+    <dt><code>startAngle</code> <span class="xref">int</span></dt>
+    <dd><p>Starting angle in degrees.</p>
+</dd>
+    <dt><code>rotationTime</code> <span class="xref">float</span></dt>
+    <dd><p>Time for one full rotation, in seconds.</p>
+</dd>
+    <dt><code>elementsOffset</code> <span class="xref">float</span></dt>
+    <dd><p>Distance factor between elements on the path.</p>
+</dd>
+    <dt><code>rotationDelay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay between element starts.</p>
+</dd>
+    <dt><code>isPlayOnEnable</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to start spinning when enabled.</p>
+</dd>
+    <dt><code>isSpinning</code> <span class="xref">bool</span></dt>
+    <dd><p>Initial spinning flag.</p>
+</dd>
+    <dt><code>isClockwise</code> <span class="xref">bool</span></dt>
+    <dd><p>Rotate clockwise if true.</p>
+</dd>
+    <dt><code>isLookForward</code> <span class="xref">bool</span></dt>
+    <dd><p>Face forward along path if true.</p>
+</dd>
+    <dt><code>isSimpleDelay</code> <span class="xref">bool</span></dt>
+    <dd><p>Use simple delay model if true.</p>
+</dd>
+    <dt><code>isContinuousSpin</code> <span class="xref">bool</span></dt>
+    <dd><p>Enable synchronized continuous spin after first loop.</p>
+</dd>
+    <dt><code>spinningType</code> <a class="xref" href="Fallencake.UI.SpinningType.html">SpinningType</a></dt>
+    <dd><p>Rotation geometry strategy.</p>
+</dd>
+    <dt><code>facingDirection</code> <a class="xref" href="Fallencake.UI.FacingDirection.html">FacingDirection</a></dt>
+    <dd><p>Initial facing direction.</p>
+</dd>
+    <dt><code>movementCurve</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Easing curve for movement.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_Initialize_" data-uid="Fallencake.UI.ModularSpinner.Initialize*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_Initialize_System_Int32_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Fallencake_UI_SpinningType_Fallencake_UI_FacingDirection_UnityEngine_AnimationCurve_" data-uid="Fallencake.UI.ModularSpinner.Initialize(System.Int32,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Fallencake.UI.SpinningType,Fallencake.UI.FacingDirection,UnityEngine.AnimationCurve)">
+  Initialize(int, float, float, float, bool, bool, bool, bool, bool, bool, SpinningType, FacingDirection, AnimationCurve)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes core parameters without changing elements collection and area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(int startAngle, float rotationTime, float elementsOffset, float rotationDelay, bool isPlayOnEnable = true, bool isSpinning = true, bool isClockwise = true, bool isLookForward = false, bool isSimpleDelay = false, bool isContinuousSpin = false, SpinningType spinningType = SpinningType.Elliptical, FacingDirection facingDirection = FacingDirection.Top, AnimationCurve movementCurve = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startAngle</code> <span class="xref">int</span></dt>
+    <dd><p>Starting angle in degrees.</p>
+</dd>
+    <dt><code>rotationTime</code> <span class="xref">float</span></dt>
+    <dd><p>Time for one full rotation, in seconds.</p>
+</dd>
+    <dt><code>elementsOffset</code> <span class="xref">float</span></dt>
+    <dd><p>Distance factor between elements on the path.</p>
+</dd>
+    <dt><code>rotationDelay</code> <span class="xref">float</span></dt>
+    <dd><p>Delay between element starts.</p>
+</dd>
+    <dt><code>isPlayOnEnable</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether to play on enable.</p>
+</dd>
+    <dt><code>isSpinning</code> <span class="xref">bool</span></dt>
+    <dd><p>Initial spinning flag.</p>
+</dd>
+    <dt><code>isClockwise</code> <span class="xref">bool</span></dt>
+    <dd><p>Rotate clockwise if true.</p>
+</dd>
+    <dt><code>isLookForward</code> <span class="xref">bool</span></dt>
+    <dd><p>Face forward along the path if true.</p>
+</dd>
+    <dt><code>isSimpleDelay</code> <span class="xref">bool</span></dt>
+    <dd><p>Use simple delay model if true.</p>
+</dd>
+    <dt><code>isContinuousSpin</code> <span class="xref">bool</span></dt>
+    <dd><p>Enable continuous spin synchronization after first loop.</p>
+</dd>
+    <dt><code>spinningType</code> <a class="xref" href="Fallencake.UI.SpinningType.html">SpinningType</a></dt>
+    <dd><p>Geometry strategy.</p>
+</dd>
+    <dt><code>facingDirection</code> <a class="xref" href="Fallencake.UI.FacingDirection.html">FacingDirection</a></dt>
+    <dd><p>Initial facing direction.</p>
+</dd>
+    <dt><code>movementCurve</code> <span class="xref">AnimationCurve</span></dt>
+    <dd><p>Easing curve; defaults to linear if null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_OnRectTransformDimensionsChange_" data-uid="Fallencake.UI.ModularSpinner.OnRectTransformDimensionsChange*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_OnRectTransformDimensionsChange" data-uid="Fallencake.UI.ModularSpinner.OnRectTransformDimensionsChange">
+  OnRectTransformDimensionsChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This callback is called when the dimensions of an associated RectTransform change. It is always called before Awake, OnEnable, or Start. The call is also made to all child RectTransforms, regardless of whether their dimensions change (which depends on how they are anchored).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_Spin_" data-uid="Fallencake.UI.ModularSpinner.Spin*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_Spin" data-uid="Fallencake.UI.ModularSpinner.Spin">
+  Spin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts or continues the spinning animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Spin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Fallencake_UI_ModularSpinner_Stop_" data-uid="Fallencake.UI.ModularSpinner.Stop*"></a>
+
+  <h3 id="Fallencake_UI_ModularSpinner_Stop" data-uid="Fallencake.UI.ModularSpinner.Stop">
+  Stop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the spinning animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

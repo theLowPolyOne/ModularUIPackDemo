@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Fallencake.UI.Examples | ModularUIPack </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Fallencake.UI.Examples | ModularUIPack ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ModularUIPack">
+            ModularUIPack
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Fallencake.UI.Examples">
+
+  <h1 id="Fallencake_UI_Examples" data-uid="Fallencake.UI.Examples" class="text-break">Namespace Fallencake.UI.Examples</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.DraggableUIExample.html">DraggableUIExample</a></dt>
+      <dd><p>Example demonstrating how to use the DraggableUI events</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.ProgressBarExample.html">ProgressBarExample</a></dt>
+      <dd><p>Example script showing how to use the ProgressBar component.
+Attach this to a GameObject with a ProgressBar component to see it in action.</p>
+<p>AUTO TEST MODES:</p>
+<ul>
+<li>Positive Value Modifier: Fills progress bar from current to maximum, then resets to minimum and repeats</li>
+<li>Negative Value Modifier: Drains progress bar from current to minimum, then sets to maximum and repeats</li>
+</ul>
+<p>The direction (fill/drain) is automatically determined by the sign of the Value Modifier.
+When Loop Test is enabled with negative modifier, it creates a &quot;fill → drain → fill → drain&quot; cycle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.ProgressBarItem.html">ProgressBarItem</a></dt>
+      <dd><p>Represents a progress bar item with its own value modifier.
+In stepwise mode (autoTestStepDelay &gt; 0), valueModifier is used with AddValue() for each step.
+Positive valueModifier = increasing progress, Negative valueModifier = decreasing progress.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.ProgressBarListExample.html">ProgressBarListExample</a></dt>
+      <dd><p>Example script for animating multiple progress bars with domino effect.
+Each progress bar can have its own value modifier and timing based on animation curve.</p>
+<p>FEATURES:</p>
+<ul>
+<li>List of progress bars with individual value modifiers</li>
+<li>Domino effect using AnimationCurve for timing</li>
+<li>Total animation duration control or individual duration based on valueModifier</li>
+<li>Support for both increasing and decreasing progress bars</li>
+<li>Individual enable/disable for each progress bar</li>
+<li>Stepwise or smooth progress updating</li>
+<li>Two completion modes: wait for all or individual reset</li>
+</ul>
+<p>ANIMATION MODES:</p>
+<ul>
+<li>Smooth (autoTestStepDelay = 0): Continuous progress filling</li>
+<li>Stepwise (autoTestStepDelay &gt; 0): Progress updates in discrete steps using AddValue(valueModifier) every autoTestStepDelay seconds</li>
+</ul>
+<p>COMPLETION MODES:</p>
+<ul>
+<li>Wait For All (waitForAllFinished = true): All bars complete in testDuration, then all reset together</li>
+<li>Individual Reset (waitForAllFinished = false): Each bar completes in testDuration, resets separately with domino delay between cycles</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleTimerExample.html">SimpleTimerExample</a></dt>
+      <dd><p>Universal timer component that triggers a list of events sequentially after a specified duration.
+Supports both simultaneous and sequential event invocation with customizable timing curves.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.html">SimpleValueScrollerExample</a></dt>
+      <dd><p>Universal component for demonstrating smooth or stepwise changes of numeric values.
+Can work with any components via the UnityEvent system.
+Supports various animation types, curves, and speed settings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerListExample.html">SimpleValueScrollerListExample</a></dt>
+      <dd><p>Universal component for animating multiple numeric values with domino effect.
+Can work with any components that accept float or int values through UnityEvent system.
+Supports smooth and stepwise animations, individual timing, and various completion modes.</p>
+<p>FEATURES:</p>
+<ul>
+<li>List of value items with individual settings and events</li>
+<li>Domino effect using AnimationCurve for timing</li>
+<li>Support for both float and int value types</li>
+<li>Individual enable/disable for each value item</li>
+<li>Stepwise or smooth value updating</li>
+<li>Two completion modes: wait for all or individual reset</li>
+<li>Flexible event system for connecting to any numeric component</li>
+</ul>
+<p>ANIMATION MODES:</p>
+<ul>
+<li>Smooth: Continuous value interpolation using curves</li>
+<li>Stepwise: Value updates in discrete steps using valueModifier every stepDelay seconds</li>
+</ul>
+<p>COMPLETION MODES:</p>
+<ul>
+<li>Wait For All: All values complete in testDuration, then all reset together</li>
+<li>Individual Reset: Each value completes individually, resets separately with domino delay</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.TintAnimationExample.html">TintAnimationExample</a></dt>
+      <dd><p>Example demonstrating how to use the new TweenType.Tint animation</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.ValueScrollerItem.html">ValueScrollerItem</a></dt>
+      <dd><p>Represents a value scroller item with its own settings and target values.
+Can animate float or int values and trigger events for any component that accepts numeric input.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleTimerExample.TimerState.html">SimpleTimerExample.TimerState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.AnimationType.html">SimpleValueScrollerExample.AnimationType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.LoopDirection.html">SimpleValueScrollerExample.LoopDirection</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerExample.ValueType.html">SimpleValueScrollerExample.ValueType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.Examples.SimpleValueScrollerListExample.LoopDirection.html">SimpleValueScrollerListExample.LoopDirection</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
