@@ -7005,6 +7005,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.Examples.ContextMenuDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.Examples.ContextMenuDemo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.Examples.ContextMenuDemo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.Examples.DemoDropdownMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.Examples.DemoDropdownMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.Examples.DemoDropdownMenu",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.Examples.DemoManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.Examples.DemoManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.Examples.DemoManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Fallencake.UI.Examples.DraggableUIExample.yml",
       "output": {
         ".html": {
@@ -7016,6 +7058,20 @@
       "IsMRef": true,
       "Title": "Fallencake.UI.Examples.DraggableUIExample",
       "Summary": "<p sourcefile=\"api/Fallencake.UI.Examples.DraggableUIExample.yml\" sourcestartlinenumber=\"1\">Example demonstrating how to use the DraggableUI events</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.Examples.NavigationScrollbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.Examples.NavigationScrollbar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.Examples.NavigationScrollbar",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -8699,6 +8755,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.ScrollRectOptimizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.ScrollRectOptimizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.ScrollRectOptimizer",
+      "Summary": "<p sourcefile=\"api/Fallencake.UI.ScrollRectOptimizer.yml\" sourcestartlinenumber=\"1\">Optimizes ScrollRect performance by culling invisible items outside the viewport.\nAutomatically activates/deactivates child elements based on their visibility in the view rectangle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Fallencake.UI.ScrollableImage.yml",
       "output": {
         ".html": {
@@ -8864,6 +8934,34 @@
       "IsMRef": true,
       "Title": "Fallencake.UI.SelectorItem",
       "Summary": "<p sourcefile=\"api/Fallencake.UI.SelectorItem.yml\" sourcestartlinenumber=\"1\">Represents a single selectable item: a display name, optional icon, and a selection event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.SimpleFPSCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.SimpleFPSCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.SimpleFPSCounter",
+      "Summary": "<p sourcefile=\"api/Fallencake.UI.SimpleFPSCounter.yml\" sourcestartlinenumber=\"1\">Lightweight and precise FPS counter that updates a TMP_Text label at a fixed interval.</p>\n<ul sourcefile=\"api/Fallencake.UI.SimpleFPSCounter.yml\" sourcestartlinenumber=\"2\">\n<li sourcefile=\"api/Fallencake.UI.SimpleFPSCounter.yml\" sourcestartlinenumber=\"2\">Uses accumulated time and frame count for accurate FPS over the interval.</li>\n<li sourcefile=\"api/Fallencake.UI.SimpleFPSCounter.yml\" sourcestartlinenumber=\"3\">Updates text infrequently to minimize allocations and UI rebuilds.</li>\n<li sourcefile=\"api/Fallencake.UI.SimpleFPSCounter.yml\" sourcestartlinenumber=\"4\">Optionally sets Application.targetFrameRate.</li>\n</ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.SimpleLayoutRebuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.SimpleLayoutRebuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.SimpleLayoutRebuilder",
+      "Summary": "<p sourcefile=\"api/Fallencake.UI.SimpleLayoutRebuilder.yml\" sourcestartlinenumber=\"1\">Component that provides methods to force rebuild layout groups when child elements change size.\nSolves the issue where layout groups don't update their arrangement when child elements resize.</p>\n"
     },
     {
       "type": "ManagedReference",

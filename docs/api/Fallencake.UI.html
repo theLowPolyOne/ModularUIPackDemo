@@ -400,10 +400,6 @@ unless AllowSwitchOff is enabled.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Fallencake.UI.NavigationScrollbar.html">NavigationScrollbar</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="Fallencake.UI.OffsetPopupTweenParameters.html">OffsetPopupTweenParameters</a></dt>
       <dd><p>Popup tween parameters for animating RectTransform offsetMin and offsetMax values with separate show and hide values</p>
 </dd>
@@ -498,6 +494,12 @@ and clockwise/counterclockwise fill direction.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.ScrollRectOptimizer.html">ScrollRectOptimizer</a></dt>
+      <dd><p>Optimizes ScrollRect performance by culling invisible items outside the viewport.
+Automatically activates/deactivates child elements based on their visibility in the view rectangle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Fallencake.UI.ScrollableImage.html">ScrollableImage</a></dt>
       <dd><p>Represents a scrollable texture bound to a <span class="xref">UnityEngine.UI.RawImage</span>.
 Manages UV offset over time to create a seamless scrolling effect.</p>
@@ -533,6 +535,22 @@ Provides functionality for single/multiple selection modes and deselection behav
     <dl class="jumplist">
       <dt><a class="xref" href="Fallencake.UI.SelectorItem.html">SelectorItem</a></dt>
       <dd><p>Represents a single selectable item: a display name, optional icon, and a selection event.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.SimpleFPSCounter.html">SimpleFPSCounter</a></dt>
+      <dd><p>Lightweight and precise FPS counter that updates a TMP_Text label at a fixed interval.</p>
+<ul>
+<li>Uses accumulated time and frame count for accurate FPS over the interval.</li>
+<li>Updates text infrequently to minimize allocations and UI rebuilds.</li>
+<li>Optionally sets Application.targetFrameRate.</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Fallencake.UI.SimpleLayoutRebuilder.html">SimpleLayoutRebuilder</a></dt>
+      <dd><p>Component that provides methods to force rebuild layout groups when child elements change size.
+Solves the issue where layout groups don't update their arrangement when child elements resize.</p>
 </dd>
     </dl>
     <dl class="jumplist">
