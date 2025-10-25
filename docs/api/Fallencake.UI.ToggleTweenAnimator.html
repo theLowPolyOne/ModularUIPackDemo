@@ -134,6 +134,134 @@ Class ToggleTweenAnimator
 
 
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Fallencake_UI_ToggleTweenAnimator_OffTweenCompleted" data-uid="Fallencake.UI.ToggleTweenAnimator.OffTweenCompleted">
+  OffTweenCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is triggered when all <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a> have completed their animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OffTweenCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleTweenAnimator_OffTweenStarted" data-uid="Fallencake.UI.ToggleTweenAnimator.OffTweenStarted">
+  OffTweenStarted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is triggered when the first tween in <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a> starts playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OffTweenStarted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleTweenAnimator_OnTweenCompleted" data-uid="Fallencake.UI.ToggleTweenAnimator.OnTweenCompleted">
+  OnTweenCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is triggered when all <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a> have completed their animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnTweenCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Fallencake_UI_ToggleTweenAnimator_OnTweenStarted" data-uid="Fallencake.UI.ToggleTweenAnimator.OnTweenStarted">
+  OnTweenStarted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is triggered when the first tween in <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a> starts playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnTweenStarted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -246,7 +374,7 @@ For this animator it exposes the ON tweens by default.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Inverts ON and OFF tween lists, swapping their contents.</p>
+  <div class="markdown level1 summary"><p>Inverts <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a> and <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a> lists, swapping their contents.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -306,7 +434,7 @@ For this animator it exposes the ON tweens by default.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Plays the OFF state tweens.</p>
+  <div class="markdown level1 summary"><p>Plays the OFF state tweens in <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -339,7 +467,7 @@ For this animator it exposes the ON tweens by default.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Plays the ON state tweens.</p>
+  <div class="markdown level1 summary"><p>Plays the ON state tweens in <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -372,7 +500,7 @@ For this animator it exposes the ON tweens by default.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Plays tweens for the specified state.</p>
+  <div class="markdown level1 summary"><p>Plays <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a> or <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a> tweens depending on <code class="paramref">isOn</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -398,6 +526,40 @@ For this animator it exposes the ON tweens by default.</p>
 
 
 
+  <a id="Fallencake_UI_ToggleTweenAnimator_SetStateInstant_" data-uid="Fallencake.UI.ToggleTweenAnimator.SetStateInstant*"></a>
+
+  <h3 id="Fallencake_UI_ToggleTweenAnimator_SetStateInstant_System_Boolean_" data-uid="Fallencake.UI.ToggleTweenAnimator.SetStateInstant(System.Boolean)">
+  SetStateInstant(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly applies the end values of <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a> or <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a> without animation.
+Stops any running animations and sets all targets to their final state immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStateInstant(bool isOn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOn</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, applies ON state end values; otherwise applies OFF state end values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Fallencake_UI_ToggleTweenAnimator_Stop_" data-uid="Fallencake.UI.ToggleTweenAnimator.Stop*"></a>
 
   <h3 id="Fallencake_UI_ToggleTweenAnimator_Stop" data-uid="Fallencake.UI.ToggleTweenAnimator.Stop">
@@ -405,7 +567,7 @@ For this animator it exposes the ON tweens by default.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Stops any running tween sequences and resets both ON and OFF tweens.</p>
+  <div class="markdown level1 summary"><p>Stops any running tween sequences and resets both <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens">OnTweens</a> and <a class="xref" href="Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens">OffTweens</a> tweens.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

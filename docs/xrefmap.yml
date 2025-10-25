@@ -7416,6 +7416,19 @@ references:
   fullName.vb: Fallencake.UI.FadeTween.New
   nameWithType: FadeTween.FadeTween
   nameWithType.vb: FadeTween.New
+- uid: Fallencake.UI.FadeTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.FadeTween.html#Fallencake_UI_FadeTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.FadeTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.FadeTween.ApplyEndValueInstant()
+  nameWithType: FadeTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.FadeTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.FadeTween.html#Fallencake_UI_FadeTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.FadeTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.FadeTween.ApplyEndValueInstant
+  nameWithType: FadeTween.ApplyEndValueInstant
 - uid: Fallencake.UI.FadeTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.FadeTween.html#Fallencake_UI_FadeTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -10075,6 +10088,19 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ITween.Reset
   nameWithType: ITween.Reset
+- uid: Fallencake.UI.ITween.SetToEndValue
+  name: SetToEndValue()
+  href: api/Fallencake.UI.ITween.html#Fallencake_UI_ITween_SetToEndValue
+  commentId: M:Fallencake.UI.ITween.SetToEndValue
+  fullName: Fallencake.UI.ITween.SetToEndValue()
+  nameWithType: ITween.SetToEndValue()
+- uid: Fallencake.UI.ITween.SetToEndValue*
+  name: SetToEndValue
+  href: api/Fallencake.UI.ITween.html#Fallencake_UI_ITween_SetToEndValue_
+  commentId: Overload:Fallencake.UI.ITween.SetToEndValue
+  isSpec: "True"
+  fullName: Fallencake.UI.ITween.SetToEndValue
+  nameWithType: ITween.SetToEndValue
 - uid: Fallencake.UI.ITweenAnimator
   name: ITweenAnimator
   href: api/Fallencake.UI.ITweenAnimator.html
@@ -10736,6 +10762,12 @@ references:
   commentId: F:Fallencake.UI.InputFieldAnimator._tweenCoroutine
   fullName: Fallencake.UI.InputFieldAnimator._tweenCoroutine
   nameWithType: InputFieldAnimator._tweenCoroutine
+- uid: Fallencake.UI.InputModuleAutoSwitcher
+  name: InputModuleAutoSwitcher
+  href: api/Fallencake.UI.InputModuleAutoSwitcher.html
+  commentId: T:Fallencake.UI.InputModuleAutoSwitcher
+  fullName: Fallencake.UI.InputModuleAutoSwitcher
+  nameWithType: InputModuleAutoSwitcher
 - uid: Fallencake.UI.JampingSpinner
   name: JampingSpinner
   href: api/Fallencake.UI.JampingSpinner.html
@@ -12669,19 +12701,6 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ModularToggle.IsFadingView
   nameWithType: ModularToggle.IsFadingView
-- uid: Fallencake.UI.ModularToggle.IsInteractable
-  name: IsInteractable
-  href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_IsInteractable
-  commentId: P:Fallencake.UI.ModularToggle.IsInteractable
-  fullName: Fallencake.UI.ModularToggle.IsInteractable
-  nameWithType: ModularToggle.IsInteractable
-- uid: Fallencake.UI.ModularToggle.IsInteractable*
-  name: IsInteractable
-  href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_IsInteractable_
-  commentId: Overload:Fallencake.UI.ModularToggle.IsInteractable
-  isSpec: "True"
-  fullName: Fallencake.UI.ModularToggle.IsInteractable
-  nameWithType: ModularToggle.IsInteractable
 - uid: Fallencake.UI.ModularToggle.IsStretchingHandle
   name: IsStretchingHandle
   href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_IsStretchingHandle
@@ -12909,6 +12928,19 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ModularToggle.ToggleOnSound
   nameWithType: ModularToggle.ToggleOnSound
+- uid: Fallencake.UI.ModularToggle.TweenAnimator
+  name: TweenAnimator
+  href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_TweenAnimator
+  commentId: P:Fallencake.UI.ModularToggle.TweenAnimator
+  fullName: Fallencake.UI.ModularToggle.TweenAnimator
+  nameWithType: ModularToggle.TweenAnimator
+- uid: Fallencake.UI.ModularToggle.TweenAnimator*
+  name: TweenAnimator
+  href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_TweenAnimator_
+  commentId: Overload:Fallencake.UI.ModularToggle.TweenAnimator
+  isSpec: "True"
+  fullName: Fallencake.UI.ModularToggle.TweenAnimator
+  nameWithType: ModularToggle.TweenAnimator
 - uid: Fallencake.UI.ModularToggle.Volume
   name: Volume
   href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_Volume
@@ -12922,6 +12954,19 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ModularToggle.Volume
   nameWithType: ModularToggle.Volume
+- uid: Fallencake.UI.ModularToggle.interactable
+  name: interactable
+  href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_interactable
+  commentId: P:Fallencake.UI.ModularToggle.interactable
+  fullName: Fallencake.UI.ModularToggle.interactable
+  nameWithType: ModularToggle.interactable
+- uid: Fallencake.UI.ModularToggle.interactable*
+  name: interactable
+  href: api/Fallencake.UI.ModularToggle.html#Fallencake_UI_ModularToggle_interactable_
+  commentId: Overload:Fallencake.UI.ModularToggle.interactable
+  isSpec: "True"
+  fullName: Fallencake.UI.ModularToggle.interactable
+  nameWithType: ModularToggle.interactable
 - uid: Fallencake.UI.ModularToggleGroup
   name: ModularToggleGroup
   href: api/Fallencake.UI.ModularToggleGroup.html
@@ -13088,6 +13133,19 @@ references:
   fullName.vb: Fallencake.UI.MoveTween.New
   nameWithType: MoveTween.MoveTween
   nameWithType.vb: MoveTween.New
+- uid: Fallencake.UI.MoveTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.MoveTween.html#Fallencake_UI_MoveTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.MoveTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.MoveTween.ApplyEndValueInstant()
+  nameWithType: MoveTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.MoveTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.MoveTween.html#Fallencake_UI_MoveTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.MoveTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.MoveTween.ApplyEndValueInstant
+  nameWithType: MoveTween.ApplyEndValueInstant
 - uid: Fallencake.UI.MoveTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.MoveTween.html#Fallencake_UI_MoveTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -13676,6 +13734,19 @@ references:
   fullName.vb: Fallencake.UI.OffsetTween.New
   nameWithType: OffsetTween.OffsetTween
   nameWithType.vb: OffsetTween.New
+- uid: Fallencake.UI.OffsetTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.OffsetTween.html#Fallencake_UI_OffsetTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.OffsetTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.OffsetTween.ApplyEndValueInstant()
+  nameWithType: OffsetTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.OffsetTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.OffsetTween.html#Fallencake_UI_OffsetTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.OffsetTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.OffsetTween.ApplyEndValueInstant
+  nameWithType: OffsetTween.ApplyEndValueInstant
 - uid: Fallencake.UI.OffsetTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.OffsetTween.html#Fallencake_UI_OffsetTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -17266,6 +17337,19 @@ references:
   fullName.vb: Fallencake.UI.RotateTween.New
   nameWithType: RotateTween.RotateTween
   nameWithType.vb: RotateTween.New
+- uid: Fallencake.UI.RotateTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.RotateTween.html#Fallencake_UI_RotateTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.RotateTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.RotateTween.ApplyEndValueInstant()
+  nameWithType: RotateTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.RotateTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.RotateTween.html#Fallencake_UI_RotateTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.RotateTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.RotateTween.ApplyEndValueInstant
+  nameWithType: RotateTween.ApplyEndValueInstant
 - uid: Fallencake.UI.RotateTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.RotateTween.html#Fallencake_UI_RotateTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -17460,6 +17544,19 @@ references:
   fullName.vb: Fallencake.UI.ScaleTween.New
   nameWithType: ScaleTween.ScaleTween
   nameWithType.vb: ScaleTween.New
+- uid: Fallencake.UI.ScaleTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.ScaleTween.html#Fallencake_UI_ScaleTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.ScaleTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.ScaleTween.ApplyEndValueInstant()
+  nameWithType: ScaleTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.ScaleTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.ScaleTween.html#Fallencake_UI_ScaleTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.ScaleTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.ScaleTween.ApplyEndValueInstant
+  nameWithType: ScaleTween.ApplyEndValueInstant
 - uid: Fallencake.UI.ScaleTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.ScaleTween.html#Fallencake_UI_ScaleTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -18744,6 +18841,19 @@ references:
   fullName.vb: Fallencake.UI.SizeTween.New
   nameWithType: SizeTween.SizeTween
   nameWithType.vb: SizeTween.New
+- uid: Fallencake.UI.SizeTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.SizeTween.html#Fallencake_UI_SizeTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.SizeTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.SizeTween.ApplyEndValueInstant()
+  nameWithType: SizeTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.SizeTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.SizeTween.html#Fallencake_UI_SizeTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.SizeTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.SizeTween.ApplyEndValueInstant
+  nameWithType: SizeTween.ApplyEndValueInstant
 - uid: Fallencake.UI.SizeTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.SizeTween.html#Fallencake_UI_SizeTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -20710,6 +20820,19 @@ references:
   fullName.vb: Fallencake.UI.TintTween.New
   nameWithType: TintTween.TintTween
   nameWithType.vb: TintTween.New
+- uid: Fallencake.UI.TintTween.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.TintTween.html#Fallencake_UI_TintTween_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.TintTween.ApplyEndValueInstant
+  fullName: Fallencake.UI.TintTween.ApplyEndValueInstant()
+  nameWithType: TintTween.ApplyEndValueInstant()
+- uid: Fallencake.UI.TintTween.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.TintTween.html#Fallencake_UI_TintTween_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.TintTween.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.TintTween.ApplyEndValueInstant
+  nameWithType: TintTween.ApplyEndValueInstant
 - uid: Fallencake.UI.TintTween.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.TintTween.html#Fallencake_UI_TintTween_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -21203,6 +21326,18 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ToggleTweenAnimator.InvertStates
   nameWithType: ToggleTweenAnimator.InvertStates
+- uid: Fallencake.UI.ToggleTweenAnimator.OffTweenCompleted
+  name: OffTweenCompleted
+  href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweenCompleted
+  commentId: F:Fallencake.UI.ToggleTweenAnimator.OffTweenCompleted
+  fullName: Fallencake.UI.ToggleTweenAnimator.OffTweenCompleted
+  nameWithType: ToggleTweenAnimator.OffTweenCompleted
+- uid: Fallencake.UI.ToggleTweenAnimator.OffTweenStarted
+  name: OffTweenStarted
+  href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweenStarted
+  commentId: F:Fallencake.UI.ToggleTweenAnimator.OffTweenStarted
+  fullName: Fallencake.UI.ToggleTweenAnimator.OffTweenStarted
+  nameWithType: ToggleTweenAnimator.OffTweenStarted
 - uid: Fallencake.UI.ToggleTweenAnimator.OffTweens
   name: OffTweens
   href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OffTweens
@@ -21216,6 +21351,18 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ToggleTweenAnimator.OffTweens
   nameWithType: ToggleTweenAnimator.OffTweens
+- uid: Fallencake.UI.ToggleTweenAnimator.OnTweenCompleted
+  name: OnTweenCompleted
+  href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweenCompleted
+  commentId: F:Fallencake.UI.ToggleTweenAnimator.OnTweenCompleted
+  fullName: Fallencake.UI.ToggleTweenAnimator.OnTweenCompleted
+  nameWithType: ToggleTweenAnimator.OnTweenCompleted
+- uid: Fallencake.UI.ToggleTweenAnimator.OnTweenStarted
+  name: OnTweenStarted
+  href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweenStarted
+  commentId: F:Fallencake.UI.ToggleTweenAnimator.OnTweenStarted
+  fullName: Fallencake.UI.ToggleTweenAnimator.OnTweenStarted
+  nameWithType: ToggleTweenAnimator.OnTweenStarted
 - uid: Fallencake.UI.ToggleTweenAnimator.OnTweens
   name: OnTweens
   href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_OnTweens
@@ -21284,6 +21431,22 @@ references:
   isSpec: "True"
   fullName: Fallencake.UI.ToggleTweenAnimator.PlayState
   nameWithType: ToggleTweenAnimator.PlayState
+- uid: Fallencake.UI.ToggleTweenAnimator.SetStateInstant(System.Boolean)
+  name: SetStateInstant(bool)
+  href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_SetStateInstant_System_Boolean_
+  commentId: M:Fallencake.UI.ToggleTweenAnimator.SetStateInstant(System.Boolean)
+  name.vb: SetStateInstant(Boolean)
+  fullName: Fallencake.UI.ToggleTweenAnimator.SetStateInstant(bool)
+  fullName.vb: Fallencake.UI.ToggleTweenAnimator.SetStateInstant(Boolean)
+  nameWithType: ToggleTweenAnimator.SetStateInstant(bool)
+  nameWithType.vb: ToggleTweenAnimator.SetStateInstant(Boolean)
+- uid: Fallencake.UI.ToggleTweenAnimator.SetStateInstant*
+  name: SetStateInstant
+  href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_SetStateInstant_
+  commentId: Overload:Fallencake.UI.ToggleTweenAnimator.SetStateInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.ToggleTweenAnimator.SetStateInstant
+  nameWithType: ToggleTweenAnimator.SetStateInstant
 - uid: Fallencake.UI.ToggleTweenAnimator.Stop
   name: Stop()
   href: api/Fallencake.UI.ToggleTweenAnimator.html#Fallencake_UI_ToggleTweenAnimator_Stop
@@ -21456,6 +21619,23 @@ references:
   fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter)
   nameWithType: TweenBase<TTarget, TParameter>
   nameWithType.vb: TweenBase(Of TTarget, TParameter)
+- uid: Fallencake.UI.TweenBase`2.ApplyEndValueInstant
+  name: ApplyEndValueInstant()
+  href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_ApplyEndValueInstant
+  commentId: M:Fallencake.UI.TweenBase`2.ApplyEndValueInstant
+  fullName: Fallencake.UI.TweenBase<TTarget, TParameter>.ApplyEndValueInstant()
+  fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).ApplyEndValueInstant()
+  nameWithType: TweenBase<TTarget, TParameter>.ApplyEndValueInstant()
+  nameWithType.vb: TweenBase(Of TTarget, TParameter).ApplyEndValueInstant()
+- uid: Fallencake.UI.TweenBase`2.ApplyEndValueInstant*
+  name: ApplyEndValueInstant
+  href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_ApplyEndValueInstant_
+  commentId: Overload:Fallencake.UI.TweenBase`2.ApplyEndValueInstant
+  isSpec: "True"
+  fullName: Fallencake.UI.TweenBase<TTarget, TParameter>.ApplyEndValueInstant
+  fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).ApplyEndValueInstant
+  nameWithType: TweenBase<TTarget, TParameter>.ApplyEndValueInstant
+  nameWithType.vb: TweenBase(Of TTarget, TParameter).ApplyEndValueInstant
 - uid: Fallencake.UI.TweenBase`2.Delay
   name: Delay
   href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Delay
@@ -21576,6 +21756,23 @@ references:
   fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).OnComplete
   nameWithType: TweenBase<TTarget, TParameter>.OnComplete
   nameWithType.vb: TweenBase(Of TTarget, TParameter).OnComplete
+- uid: Fallencake.UI.TweenBase`2.OnStart
+  name: OnStart()
+  href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_OnStart
+  commentId: M:Fallencake.UI.TweenBase`2.OnStart
+  fullName: Fallencake.UI.TweenBase<TTarget, TParameter>.OnStart()
+  fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).OnStart()
+  nameWithType: TweenBase<TTarget, TParameter>.OnStart()
+  nameWithType.vb: TweenBase(Of TTarget, TParameter).OnStart()
+- uid: Fallencake.UI.TweenBase`2.OnStart*
+  name: OnStart
+  href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_OnStart_
+  commentId: Overload:Fallencake.UI.TweenBase`2.OnStart
+  isSpec: "True"
+  fullName: Fallencake.UI.TweenBase<TTarget, TParameter>.OnStart
+  fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).OnStart
+  nameWithType: TweenBase<TTarget, TParameter>.OnStart
+  nameWithType.vb: TweenBase(Of TTarget, TParameter).OnStart
 - uid: Fallencake.UI.TweenBase`2.Play(UnityEngine.MonoBehaviour,System.Boolean)
   name: Play(MonoBehaviour, bool)
   href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_Play_UnityEngine_MonoBehaviour_System_Boolean_
@@ -21629,6 +21826,23 @@ references:
   fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).ResetTarget
   nameWithType: TweenBase<TTarget, TParameter>.ResetTarget
   nameWithType.vb: TweenBase(Of TTarget, TParameter).ResetTarget
+- uid: Fallencake.UI.TweenBase`2.SetToEndValue
+  name: SetToEndValue()
+  href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_SetToEndValue
+  commentId: M:Fallencake.UI.TweenBase`2.SetToEndValue
+  fullName: Fallencake.UI.TweenBase<TTarget, TParameter>.SetToEndValue()
+  fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).SetToEndValue()
+  nameWithType: TweenBase<TTarget, TParameter>.SetToEndValue()
+  nameWithType.vb: TweenBase(Of TTarget, TParameter).SetToEndValue()
+- uid: Fallencake.UI.TweenBase`2.SetToEndValue*
+  name: SetToEndValue
+  href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_SetToEndValue_
+  commentId: Overload:Fallencake.UI.TweenBase`2.SetToEndValue
+  isSpec: "True"
+  fullName: Fallencake.UI.TweenBase<TTarget, TParameter>.SetToEndValue
+  fullName.vb: Fallencake.UI.TweenBase(Of TTarget, TParameter).SetToEndValue
+  nameWithType: TweenBase<TTarget, TParameter>.SetToEndValue
+  nameWithType.vb: TweenBase(Of TTarget, TParameter).SetToEndValue
 - uid: Fallencake.UI.TweenBase`2.StartValue
   name: StartValue
   href: api/Fallencake.UI.TweenBase-2.html#Fallencake_UI_TweenBase_2_StartValue
@@ -22644,7 +22858,7 @@ references:
   nameWithType: UISpinner.isSpinning
 - uid: changelog
   name: Changelog
-  href: Library/PackageCache/com.unity.memoryprofiler%401.1.5/CHANGELOG.html
+  href: Library/PackageCache/com.unity.memoryprofiler%401.1.6/CHANGELOG.html
 - uid: collections-allocation
   name: Using unmanaged memory
   href: Library/PackageCache/com.unity.collections%401.2.4/Documentation~/allocation.html
@@ -22656,4 +22870,4 @@ references:
   href: Library/PackageCache/com.unity.collections%401.2.4/Documentation~/index.html
 - uid: neon-intrinsics
   name: Burst Arm Neon intrinsics reference
-  href: Library/PackageCache/com.unity.burst%401.8.19/Documentation~/csharp-burst-intrinsics-neon.html
+  href: Library/PackageCache/com.unity.burst%401.8.21/Documentation~/csharp-burst-intrinsics-neon.html

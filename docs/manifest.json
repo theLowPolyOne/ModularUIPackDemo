@@ -12,753 +12,720 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Assets/Fallencake/ModularUIPack/Docs/getting-started.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Assets/Fallencake/ModularUIPack/Docs/getting-started.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Assets/Fallencake/ModularUIPack/Docs/introduction.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/2DIK.md",
       "output": {
         ".html": {
-          "relative_path": "Assets/Fallencake/ModularUIPack/Docs/introduction.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/2DIK.html"
         }
       },
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "Assets/Fallencake/ModularUIPack/Docs/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "Assets/Fallencake/ModularUIPack/Docs/toc.html"
-        },
-        ".json": {
-          "relative_path": "Assets/Fallencake/ModularUIPack/Docs/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/CHANGELOG.md",
-      "output": {
-        ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/CHANGELOG.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/2DIK.md",
-      "output": {
-        ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/2DIK.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/Animating-actor.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/Animating-actor.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/Animating-actor.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/Animating-actor.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/AssetUpgrader.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/AssetUpgrader.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/AssetUpgrader.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/AssetUpgrader.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/CharacterParts.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/CharacterParts.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/CharacterParts.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/CharacterParts.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/CharacterRig.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/CharacterRig.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/CharacterRig.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/CharacterRig.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/Examples.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/Examples.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/Examples.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/Examples.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/PreparingArtwork.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/PreparingArtwork.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/PreparingArtwork.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/PreparingArtwork.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Asset.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Asset.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Asset.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Asset.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Drag.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Drag.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Drag.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Drag.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Editor-UI.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Editor-UI.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Editor-UI.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Editor-UI.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Editor.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Editor.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Editor.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Editor.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Main-Library.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Main-Library.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Main-Library.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Main-Library.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Resolver.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Resolver.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-Resolver.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-Resolver.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-component.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-component.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SL-component.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SL-component.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SLASwap.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SLASwap.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SLASwap.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SLASwap.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SLAsset.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SLAsset.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SLAsset.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SLAsset.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SkinEdToolsShortcuts.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SkinEdToolsShortcuts.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SkinEdToolsShortcuts.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SkinEdToolsShortcuts.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SkinningEditor.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SkinningEditor.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SkinningEditor.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SkinningEditor.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSkin.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSkin.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSkin.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSkin.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSwapIntro.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSwapIntro.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSwapIntro.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSwapIntro.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSwapLanding.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSwapLanding.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSwapLanding.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSwapLanding.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSwapSetup.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSwapSetup.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteSwapSetup.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteSwapSetup.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteVis.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteVis.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/SpriteVis.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/SpriteVis.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ToolPref.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ToolPref.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ToolPref.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ToolPref.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-psd-importer.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-psd-importer.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-psd-importer.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-psd-importer.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-runtime-swap.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-runtime-swap.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-runtime-swap.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-runtime-swap.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-simple.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-simple.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-simple.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-simple.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-single-skinned-sprite.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-single-skinned-sprite.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-single-skinned-sprite.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-single-skinned-sprite.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-skeleton-sharing.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-skeleton-sharing.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-skeleton-sharing.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-skeleton-sharing.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-sprite-swap.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-sprite-swap.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/ex-sprite-swap.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/ex-sprite-swap.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/whats-new.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/whats-new.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Documentation~/whats-new.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Documentation~/whats-new.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Samples~/AnimationSamples/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Samples~/AnimationSamples/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Samples~/AnimationSamples/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Samples~/AnimationSamples/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Samples~/AnimationSamples/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Samples~/AnimationSamples/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Samples~/AnimationSamples/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Samples~/AnimationSamples/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Third Party Notices.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Third Party Notices.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.1.3/Third Party Notices.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.animation@9.2.0/Third Party Notices.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/AsepriteFeatures.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/AsepriteFeatures.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/AsepriteFeatures.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/AsepriteFeatures.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/ImporterFAQ.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/ImporterFAQ.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/ImporterFAQ.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/ImporterFAQ.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/ImporterFeatures.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/ImporterFeatures.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/ImporterFeatures.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/ImporterFeatures.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/whats-new.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/whats-new.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/Documentation~/whats-new.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/Documentation~/whats-new.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.8/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.aseprite@1.1.9/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/Documentation~/Common.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/Documentation~/Common.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/Documentation~/Common.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/Documentation~/Common.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/Third Party Notices.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/Third Party Notices.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.common@8.0.4/Third Party Notices.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.common@8.1.0/Third Party Notices.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Samples~/Scenes and Extras/Third-Party Notices.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/Samples~/Scenes and Extras/Third-Party Notices.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.0.3/Samples~/Scenes and Extras/Third-Party Notices.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.pixel-perfect@5.1.0/Samples~/Scenes and Extras/Third-Party Notices.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/PSD-importer-SpriteRect.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/PSD-importer-SpriteRect.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/PSD-importer-SpriteRect.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/PSD-importer-SpriteRect.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/PSD-importer-properties.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/PSD-importer-properties.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/PSD-importer-properties.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/PSD-importer-properties.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/PSD-override.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/PSD-override.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/PSD-override.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/PSD-override.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/skeleton-sharing.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/skeleton-sharing.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Documentation~/skeleton-sharing.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Documentation~/skeleton-sharing.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Samples~/PSDImporterSamples/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Samples~/PSDImporterSamples/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Samples~/PSDImporterSamples/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Samples~/PSDImporterSamples/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Samples~/PSDImporterSamples/PSDImporterCustomPacker/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Samples~/PSDImporterSamples/PSDImporterCustomPacker/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Samples~/PSDImporterSamples/PSDImporterCustomPacker/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Samples~/PSDImporterSamples/PSDImporterCustomPacker/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Samples~/PSDImporterSamples/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Samples~/PSDImporterSamples/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Samples~/PSDImporterSamples/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Samples~/PSDImporterSamples/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Third Party Notices.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Third Party Notices.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.0.5/Third Party Notices.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.psdimporter@8.1.0/Third Party Notices.html"
         }
       },
       "version": ""
@@ -825,120 +792,120 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/CustomGeometry.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/CustomGeometry.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/CustomGeometry.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/CustomGeometry.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/FillTessellation.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/FillTessellation.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/FillTessellation.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/FillTessellation.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSCollision.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSCollision.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSCollision.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSCollision.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSController.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSController.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSController.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSController.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSPreferences.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSPreferences.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSPreferences.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSPreferences.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSProfile.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSProfile.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/SSProfile.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/SSProfile.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/README.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Third Party Notices.md",
+      "source_relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Third Party Notices.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.0.5/Third Party Notices.html"
+          "relative_path": "Library/PackageCache/com.unity.2d.spriteshape@9.1.0/Third Party Notices.html"
         }
       },
       "version": ""
@@ -1205,440 +1172,430 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/aliasing-job-system.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/aliasing-job-system.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/aliasing-job-system.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/aliasing-job-system.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/aliasing-noalias.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/aliasing-noalias.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/aliasing-noalias.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/aliasing-noalias.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/aliasing.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/aliasing.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/aliasing.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/aliasing.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/building-aot-settings.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/building-aot-settings.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/building-aot-settings.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/building-aot-settings.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/building-projects.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/building-projects.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/building-projects.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/building-projects.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-burstcompile-assembly.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-burstcompile-assembly.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-burstcompile-assembly.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-burstcompile-assembly.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-burstcompile.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-burstcompile.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-burstcompile.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-burstcompile.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-burstdiscard.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-burstdiscard.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-burstdiscard.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-burstdiscard.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-generic-jobs.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-generic-jobs.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-generic-jobs.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-generic-jobs.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-overview.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-synchronous.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-overview.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-synchronous.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-synchronous.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-warnings.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-synchronous.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation-warnings.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-warnings.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation-warnings.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/compilation.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-common.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/compilation.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-common.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-common.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-dllimport.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-common.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-dllimport.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-dllimport.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-neon.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-dllimport.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-neon.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-neon.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-processors.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-neon.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics-processors.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-processors.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics-processors.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-burst-intrinsics.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-calling-burst-code.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-burst-intrinsics.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-calling-burst-code.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-calling-burst-code.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-function-pointers.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-calling-burst-code.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-function-pointers.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-function-pointers.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-hpc-overview.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-function-pointers.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-hpc-overview.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-hpc-overview.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-language-support.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-hpc-overview.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-language-support.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-language-support.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-shared-static.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-language-support.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-shared-static.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-shared-static.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-static-read-only-support.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-shared-static.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-static-read-only-support.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-static-read-only-support.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-string-support.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-static-read-only-support.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-string-support.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-string-support.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-system-support.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-string-support.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-system-support.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-system-support.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-type-support.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-system-support.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/csharp-type-support.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-type-support.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/debugging-profiling-tools.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/csharp-type-support.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/debugging-profiling-tools.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/debugging-profiling-tools.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/editor-burst-inspector.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/debugging-profiling-tools.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/editor-burst-inspector.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/editor-burst-inspector.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/editor-burst-menu.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/editor-burst-inspector.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/editor-burst-menu.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/editor-burst-menu.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/editor-reference-overview.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/editor-burst-menu.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/editor-reference-overview.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/editor-reference-overview.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/editor-reference-overview.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/getting-started.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/getting-started.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/getting-started.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/modding-support.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/modding-support.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/modding-support.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-assumerange.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/modding-support.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-assumerange.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-assumerange.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-constant.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-assumerange.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-constant.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-constant.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-hint.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-constant.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-hint.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-hint.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-loop-vectorization.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-hint.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-loop-vectorization.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-loop-vectorization.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-overview.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-loop-vectorization.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-overview.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-overview.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-skiplocalsinit.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-overview.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Documentation~/optimization-skiplocalsinit.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-skiplocalsinit.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Documentation~/optimization-skiplocalsinit.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Third Party Notices.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/LICENSE.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Third Party Notices.md",
-      "output": {
-        ".html": {
-          "relative_path": "Library/PackageCache/com.unity.burst@1.8.19/Third Party Notices.html"
+          "relative_path": "Library/PackageCache/com.unity.burst@1.8.21/Third Party Notices.html"
         }
       },
       "version": ""
@@ -2108,70 +2065,70 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/CONTRIBUTING.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/CONTRIBUTING.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/CONTRIBUTING.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/CONTRIBUTING.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/README.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/README.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/using-the-jetbrains-rider-editor-package.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/using-the-jetbrains-rider-editor-package.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/Documentation~/using-the-jetbrains-rider-editor-package.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/Documentation~/using-the-jetbrains-rider-editor-package.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.34/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.ide.rider@3.0.36/LICENSE.html"
         }
       },
       "version": ""
@@ -2328,250 +2285,250 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/all-memory-tab.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/all-memory-tab.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/all-memory-tab.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/all-memory-tab.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/find-memory-leaks.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/find-memory-leaks.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/find-memory-leaks.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/find-memory-leaks.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/inspect-assets-that-use-most-memory.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/inspect-assets-that-use-most-memory.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/inspect-assets-that-use-most-memory.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/inspect-assets-that-use-most-memory.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/inspect-memory-usage.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/inspect-memory-usage.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/inspect-memory-usage.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/inspect-memory-usage.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/main-component.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/main-component.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/main-component.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/main-component.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/managed-shell-objects.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/managed-shell-objects.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/managed-shell-objects.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/managed-shell-objects.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/memory-on-device.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/memory-on-device.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/memory-on-device.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/memory-on-device.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/memory-profiler-window-reference.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/memory-profiler-window-reference.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/memory-profiler-window-reference.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/memory-profiler-window-reference.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/memory-profiler-window-section.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/memory-profiler-window-section.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/memory-profiler-window-section.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/memory-profiler-window-section.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/references-component.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/references-component.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/references-component.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/references-component.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/selection-details-component.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/selection-details-component.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/selection-details-component.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/selection-details-component.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshot-capture.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshot-capture.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshot-capture.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshot-capture.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots-comparison.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots-comparison.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots-comparison.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots-comparison.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots-component.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots-component.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots-component.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots-component.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots-concepts.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots-concepts.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots-concepts.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots-concepts.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/snapshots.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/snapshots.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/summary-tab.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/summary-tab.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/summary-tab.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/summary-tab.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/total-memory-use.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/total-memory-use.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/total-memory-use.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/total-memory-use.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/unity-objects-tab.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/unity-objects-tab.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/unity-objects-tab.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/unity-objects-tab.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/whats-new.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/whats-new.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/Documentation~/whats-new.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/Documentation~/whats-new.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.5/README.html"
+          "relative_path": "Library/PackageCache/com.unity.memoryprofiler@1.1.6/README.html"
         }
       },
       "version": ""
@@ -3288,730 +3245,730 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/CHANGELOG.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/CHANGELOG.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/CHANGELOG.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/TableOfContents.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/TableOfContents.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/TableOfContents.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/TableOfContents.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_add.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_add.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_add.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_add.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_blend.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_blend.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_blend.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_blend.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_dup.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_dup.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_dup.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_dup.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_ease.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_ease.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_ease.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_ease.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_gap_extrap.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_gap_extrap.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_gap_extrap.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_gap_extrap.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_insert.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_insert.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_insert.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_insert.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_match.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_match.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_match.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_match.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_pan_zoom.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_pan_zoom.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_pan_zoom.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_pan_zoom.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_position.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_position.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_position.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_position.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_reset.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_reset.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_reset.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_reset.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_select.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_select.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_select.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_select.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_speed.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_speed.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_speed.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_speed.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_split.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_split.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_split.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_split.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_tile.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_tile.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_tile.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_tile.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_trim.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_trim.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/clp_trim.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/clp_trim.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_hide.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_hide.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_hide.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_hide.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_add.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_add.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_add.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_add.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_del.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_del.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_del.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_del.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_edit.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_edit.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_edit.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_edit.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_interp.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_interp.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_interp.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_interp.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_sel.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_sel.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_keys_sel.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_keys_sel.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_nav.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_nav.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/crv_nav.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/crv_nav.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_hide.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/grp_hide.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_hide.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/grp_hide.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_lock.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/grp_lock.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_lock.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/grp_lock.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_use.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/grp_use.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/grp_use.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/grp_use.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/index.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/index.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/index.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_act.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_act.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_act.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_act.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_com.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_anim_com.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_com.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_anim_com.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_plyb.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_anim_plyb.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_anim_plyb.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_anim_plyb.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_aud.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_aud.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_aud.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_aud.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_com.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_ctrl_com.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_com.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_ctrl_com.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_plyb.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_ctrl_plyb.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_clp_ctrl_plyb.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_clp_ctrl_plyb.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_tl.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_tl.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_tl.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_tl.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_trk.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_trk.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_act.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_trk_act.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_act.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_trk_act.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_anim.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_trk_anim.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/insp_trk_anim.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/insp_trk_anim.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/play_director.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/play_director.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/play_director.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/play_director.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_annotation.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_annotation.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_annotation.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_annotation.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_text.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_text.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_text.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_text.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_time.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_time.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_time.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_time.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_tween.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_tween.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_tween.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_tween.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_video.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_video.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/smpl_custom_video.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/smpl_custom_video.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_gloss.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_gloss.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_gloss.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_gloss.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_play_cntrls.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_play_cntrls.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_play_cntrls.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_play_cntrls.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_selector.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_selector.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_selector.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_selector.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_settings.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_settings.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_settings.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_settings.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_window.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_window.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/tl_window.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/tl_window.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_add.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_add.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_add.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_add.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_delete.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_delete.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_delete.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_delete.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_dup.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_dup.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_dup.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_dup.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_list_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_list_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_list_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_list_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_lock.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_lock.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_lock.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_lock.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_mute.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_mute.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_mute.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_mute.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_reorder.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_reorder.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_reorder.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_reorder.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_select.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_select.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/trk_select.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/trk_select.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/uss_styles.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/uss_styles.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/uss_styles.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/uss_styles.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_about.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_about.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_about.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_about.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_char_anim.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_char_anim.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_char_anim.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_char_anim.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_conv_infinite.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_conv_infinite.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_conv_infinite.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_conv_infinite.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_instance.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_instance.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_instance.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_instance.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_mask.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_mask.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_mask.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_mask.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_nested.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_nested.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_nested.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_nested.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_rec_anim.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_rec_anim.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/Documentation~/wf_rec_anim.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/Documentation~/wf_rec_anim.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/LICENSE.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/LICENSE.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/LICENSE.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/LICENSE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/README.md",
+      "source_relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/README.md",
       "output": {
         ".html": {
-          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.6/README.html"
+          "relative_path": "Library/PackageCache/com.unity.timeline@1.7.7/README.html"
         }
       },
       "version": ""
@@ -7941,6 +7898,20 @@
       "IsMRef": true,
       "Title": "Fallencake.UI.InputFieldAnimator",
       "Summary": "<p sourcefile=\"api/Fallencake.UI.InputFieldAnimator.yml\" sourcestartlinenumber=\"1\">Base animator for input field visual feedback. Handles select/deselect animations\nusing tweened coroutines and exposes events for selection state changes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fallencake.UI.InputModuleAutoSwitcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fallencake.UI.InputModuleAutoSwitcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Fallencake.UI.InputModuleAutoSwitcher",
+      "Summary": "<p sourcefile=\"api/Fallencake.UI.InputModuleAutoSwitcher.yml\" sourcestartlinenumber=\"1\">On scene start, if the project uses the new Input System only,\nreplaces StandaloneInputModule with InputSystemUIInputModule and logs a message.</p>\n"
     },
     {
       "type": "ManagedReference",
